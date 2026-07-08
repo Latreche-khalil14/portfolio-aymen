@@ -1,0 +1,79 @@
+import esbuild from 'esbuild';
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const rootDir = path.resolve(__dirname, '..');
+const srcDir = path.join(rootDir, 'src', 'site');
+const publicDir = path.join(rootDir, 'public');
+
+function ensureDirExists(dir) {
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir, { recursive: true });
+  }
+}
+
+async function build() {
+  try {
+    ensureDirExists(publicDir);
+
+    console.log('Minifying CSS and JS...');
+    // Minify styles.css
+    esbuild.buildSync({
+      entryPoints: [path.join(srcDir, 'styles.css')],
+      outfile: path.join(publicDir, 'styles.css'),
+      minify: true,
+    });
+
+    // Minify script.js
+    esbuild.buildSync({
+      entryPoints: [path.join(srcDir, 'script.js')],
+      outfile: path.join(publicDir, 'script.js'),
+      minify: true,
+    });
+
+    console.log('Copying HTML files...');
+    fs.copyFileSync(path.join(srcDir, 'site.html'), path.join(publicDir, 'site.html'));
+    fs.copyFileSync(path.join(srcDir, '404.html'), path.join(publicDir, '404.html'));
+    fs.copyFileSync(path.join(srcDir, 'privacy.html'), path.join(publicDir, 'privacy.html'));
+    fs.copyFileSync(path.join(srcDir, 'services.html'), path.join(publicDir, 'services.html'));
+
+    console.log('Checking for sharp to generate JPEG fallback images...');
+    try {
+      const sharpModule = await import('sharp');
+      const sharp = sharpModule.default || sharpModule;
+
+      const portraitWebP = path.join(publicDir, 'portrait.webp');
+      const portraitJpg = path.join(publicDir, 'portrait.jpg');
+      if (fs.existsSync(portraitWebP)) {
+        if (fs.existsSync(portraitJpg)) {
+          fs.unlinkSync(portraitJpg);
+        }
+        await sharp(portraitWebP).jpeg({ quality: 85 }).toFile(portraitJpg);
+        console.log('Generated portrait.jpg fallback.');
+      }
+
+      const aboutWebP = path.join(publicDir, 'about.webp');
+      const aboutJpg = path.join(publicDir, 'about.jpg');
+      if (fs.existsSync(aboutWebP)) {
+        if (fs.existsSync(aboutJpg)) {
+          fs.unlinkSync(aboutJpg);
+        }
+        await sharp(aboutWebP).jpeg({ quality: 85 }).toFile(aboutJpg);
+        console.log('Generated about.jpg fallback.');
+      }
+    } catch (err) {
+      console.warn('sharp is not available yet. Skipping JPEG fallback generation. Reason:', err.message);
+    }
+
+    console.log('Static site build complete.');
+  } catch (error) {
+    console.error('Error during static site build:', error);
+    process.exit(1);
+  }
+}
+
+build();

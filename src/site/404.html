@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Not Found — Ben</title>
+  <meta name="robots" content="noindex" />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .error-container {
+      min-height: calc(100vh - 120px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: var(--space-lg);
+    }
+    .error-code {
+      font-size: clamp(4rem, 10vw, 8rem);
+      font-weight: 700;
+      color: var(--color-accent);
+      line-height: 1;
+      margin-bottom: var(--space-sm);
+    }
+    .error-message {
+      max-width: 480px;
+      color: var(--color-text-muted);
+      margin-bottom: var(--space-lg);
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header" id="siteHeader" aria-label="Site Header">
+    <div class="container nav">
+      <a href="site.html" class="brand" aria-label="Ben, home">
+        <img src="logo.jpg" alt="AB Fysioterapia logo" class="brand-logo" width="44" height="44" />
+        <span class="brand-name">Ben</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="main" class="container" aria-label="Main Content">
+    <div class="error-container">
+      <div class="error-code">404</div>
+      <h1>Page Not Found</h1>
+      <p class="error-message">
+        The page you are looking for does not exist or has been moved. 
+        Please return to the home page to find the information you need.
+      </p>
+      <a href="site.html" class="btn btn-primary">Return to Home</a>
+    </div>
+  </main>
+
+  <footer class="site-footer" aria-label="Footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> AB Fysioterapia. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = String(new Date().getFullYear());
+  </script>
+</body>
+</html>

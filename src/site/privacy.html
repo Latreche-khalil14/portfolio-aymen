@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Ben</title>
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .privacy-container {
+      max-width: 800px;
+      margin: var(--space-xl) auto;
+      padding: 0 var(--space-md);
+    }
+    .privacy-container h1 {
+      margin-bottom: var(--space-md);
+    }
+    .last-updated {
+      font-size: 0.9rem;
+      color: var(--color-text-muted);
+      margin-bottom: var(--space-lg);
+    }
+    .privacy-container h2 {
+      font-size: 1.5rem;
+      margin-top: var(--space-lg);
+      margin-bottom: var(--space-sm);
+    }
+    .privacy-container p, .privacy-container ul {
+      margin-bottom: var(--space-md);
+    }
+    .privacy-container ul {
+      padding-left: var(--space-lg);
+    }
+    .privacy-container li {
+      margin-bottom: var(--space-sm);
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header" id="siteHeader" aria-label="Site Header">
+    <div class="container nav">
+      <a href="site.html" class="brand" aria-label="Ben, home">
+        <img src="logo.jpg" alt="AB Fysioterapia logo" class="brand-logo" width="44" height="44" />
+        <span class="brand-name">Ben</span>
+      </a>
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-menu">
+          <li><a href="site.html">Home</a></li>
+          <li><a href="site.html#about">About</a></li>
+          <li><a href="site.html#services">Services</a></li>
+          <li><a href="site.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" aria-label="Main Content">
+    <article class="privacy-container">
+      <h1>Privacy Policy</h1>
+      <p class="last-updated">Last updated: July 7, 2026</p>
+
+      <p>
+        This Privacy Policy describes how your personal data is collected, used, and protected when you visit this website
+        or contact the practice. We are committed to protecting your privacy in accordance with the General Data Protection Regulation (GDPR)
+        and other applicable Finnish data protection legislation.
+      </p>
+
+      <h2>1. Data Controller</h2>
+      <p>
+        The data controller responsible for your personal data is:<br />
+        <strong>Ben — Koulutettu Hieroja</strong><br />
+        Address: Rekikuja 6 AS 3, 28400 Ulvila, Finland<br />
+        Email: <a href="mailto:info@abfysioterapia.fi">info@abfysioterapia.fi</a><br />
+        Phone: 045 1457445
+      </p>
+
+      <h2>2. What Personal Data We Collect and Why</h2>
+      <p>
+        We only collect personal data that is necessary for the purposes outlined below:
+      </p>
+      <ul>
+        <li>
+          <strong>Contact Submissions:</strong> If you contact us via email or phone, we collect the personal details you provide
+          (such as name, email, phone number, and message content) to respond to your inquiries.
+        </li>
+        <li>
+          <strong>Server Logs:</strong> When you access this website, our hosting provider automatically collects standard server logs,
+          which may include your IP address, browser type, operating system, referring URL, and date/time of access. This data is processed
+          solely for security and system maintenance purposes.
+        </li>
+      </ul>
+
+      <h2>3. Legal Basis for Processing</h2>
+      <p>
+        We process your personal data under the following legal bases of GDPR Article 6:
+      </p>
+      <ul>
+        <li>
+          <strong>Legitimate Interests:</strong> To communicate with you and respond to your direct queries (GDPR Article 6(1)(f)).
+        </li>
+        <li>
+          <strong>Performance of a Contract / Pre-contractual Measures:</strong> To arrange and manage appointments and provide physical therapy services (GDPR Article 6(1)(b)).
+        </li>
+      </ul>
+
+      <h2>4. Cookies and Web Analytics</h2>
+      <p>
+        This website does not use tracking cookies, analytics scripts (such as Google Analytics), or any third-party tracking services.
+        No non-essential cookies are set, and your browsing behavior is not tracked or shared. Because we do not use cookies or analytics, 
+        no cookie consent banner is displayed.
+      </p>
+
+      <h2>5. Data Retention Period</h2>
+      <p>
+        We retain your personal data only as long as necessary to fulfill the purposes for which it was collected, or as required by law.
+        General contact inquiries are deleted once the query has been resolved, unless further communication is required. Medical and client records
+        related to physiotherapy treatments are stored in compliance with statutory patient record laws in Finland.
+      </p>
+
+      <h2>6. Your Rights Under GDPR</h2>
+      <p>
+        As a data subject located in the EU/Finland, you have the following rights regarding your personal data:
+      </p>
+      <ul>
+        <li><strong>Right of Access:</strong> You can request a copy of the personal data we hold about you.</li>
+        <li><strong>Right to Rectification:</strong> You can request that inaccurate or incomplete data be corrected.</li>
+        <li><strong>Right to Erasure ("Right to be Forgotten"):</strong> You can request the deletion of your personal data under certain conditions.</li>
+        <li><strong>Right to Restrict Processing:</strong> You can request that we restrict how we use your data in specific scenarios.</li>
+        <li><strong>Right to Data Portability:</strong> You can request the transfer of your data to another organization.</li>
+        <li><strong>Right to Object:</strong> You can object to the processing of your data based on legitimate interests.</li>
+      </ul>
+      <p>
+        To exercise any of these rights, please contact us at <a href="mailto:aino@virtanenfysio.fi">aino@virtanenfysio.fi</a>.
+      </p>
+      <p>
+        If you believe that your data has been processed in violation of data protection regulations, you also have the right to lodge a complaint
+        with the Finnish Data Protection Ombudsman (Tietosuojavaltuutettu): <a href="https://tietosuoja.fi" target="_blank" rel="noopener noreferrer">tietosuoja.fi</a>.
+      </p>
+    </article>
+  </main>
+
+  <footer class="site-footer" aria-label="Footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> AB Fysioterapia. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = String(new Date().getFullYear());
+  </script>
+</body>
+</html>
