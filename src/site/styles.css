@@ -1630,29 +1630,32 @@ html[data-font-size="xlarge"] {
 /* WhatsApp Booking Card */
 .whatsapp-booking-card {
   margin-top: var(--space-xl);
-  background: #e8f9ef;
-  border: 1px solid #ccefd8;
+  background: linear-gradient(135deg, #e8f9ef 0%, #d4f5e2 100%);
+  border: 1px solid #b2e8c8;
   border-radius: var(--r-lg);
-  padding: var(--space-lg);
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-md);
-  align-items: flex-start;
-  text-align: left;
+  padding: var(--space-lg) var(--space-xl);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+  align-items: center;
 }
 
 [data-theme="dark"] .whatsapp-booking-card {
-  background: rgba(37, 211, 102, 0.08);
-  border: 1px solid rgba(37, 211, 102, 0.2);
+  background: linear-gradient(135deg, rgba(37, 211, 102, 0.07) 0%, rgba(37, 211, 102, 0.12) 100%);
+  border: 1px solid rgba(37, 211, 102, 0.25);
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .whatsapp-booking-card {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    grid-template-columns: 1fr auto;
     gap: var(--space-xl);
   }
+}
+
+.whatsapp-card-left {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
 }
 
 .whatsapp-card-badge {
@@ -1694,29 +1697,21 @@ html[data-font-size="xlarge"] {
   }
 }
 
-.whatsapp-card-info {
-  flex-grow: 1;
-}
-
-.whatsapp-card-info h3 {
+.whatsapp-card-title {
   margin: 0 0 6px;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: #075e54;
 }
 
-[data-theme="dark"] .whatsapp-card-info h3 {
+[data-theme="dark"] .whatsapp-card-title {
   color: #25d366;
 }
 
-.whatsapp-card-info p {
+.whatsapp-card-desc {
   margin: 0;
-  font-size: 0.95rem;
-  line-height: 1.5;
-  color: #128c7e;
-}
-
-[data-theme="dark"] .whatsapp-card-info p {
+  font-size: 0.94rem;
+  line-height: 1.6;
   color: var(--color-text-muted);
 }
 
