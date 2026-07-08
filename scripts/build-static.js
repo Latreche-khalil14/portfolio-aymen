@@ -41,6 +41,11 @@ async function build() {
     fs.copyFileSync(path.join(srcDir, 'privacy.html'), path.join(publicDir, 'privacy.html'));
     fs.copyFileSync(path.join(srcDir, 'services.html'), path.join(publicDir, 'services.html'));
 
+    console.log('Copying service images...');
+    fs.copyFileSync(path.join(srcDir, 'sports_massage.png'), path.join(publicDir, 'sports_massage.png'));
+    fs.copyFileSync(path.join(srcDir, 'masseter_massage.png'), path.join(publicDir, 'masseter_massage.png'));
+    fs.copyFileSync(path.join(srcDir, 'classic_massage.png'), path.join(publicDir, 'classic_massage.png'));
+
     console.log('Checking for sharp to generate JPEG fallback images...');
     try {
       const sharpModule = await import('sharp');

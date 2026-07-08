@@ -192,59 +192,48 @@
           <p class="section-lede" data-i18n="services.lede">Jokainen hoitokerta on yksilöllinen — kiputilat, palautuminen tai rentoutuminen.</p>
         </header>
 
-        <div class="services-accordion-grid">
-          <div class="svc-item">
-            <button class="svc-btn" aria-expanded="false">
-              <span data-i18n="s1.h3">Urheiluhieronta</span>
-              <svg class="svc-chevron" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="svc-body"><p data-i18n="s1.p">Kohdennettua hierontaa urheilusuorituksen tukemiseen, vammojen ehkäisyyn ja palautumisen nopeuttamiseen.</p></div>
-          </div>
-          <div class="svc-item">
-            <button class="svc-btn" aria-expanded="false">
-              <span data-i18n="s2.h3">Klassinen hieronta</span>
-              <svg class="svc-chevron" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="svc-body"><p data-i18n="s2.p">Perinteinen koko kehon rentoutushieronta, joka lievittää lihasjännityksiä ja edistää kokonaisvaltaista hyvinvointia.</p></div>
-          </div>
-          <div class="svc-item">
-            <button class="svc-btn" aria-expanded="false">
-              <span data-i18n="s3.h3">Faskiahieronta</span>
-              <svg class="svc-chevron" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="svc-body"><p data-i18n="s3.p">Syvä sidekudostyö, joka vapauttaa faskian rajoitukset ja palauttaa liikkeen sujuvuuden.</p></div>
-          </div>
-          <div class="svc-item">
-            <button class="svc-btn" aria-expanded="false">
-              <span data-i18n="s4.h3">Triggerpistekäsittely</span>
-              <svg class="svc-chevron" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="svc-body"><p data-i18n="s4.p">Tarkka paine lihasten triggerpisteisiin solmujen avaamiseksi ja heijastekivun lievittämiseksi.</p></div>
-          </div>
-          <div class="svc-item">
-            <button class="svc-btn" aria-expanded="false">
-              <span data-i18n="s5.h3">Kuppaus</span>
-              <svg class="svc-chevron" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="svc-body"><p data-i18n="s5.p">Perinteinen kuppaustekniikka verenkierron parantamiseksi, kudosten löysäämiseksi ja lihaskipujen vähentämiseksi.</p></div>
-          </div>
-          <div class="svc-item">
-            <button class="svc-btn" aria-expanded="false">
-              <span data-i18n="s6.h3">Lymfahieronta</span>
-              <svg class="svc-chevron" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="svc-body"><p data-i18n="s6.p">Hellävarainen rytminen hieronta, joka stimuloi imusuonistoa ja vähentää turvotusta sekä nesteen kertymistä.</p></div>
-          </div>
-          <div class="svc-item">
-            <button class="svc-btn" aria-expanded="false">
-              <span data-i18n="s7.h3">Kinesioteippaus</span>
-              <svg class="svc-chevron" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="svc-body"><p data-i18n="s7.p">Elastinen terapeuttinen teippaus lihaksiston ja nivelten tukemiseksi liikkuvuutta rajoittamatta.</p></div>
-          </div>
-        </div>
-        <div class="services-more-cta" style="text-align: center; margin-top: var(--space-xl);">
-          <a class="btn btn-accent" href="services.html" data-i18n="services.see_more">Katso tarkempi hinnasto &amp; palvelut</a>
+        <div class="grid cards services-cards-grid">
+          <!-- Card 1: Sports Massage -->
+          <article class="card service-home-card scroll-reveal">
+            <div class="card-image-wrapper">
+              <img src="sports_massage.png" alt="Sports massage" class="card-image" loading="lazy" />
+            </div>
+            <div class="card-content">
+              <h3 data-i18n="s1.h3">Urheiluhieronta</h3>
+              <p data-i18n="s1.p">Urheiluhieronta on tehokas lihaksia venyttävä ja muokkaava hoitomuoto, joka edistää palautumista, ehkäisee vammoja ja parantaa suorituskykyä.</p>
+              <div class="card-actions">
+                <a href="services.html" class="btn btn-primary card-btn" data-i18n="services.see_more">Lue lisää &amp; Hinnasto</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Classic Massage -->
+          <article class="card service-home-card scroll-reveal">
+            <div class="card-image-wrapper">
+              <img src="classic_massage.png" alt="Classic massage" class="card-image" loading="lazy" />
+            </div>
+            <div class="card-content">
+              <h3 data-i18n="s2.h3">Klassinen hieronta</h3>
+              <p data-i18n="s2.p">Klassinen hieronta on rentouttava ja lihaksia huoltava hoitomuoto, joka vilkastuttaa verenkiertoa, lievittää jännitystä ja edistää kehon palautumista.</p>
+              <div class="card-actions">
+                <a href="services.html" class="btn btn-primary card-btn" data-i18n="services.see_more">Lue lisää &amp; Hinnasto</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Masseter Massage -->
+          <article class="card service-home-card scroll-reveal">
+            <div class="card-image-wrapper">
+              <img src="masseter_massage.png" alt="Masseter massage" class="card-image" loading="lazy" />
+            </div>
+            <div class="card-content">
+              <h3 data-i18n="s3.h3">Purentalihashieronta</h3>
+              <p data-i18n="s3.p">Purentalihashieronta on hoito, joka vapauttaa kasvojen ja pään alueen lihasjännitystä, lievittää kipua ja parantaa leuan liikkuvuutta.</p>
+              <div class="card-actions">
+                <a href="services.html" class="btn btn-primary card-btn" data-i18n="services.see_more">Lue lisää &amp; Hinnasto</a>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
     </section>

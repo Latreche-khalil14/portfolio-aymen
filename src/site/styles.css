@@ -836,6 +836,91 @@ p  { margin: 0 0 var(--space-md); color: var(--color-text-muted); }
   color: var(--color-accent-ink);
   font-weight: 600;
 }
+
+/* =========================================================
+   Service Home Cards Layout
+   ========================================================= */
+.services-cards-grid {
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+  margin-top: var(--space-lg);
+}
+
+@media (min-width: 768px) {
+  .services-cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.service-home-card {
+  padding: 0;
+  overflow: hidden;
+  border-radius: var(--r-lg);
+  background: var(--color-bg);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.service-home-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-accent);
+}
+
+.card-image-wrapper {
+  width: 100%;
+  aspect-ratio: 16/10;
+  overflow: hidden;
+  position: relative;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.service-home-card:hover .card-image {
+  transform: scale(1.05);
+}
+
+.card-content {
+  padding: var(--space-md) var(--space-lg) var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-content h3 {
+  font-size: 1.25rem;
+  margin-bottom: var(--space-sm);
+  color: var(--color-text);
+}
+
+.card-content p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-lg);
+  flex-grow: 1;
+}
+
+.card-actions {
+  margin-top: auto;
+}
+
+.card-btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 0.95rem;
+  padding: 12px var(--space-md);
+  border-radius: var(--r);
+  text-decoration: none;
+  font-weight: 600;
+}
+
 /* =========================================================
    Services Accordion (compact 2-col list)
    ========================================================= */
