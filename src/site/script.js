@@ -406,10 +406,16 @@ if (header) {
 const toggle = document.getElementById('navToggle');
 const menu   = document.getElementById('navMenu');
 if (toggle && menu) {
+  function setMenuTop() {
+    if (header) {
+      menu.style.top = header.offsetHeight + 'px';
+    }
+  }
   toggle.addEventListener('click', () => {
     const open = toggle.getAttribute('aria-expanded') === 'true';
     toggle.setAttribute('aria-expanded', String(!open));
     toggle.setAttribute('aria-label', open ? (currentLang === 'fi' ? 'Avaa valikko' : 'Open menu') : (currentLang === 'fi' ? 'Sulje valikko' : 'Close menu'));
+    if (!open) setMenuTop(); // Set correct top position before opening
     menu.classList.toggle('open', !open);
   });
   menu.querySelectorAll('a').forEach(link => {

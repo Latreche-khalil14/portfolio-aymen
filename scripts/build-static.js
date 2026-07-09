@@ -40,6 +40,7 @@ async function build() {
     fs.copyFileSync(path.join(srcDir, '404.html'), path.join(publicDir, '404.html'));
     fs.copyFileSync(path.join(srcDir, 'privacy.html'), path.join(publicDir, 'privacy.html'));
     fs.copyFileSync(path.join(srcDir, 'services.html'), path.join(publicDir, 'services.html'));
+    fs.copyFileSync(path.join(srcDir, 'booking-guide.html'), path.join(publicDir, 'booking-guide.html'));
 
     console.log('Copying service images...');
     fs.copyFileSync(path.join(srcDir, 'sports_massage.png'), path.join(publicDir, 'sports_massage.png'));
