@@ -1338,6 +1338,12 @@ p  { margin: 0 0 var(--space-md); color: var(--color-text-muted); }
     justify-content: center;
     min-height: 48px;
   }
+  .nav-menu li.mobile-only + li.mobile-only .nav-cta {
+    margin-top: var(--space-sm);
+  }
+  .nav-menu li.mobile-only {
+    border-bottom: none;
+  }
   .site-header.menu-open .nav-menu,
   .nav-menu.open,
   #navMenu.open {
