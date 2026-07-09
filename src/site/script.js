@@ -66,6 +66,7 @@ const translations = {
     'contact.sun': 'Sunnuntai',
     'contact.closed': 'Suljettu',
     'contact.cta': 'Varaa aika',
+    'contact.whatsapp': 'WhatsApp',
     'footer.rights': 'Kaikki oikeudet pid\u00e4tet\u00e4\u00e4n.',
     'footer.privacy': 'Tietosuoja',
     'services.see_more': 'Katso tarkempi hinnasto &amp; palvelut',
@@ -105,7 +106,7 @@ const translations = {
     'booking.phone.title': 'Haluatko mieluummin varata WhatsAppilla?',
     'booking.phone.desc': 'Jos netissä varaaminen tuntuu hankalalta, voit lähettää minulle viestin suoraan WhatsAppissa. Vastaan mielelläni ja varaan ajan puolestasi!',
     'booking.phone.cta': 'Lähetä viesti WhatsAppissa: 045 1457445',
-    'hero.more-btn': 'Lue lisää minusta',
+    'hero.more-btn': 'Ota yhteyttä',
   },
   en: {
     'nav.about': 'About',
@@ -173,6 +174,7 @@ const translations = {
     'contact.sun': 'Sunday',
     'contact.closed': 'Closed',
     'contact.cta': 'Book Appointment',
+    'contact.whatsapp': 'WhatsApp',
     'footer.rights': 'All rights reserved.',
     'footer.privacy': 'Privacy Policy',
     'services.see_more': 'See detailed pricing &amp; services',
@@ -212,7 +214,7 @@ const translations = {
     'booking.phone.title': 'Would you rather book via WhatsApp?',
     'booking.phone.desc': 'If online booking feels too complicated, you can send me a message directly on WhatsApp. I am happy to assist you and book your slot!',
     'booking.phone.cta': 'Send WhatsApp message: 045 1457445',
-    'hero.more-btn': 'Read more about me',
+    'hero.more-btn': 'Contact me',
   }
 };
 

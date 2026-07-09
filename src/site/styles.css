@@ -6,11 +6,11 @@
 :root {
   /* Palette (Requirement 2.1) */
   --color-bg:            #fafafa; /* Light cream/gray, lightness >= 95% */
-  --color-bg-secondary:  #e9ecef; /* Soft gray, lightness 88-94% (satisfies 92.5%) */
+  --color-bg-secondary:  #ede8e0; /* Soft gray, lightness 88-94% (satisfies 92.5%) */
   --color-accent:        #4a7fb8; /* Blue hue (hue 211, in range 200-230) */
   --color-accent-ink:    #2b5a8a; /* High contrast blue */
   --color-accent-soft:   #eaf1f9;
-  --color-text:          #1a1f2b; /* Dark gray, lightness <= 25% (satisfies 13.5%) */
+  --color-text:           #1c1917; /* Dark gray, lightness <= 25% (satisfies 13.5%) */
   --color-text-muted:    #6c7580; /* Medium gray, lightness 45-60% (satisfies 48%) */
   --color-border:        #e6e8ec;
   --color-card-dark:     #1e293b; /* Premium slate for testimonial cards */
@@ -24,15 +24,18 @@
   --font-size-display: 3.5rem;     /* 56px */
 
   /* Spacing Scale (Requirement 2.5) */
+  --space-xs: 0.25rem; /* 4px */
   --space-sm: 0.5rem;  /* 8px */
   --space-md: 1rem;    /* 16px */
   --space-lg: 2rem;    /* 32px */
   --space-xl: 4rem;    /* 64px */
+  --space-2xl: 6rem;   /* 96px */
 
   /* Radii */
   --r-sm: 8px;
   --r:    14px;
   --r-lg: 22px;
+  --radius-lg: 22px; /* alias for --r-lg used in scoped styles */
 
   /* Shadows */
   --shadow-sm: 0 1px 2px rgba(16,24,40,.04);
@@ -119,6 +122,15 @@
 }
 [data-theme="dark"] .nav-cta:hover {
   background: #3b82f6;
+}
+[data-theme="dark"] .nav-cta.btn-whatsapp {
+  background: #25D366;
+  border-color: #25D366;
+  color: #fff;
+}
+[data-theme="dark"] .nav-cta.btn-whatsapp:hover {
+  background: #1ebe57;
+  border-color: #1ebe57;
 }
 
 /* Brand name */
@@ -1187,6 +1199,30 @@ p  { margin: 0 0 var(--space-md); color: var(--color-text-muted); }
 }
 .contact-list a:hover { color: var(--color-accent-ink); }
 .contact-copy .btn { margin-top: var(--space-lg); }
+.contact-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-top: var(--space-lg);
+  align-items: center;
+}
+.contact-cta-row .btn {
+  margin-top: 0;
+  display: inline-flex;
+  align-items: center;
+}
+.btn-whatsapp {
+  background: #25D366;
+  color: #ffffff !important;
+  border-color: #25D366;
+}
+.btn-whatsapp:hover,
+.btn-whatsapp:focus {
+  background: #1ebe57;
+  border-color: #1ebe57;
+  color: #ffffff !important;
+  transform: translateY(-1px);
+}
 
 .clinic-address {
   font-style: normal;
@@ -1239,7 +1275,7 @@ p  { margin: 0 0 var(--space-md); color: var(--color-text-muted); }
   gap: var(--space-lg);
 }
 .footer-links a {
-  color: #94a3b8;
+  color: #9eb894ff;
   font-size: 0.9rem;
   min-height: 44px; /* Accessible tap target (Requirement 11.4) */
   padding: 12px 8px;

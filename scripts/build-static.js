@@ -42,6 +42,9 @@ async function build() {
     fs.copyFileSync(path.join(srcDir, 'services.html'), path.join(publicDir, 'services.html'));
     fs.copyFileSync(path.join(srcDir, 'booking-guide.html'), path.join(publicDir, 'booking-guide.html'));
 
+    console.log('Copying favicon...');
+    fs.copyFileSync(path.join(srcDir, 'favicon.svg'), path.join(publicDir, 'favicon.svg'));
+
     console.log('Copying service images...');
     fs.copyFileSync(path.join(srcDir, 'sports_massage.png'), path.join(publicDir, 'sports_massage.png'));
     fs.copyFileSync(path.join(srcDir, 'masseter_massage.png'), path.join(publicDir, 'masseter_massage.png'));
