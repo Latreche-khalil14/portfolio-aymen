@@ -87,7 +87,9 @@
   border-bottom-color: #60a5fa;
 }
 [data-theme="dark"] .nav-menu {
-  background: #0d1117;
+  background: rgba(13, 17, 23, 0.96);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
 /* Buttons */
@@ -1095,6 +1097,38 @@ p  { margin: 0 0 var(--space-md); color: var(--color-text-muted); }
   font-size: clamp(1.4rem, 2vw + 1rem, 2rem);
   margin-bottom: 0;
 }
+
+/* Google Reviews Badge */
+.google-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 100px;
+  padding: 6px 14px 6px 10px;
+  margin-bottom: var(--space-md);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  box-shadow: var(--shadow-sm);
+}
+.google-badge-stars {
+  color: #f5a623;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+}
+.google-badge-text {
+  color: var(--color-text);
+  font-weight: 700;
+}
+.google-badge-count {
+  color: var(--color-text-muted);
+}
+[data-theme="dark"] .google-badge {
+  background: rgba(255,255,255,0.05);
+  border-color: rgba(255,255,255,0.1);
+}
 .stars {
   display: flex;
   gap: 2px;
@@ -1223,10 +1257,17 @@ p  { margin: 0 0 var(--space-md); color: var(--color-text-muted); }
   .nav-toggle {
     display: inline-flex; /* Show hamburger */
   }
+  .nav-toggle[aria-expanded="true"] {
+    background: rgba(74, 127, 184, 0.1);
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+  }
   .nav-menu {
     position: fixed;
     inset: 72px 0 0 0;
-    background: #ffffff;
+    background: rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     flex-direction: column;
     align-items: stretch;
     gap: 0;
@@ -1237,6 +1278,7 @@ p  { margin: 0 0 var(--space-md); color: var(--color-text-muted); }
     pointer-events: none;
     transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
     border-top: 1px solid var(--color-border);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     z-index: 99;
   }
   .nav-menu li {
