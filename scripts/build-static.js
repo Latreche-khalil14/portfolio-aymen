@@ -37,6 +37,7 @@ async function build() {
 
     console.log('Copying HTML files...');
     fs.copyFileSync(path.join(srcDir, 'site.html'), path.join(publicDir, 'site.html'));
+    fs.copyFileSync(path.join(srcDir, 'site.html'), path.join(publicDir, 'index.html')); // Vercel root entry
     fs.copyFileSync(path.join(srcDir, '404.html'), path.join(publicDir, '404.html'));
     fs.copyFileSync(path.join(srcDir, 'privacy.html'), path.join(publicDir, 'privacy.html'));
     fs.copyFileSync(path.join(srcDir, 'services.html'), path.join(publicDir, 'services.html'));

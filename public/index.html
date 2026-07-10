@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ben — Koulutettu Hieroja | Ulvila</title>
+  <meta name="description" content="Ben — koulutettu hieroja Ulvilassa. Urheiluhieronta, klassinen hieronta, kuppaus, lymfahieronta ja kinesioteippaus. Varaa aika verkossa." />
+  <meta name="theme-color" content="#fafafa" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ben — Koulutettu Hieroja | Ulvila" />
+  <meta property="og:description" content="Urheiluhieronta, kuppaus, lymfahieronta ja paljon muuta — yksilöllistä hoitoa Ulvilassa." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://abfysioterapia.fi/" />
+  <meta property="og:image" content="/og-image.jpg" />
+  <meta property="og:locale" content="fi_FI" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ben — Koulutettu Hieroja" />
+  <meta name="twitter:description" content="Urheiluhieronta, kuppaus, lymfahieronta ja paljon muuta Ulvilassa." />
+  <meta name="twitter:image" content="/og-image.jpg" />
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="preload" as="image" href="portrait.webp" fetchpriority="high" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Schema.org MedicalBusiness / Physiotherapist -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalBusiness",
+    "name": "Ben — Koulutettu Hieroja",
+    "description": "Certified masseur in Ulvila offering sports massage, classical massage, fascia massage, trigger point therapy, cupping, lymphatic massage and kinesiotaping.",
+    "image": "/og-image.jpg",
+    "priceRange": "$$",
+    "telephone": "+358451457445",
+    "email": "info@test.fi",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rekikuja 6 AS 3",
+      "addressLocality": "Ulvila",
+      "postalCode": "28400",
+      "addressCountry": "FI"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "14:00" }
+    ],
+    "sameAs": [
+      "https://www.linkedin.com/",
+      "https://www.instagram.com/hieroja_ben?igsh=YmRhcDg1bTR6aTR2"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Siirry sisältöön</a>
+
+  <div id="nav-sentinel" aria-hidden="true"></div>
+
+  <header class="site-header" id="siteHeader" aria-label="Sivuston otsikko">
+    <!-- Accessibility Toolbar -->
+    <div class="a11y-bar" aria-label="Saavutettavuustyökalut">
+      <div class="container a11y-container">
+        <div class="a11y-group">
+          <span class="a11y-label" data-i18n="a11y.text-size">Tekstin koko:</span>
+          <button class="btn-a11y" data-size="normal" data-i18n="a11y.normal" aria-label="Normaali tekstikoko">Normaali</button>
+          <button class="btn-a11y" data-size="large" data-i18n="a11y.large" aria-label="Suuri tekstikoko">Suuri</button>
+          <button class="btn-a11y" data-size="xlarge" data-i18n="a11y.xlarge" aria-label="Erittäin suuri tekstikoko">Erittäin suuri</button>
+        </div>
+        <div class="a11y-group">
+          <a href="booking-guide.html" class="a11y-link" data-i18n="a11y.booking-guide">Helppo varausopas</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container nav">
+      <a href="#top" class="brand" aria-label="Ben, home">
+        <img src="logo.jpg" alt="AB Fysioterapia logo" class="brand-logo" width="44" height="44" />
+        <span class="brand-name">Ben</span>
+      </a>
+
+      <!-- Navigation Menu (Middle) -->
+      <nav aria-label="Päänavigaatio" class="nav-navigation">
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Avaa valikko">
+          <span class="bars" aria-hidden="true"></span>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#about" data-i18n="nav.about">Tietoa</a></li>
+          <li><a href="#services" data-i18n="nav.services">Palvelut</a></li>
+          <li><a href="#testimonials" data-i18n="nav.testimonials">Kokemukset</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Yhteystiedot</a></li>
+          <!-- Mobile only actions inside the drawer -->
+          <li class="mobile-only"><a class="btn btn-primary nav-cta" href="https://pro.vello.fi/koulutettu-hieroja-ben/service" target="_blank" rel="noopener noreferrer" data-i18n="nav.book">Varaa aika</a></li>
+          <li class="mobile-only"><a class="btn btn-whatsapp nav-cta" href="https://wa.me/358451457445" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:0.35rem;">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.625 1.45 5.426-.003 9.885-4.417 9.888-9.848.002-2.628-1.02-5.1-2.877-6.96C16.427 1.936 13.96 1.91 11.2 1.91c-5.428 0-9.885 4.414-9.888 9.847-.001 1.63.463 3.22 1.34 4.646l-.997 3.64 3.73-.978zM17.65 14.88c-.31-.155-1.833-.902-2.115-1.006-.28-.104-.486-.156-.69.155-.205.31-.795.983-.974 1.19-.18.206-.358.23-.668.075-1.07-.538-1.848-.992-2.584-1.63-1.05-.907-1.527-1.89-1.674-2.148-.146-.26-.016-.4-.146-.53-.118-.117-.26-.31-.39-.465-.13-.155-.174-.26-.26-.44-.087-.18-.044-.336-.02-.49.02-.156.205-.5.31-.646.104-.155.138-.26.206-.44.068-.18.034-.336-.017-.44-.05-.104-.486-1.163-.667-1.602-.176-.425-.37-.367-.508-.374-.132-.007-.284-.008-.436-.008-.153 0-.402.057-.613.284-.21.227-.805.785-.805 1.915 0 1.13.827 2.22.94 2.378.114.156 1.625 2.447 3.937 3.428.55.233 1.077.37 1.442.483.553.176 1.057.15 1.455.09.444-.066 1.834-.749 2.09-1.474.257-.724.257-1.345.18-1.474-.078-.13-.284-.207-.593-.362z"/></svg>
+            WhatsApp
+          </a></li>
+          <li class="mobile-only-flex">
+            <button class="lang-toggle" id="langToggleMobile" aria-label="Switch to English">EN</button>
+            <button class="theme-toggle" id="themeToggleMobile" aria-label="Toggle dark mode">
+              <svg class="icon-moon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z"/></svg>
+              <svg class="icon-sun" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Desktop only actions (Right) -->
+      <div class="nav-actions desktop-only">
+        <button class="lang-toggle" id="langToggle" aria-label="Switch to English">EN</button>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="icon-moon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+        <a class="btn btn-primary nav-cta" href="https://pro.vello.fi/koulutettu-hieroja-ben/service" target="_blank" rel="noopener noreferrer" data-i18n="nav.book">Varaa aika</a>
+        <a class="btn btn-whatsapp nav-cta" href="https://wa.me/358451457445" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" style="display:inline-flex;align-items:center;gap:0.35rem;">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.625 1.45 5.426-.003 9.885-4.417 9.888-9.848.002-2.628-1.02-5.1-2.877-6.96C16.427 1.936 13.96 1.91 11.2 1.91c-5.428 0-9.885 4.414-9.888 9.847-.001 1.63.463 3.22 1.34 4.646l-.997 3.64 3.73-.978zM17.65 14.88c-.31-.155-1.833-.902-2.115-1.006-.28-.104-.486-.156-.69.155-.205.31-.795.983-.974 1.19-.18.206-.358.23-.668.075-1.07-.538-1.848-.992-2.584-1.63-1.05-.907-1.527-1.89-1.674-2.148-.146-.26-.016-.4-.146-.53-.118-.117-.26-.31-.39-.465-.13-.155-.174-.26-.26-.44-.087-.18-.044-.336-.02-.49.02-.156.205-.5.31-.646.104-.155.138-.26.206-.44.068-.18.034-.336-.017-.44-.05-.104-.486-1.163-.667-1.602-.176-.425-.37-.367-.508-.374-.132-.007-.284-.008-.436-.008-.153 0-.402.057-.613.284-.21.227-.805.785-.805 1.915 0 1.13.827 2.22.94 2.378.114.156 1.625 2.447 3.937 3.428.55.233 1.077.37 1.442.483.553.176 1.057.15 1.455.09.444-.066 1.834-.749 2.09-1.474.257-.724.257-1.345.18-1.474-.078-.13-.284-.207-.593-.362z"/></svg>
+           WhatsApp
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" aria-label="Pääsisältö">
+    <!-- HERO -->
+    <section class="hero" id="top" aria-label="Hero-osio">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="hero.eyebrow">Hieronta · Ulvila</p>
+          <h1>Ben</h1>
+          <p class="hero-subtitle" data-i18n="hero.subtitle">Koulutettu Hieroja</p>
+          <p class="lede" data-i18n="hero.lede.1">Olen Ben, koulutettu hieroja. Valmistuin Turun Hierojakoulusta (TYA), ja lisäksi minulla on liikunta-alan maisterin tutkinto. Taustani valmennuksessa, opetuksessa ja urheiluravitsemuksessa tukee kokonaisvaltaista lähestymistapaani asiakkaiden hyvinvointiin.</p>
+          <p class="lede" data-i18n="hero.lede.2">Työssäni kohtaan jokaisen asiakkaan yksilöllisesti ja suunnittelen hoidon aina asiakkaan tarpeiden mukaan. Vastaanotolleni voit tulla hakemaan apua kiputiloihin, lihasjännityksiin, urheilusta palautumiseen tai rentoutumaan.</p>
+          <p class="lede" data-i18n="hero.lede.3">Liikunta on ollut tärkeä osa elämääni jo pitkään. Pelasin käsipalloa ammattilaistasolla useiden vuosien ajan, ja vapaa-ajallani harrastan myös monipuolisesti muita liikuntalajeja.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="https://pro.vello.fi/koulutettu-hieroja-ben/service" target="_blank" rel="noopener noreferrer" data-i18n="hero.cta">Varaa aika</a>
+            <a class="btn btn-ghost" href="#contact" data-i18n="hero.more-btn">Ota yhteyttä</a>
+          </div>
+          <p class="hero-price-hint" data-i18n="hero.price-hint">
+            <svg viewBox="0 0 20 20" width="14" height="14" fill="currentColor" aria-hidden="true" style="display:inline-block;vertical-align:middle;margin-right:4px;color:var(--color-accent)"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 0 0 .95.69h4.173c.969 0 1.371 1.24.588 1.81l-3.376 2.453a1 1 0 0 0-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.539 1.118L10 15.347l-3.376 2.454c-.784.57-1.838-.196-1.539-1.118l1.287-3.966a1 1 0 0 0-.364-1.118L2.632 9.394c-.783-.57-.38-1.81.588-1.81h4.173a1 1 0 0 0 .95-.69L9.05 2.927z"/></svg>
+            Hieronta alkaen 35 € · <a href="services.html" data-i18n="hero.price-link">Katso kaikki hinnat</a>
+          </p>
+        </div>
+        <div class="hero-media">
+          <picture>
+            <source srcset="portrait.webp" type="image/webp" />
+            <img
+              src="portrait.jpg"
+              alt="Aymen Benloucif, koulutettu urheiluhieroja"
+              width="1024" height="1280"
+              fetchpriority="high" decoding="async"
+            />
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about" aria-label="Tietoa-osio">
+      <div class="container about-grid">
+        <div class="about-media">
+          <picture>
+            <source srcset="about.webp" type="image/webp" />
+            <img
+              src="about.jpg"
+              alt="Aymen Benloucif hoitamassa asiakasta Ulvilan vastaanotollaan"
+              width="1280" height="1024"
+              loading="lazy" decoding="async"
+            />
+          </picture>
+        </div>
+        <div class="about-copy">
+          <p class="eyebrow" data-i18n="about.eyebrow">Tietoa minusta</p>
+          <h2 data-i18n="about.h2">Yksilöllistä hoitoa jokaiselle</h2>
+          <div class="about-logo">
+            <img src="logo.jpg" alt="Aymen Benloucif — Koulutettu Urheiluhieroja" width="120" height="120" loading="lazy" />
+          </div>
+        
+          <dl class="stats">
+            <div><dt data-i18n="about.stat1.dt">Koulutus</dt><dd data-i18n="about.stat1.dd">Maisteri</dd></div>
+            <div><dt data-i18n="about.stat2.dt">Ammattilaiskäsipallo</dt><dd data-i18n="about.stat2.dd">Vuosia</dd></div>
+            <div><dt data-i18n="about.stat3.dt">Vastausaika</dt><dd>&lt; 24h</dd></div>
+          </dl>
+
+          <h3 class="mini-title" data-i18n="about.qual.h3">Koulutus &amp; Tausta</h3>
+          <ul class="clean-list">
+            <li data-i18n="about.q1">Koulutettu urheiluhieroja — Turun Hierojakoulu (TYA)</li>
+            <li data-i18n="about.q2">Liikunta-alan maisterin tutkinto</li>
+            <li data-i18n="about.q3">Tausta valmennuksessa, opetuksessa &amp; urheiluravitsemuksessa</li>
+            <li data-i18n="about.q4">Entinen ammattilaiskäsipalloilija</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section section-alt" id="services" aria-label="Palvelut-osio">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow" data-i18n="services.eyebrow">Palvelut</p>
+          <h2 data-i18n="services.h2">Hoitoa jokaiseen tarpeeseen</h2>
+          <p class="section-lede" data-i18n="services.lede">Jokainen hoitokerta on yksilöllinen — kiputilat, palautuminen tai rentoutuminen.</p>
+        </header>
+
+        <div class="grid cards services-cards-grid">
+          <!-- Card 1: Sports Massage -->
+          <article class="card service-home-card scroll-reveal">
+            <div class="card-image-wrapper">
+              <img src="sports_massage.png" alt="Sports massage" class="card-image" loading="lazy" />
+            </div>
+            <div class="card-content">
+              <h3 data-i18n="s1.h3">Urheiluhieronta</h3>
+              <p data-i18n="s1.p">Urheiluhieronta on tehokas lihaksia venyttävä ja muokkaava hoitomuoto, joka edistää palautumista, ehkäisee vammoja ja parantaa suorituskykyä.</p>
+              <div class="card-actions">
+                <a href="services.html" class="btn btn-primary card-btn" data-i18n="services.see_more">Lue lisää &amp; Hinnasto</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Classic Massage -->
+          <article class="card service-home-card scroll-reveal">
+            <div class="card-image-wrapper">
+              <img src="classic_massage.png" alt="Classic massage" class="card-image" loading="lazy" />
+            </div>
+            <div class="card-content">
+              <h3 data-i18n="s2.h3">Klassinen hieronta</h3>
+              <p data-i18n="s2.p">Klassinen hieronta on rentouttava ja lihaksia huoltava hoitomuoto, joka vilkastuttaa verenkiertoa, lievittää jännitystä ja edistää kehon palautumista.</p>
+              <div class="card-actions">
+                <a href="services.html" class="btn btn-primary card-btn" data-i18n="services.see_more">Lue lisää &amp; Hinnasto</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Masseter Massage -->
+          <article class="card service-home-card scroll-reveal">
+            <div class="card-image-wrapper">
+              <img src="masseter_massage.png" alt="Masseter massage" class="card-image" loading="lazy" />
+            </div>
+            <div class="card-content">
+              <h3 data-i18n="s3.h3">Purentalihashieronta</h3>
+              <p data-i18n="s3.p">Purentalihashieronta on hoito, joka vapauttaa kasvojen ja pään alueen lihasjännitystä, lievittää kipua ja parantaa leuan liikkuvuutta.</p>
+              <div class="card-actions">
+                <a href="services.html" class="btn btn-primary card-btn" data-i18n="services.see_more">Lue lisää &amp; Hinnasto</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS + FAQ (side by side) -->
+    <section class="section section-alt" id="testimonials" aria-label="Asiakaskokemukset ja usein kysytyt kysymykset">
+      <div class="container tf-grid">
+
+        <!-- LEFT: Testimonials -->
+        <div class="tf-col">
+          <header class="tf-head">
+            <p class="eyebrow" data-i18n="test.eyebrow">Asiakaskokemukset</p>
+            <h2 data-i18n="test.h2">Mitä asiakkaat sanovat</h2>
+          </header>
+          <!-- Google Reviews badge -->
+          <a class="google-badge" href="https://www.google.com/search?q=Ben+Koulutettu+Hieroja+Ulvila&hl=fi#lrd=0x0:0x0,1" target="_blank" rel="noopener noreferrer" aria-label="Katso Google-arvostelut (avautuu uuteen ikkunaan)">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+            <span class="google-badge-text">Google Reviews</span>
+            <span class="google-badge-stars">★★★★★</span>
+            <span class="google-badge-count">9 arvostelua</span>
+            <svg viewBox="0 0 16 16" width="12" height="12" fill="currentColor" aria-hidden="true" style="margin-left:2px;opacity:0.5"><path d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/><path d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/></svg>
+          </a>
+
+          <div class="tf-quotes">
+            <!-- Review 1: Minna Salonen -->
+            <figure class="quote scroll-reveal">
+              <div class="stars" aria-label="5 out of 5 stars">
+                <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 0 0 .95.69h4.173c.969 0 1.371 1.24.588 1.81l-3.376 2.453a1 1 0 0 0-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.539 1.118L10 15.347l-3.376 2.454c-.784.57-1.838-.196-1.539-1.118l1.287-3.966a1 1 0 0 0-.364-1.118L2.632 9.394c-.783-.57-.38-1.81.588-1.81h4.173a1 1 0 0 0 .95-.69L9.05 2.927z"/></svg>
+                <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 0 0 .95.69h4.173c.969 0 1.371 1.24.588 1.81l-3.376 2.453a1 1 0 0 0-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.539 1.118L10 15.347l-3.376 2.454c-.784.57-1.838-.196-1.539-1.118l1.287-3.966a1 1 0 0 0-.364-1.118L2.632 9.394c-.783-.57-.38-1.81.588-1.81h4.173a1 1 0 0 0 .95-.69L9.05 2.927z"/></svg>
+                <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 0 0 .95.69h4.173c.969 0 1.371 1.24.588 1.81l-3.376 2.453a1 1 0 0 0-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.539 1.118L10 15.347l-3.376 2.454c-.784.57-1.838-.196-1.539-1.118l1.287-3.966a1 1 0 0 0-.364-1.118L2.632 9.394c-.783-.57-.38-1.81.588-1.81h4.173a1 1 0 0 0 .95-.69L9.05 2.927z"/></svg>
+                <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 0 0 .95.69h4.173c.969 0 1.371 1.24.588 1.81l-3.376 2.453a1 1 0 0 0-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.539 1.118L10 15.347l-3.376 2.454c-.784.57-1.838-.196-1.539-1.118l1.287-3.966a1 1 0 0 0-.364-1.118L2.632 9.394c-.783-.57-.38-1.81.588-1.81h4.173a1 1 0 0 0 .95-.69L9.05 2.927z"/></svg>
+                <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 0 0 .95.69h4.173c.969 0 1.371 1.24.588 1.81l-3.376 2.453a1 1 0 0 0-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.539 1.118L10 15.347l-3.376 2.454c-.784.57-1.838-.196-1.539-1.118l1.287-3.966a1 1 0 0 0-.364-1.118L2.632 9.394c-.783-.57-.38-1.81.588-1.81h4.173a1 1 0 0 0 .95-.69L9.05 2.927z"/></svg>
+              </div>
+              <blockquote>
+                <p data-i18n="q1.text">„Erittäin huomaavainen, ammattimainen ja lämmin hieroja. Asiantuntemus näkyy sekä hoidon laadussa että erinomaisissa neuvoissa. Lähdin rentoutuneena ja luottavaisena!"</p>
+              </blockquote>
+              <figcaption>Minna Salonen — Google</figcaption>
+            </figure>
+
+            <!-- Review 2: Thanh Nguyen -->
+            <figure class="quote scroll-reveal">
+              <div class="stars" aria-label="5 out of 5 stars">
+                <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 0 0 .95.69h4.173c.969 0 1.371 1.24.588 1.81l-3.376 2.453a1 1 0 0 0-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.539 1.118L10 15.347l-3.376 2.454c-.784.57-1.838-.196-1.539-1.118l1.287-3.966a1 1 0 0 0-.364-1.118L2.632 9.394c-.783-.57-.38-1.81.588-1.81h4.173a1 1 0 0 0 .95-.69L9.05 2.927z"/></svg>
+                <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 0 0 .95.69h4.173c.969 0 1.371 1.24.588 1.81l-3.376 2.453a1 1 0 0 0-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.539 1.118L10 15.347l-3.376 2.454c-.784.57-1.838-.196-1.539-1.118l1.287-3.966a1 1 0 0 0-.364-1.118L2.632 9.394c-.783-.57-.38-1.81.588-1.81h4.173a1 1 0 0 0 .95-.69L9.05 2.927z"/></svg>
+                <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 0 0 .95.69h4.173c.969 0 1.371 1.24.588 1.81l-3.376 2.453a1 1 0 0 0-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.539 1.118L10 15.347l-3.376 2.454c-.784.57-1.838-.196-1.539-1.118l1.287-3.966a1 1 0 0 0-.364-1.118L2.632 9.394c-.783-.57-.38-1.81.588-1.81h4.173a1 1 0 0 0 .95-.69L9.05 2.927z"/></svg>
+                <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 0 0 .95.69h4.173c.969 0 1.371 1.24.588 1.81l-3.376 2.453a1 1 0 0 0-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.539 1.118L10 15.347l-3.376 2.454c-.784.57-1.838-.196-1.539-1.118l1.287-3.966a1 1 0 0 0-.364-1.118L2.632 9.394c-.783-.57-.38-1.81.588-1.81h4.173a1 1 0 0 0 .95-.69L9.05 2.927z"/></svg>
+                <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 0 0 .95.69h4.173c.969 0 1.371 1.24.588 1.81l-3.376 2.453a1 1 0 0 0-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.539 1.118L10 15.347l-3.376 2.454c-.784.57-1.838-.196-1.539-1.118l1.287-3.966a1 1 0 0 0-.364-1.118L2.632 9.394c-.783-.57-.38-1.81.588-1.81h4.173a1 1 0 0 0 .95-.69L9.05 2.927z"/></svg>
+              </div>
+              <blockquote>
+                <p data-i18n="q2.text">„Ammattimainen ja osaava hieroja — kuunteleva ja erittäin miellyttävä. Olen käynyt useita kertoja ja laatu on todella erinomainen. Hän antoi myös neuvoja venyttelyyn ja liikkeisiin."</p>
+              </blockquote>
+              <figcaption>Thanh Nguyen — Google</figcaption>
+            </figure>
+
+            <!-- Review 3: Tomi Heikkilä -->
+            <figure class="quote scroll-reveal">
+              <div class="stars" aria-label="5 out of 5 stars">
+                <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 0 0 .95.69h4.173c.969 0 1.371 1.24.588 1.81l-3.376 2.453a1 1 0 0 0-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.539 1.118L10 15.347l-3.376 2.454c-.784.57-1.838-.196-1.539-1.118l1.287-3.966a1 1 0 0 0-.364-1.118L2.632 9.394c-.783-.57-.38-1.81.588-1.81h4.173a1 1 0 0 0 .95-.69L9.05 2.927z"/></svg>
+                <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 0 0 .95.69h4.173c.969 0 1.371 1.24.588 1.81l-3.376 2.453a1 1 0 0 0-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.539 1.118L10 15.347l-3.376 2.454c-.784.57-1.838-.196-1.539-1.118l1.287-3.966a1 1 0 0 0-.364-1.118L2.632 9.394c-.783-.57-.38-1.81.588-1.81h4.173a1 1 0 0 0 .95-.69L9.05 2.927z"/></svg>
+                <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 0 0 .95.69h4.173c.969 0 1.371 1.24.588 1.81l-3.376 2.453a1 1 0 0 0-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.539 1.118L10 15.347l-3.376 2.454c-.784.57-1.838-.196-1.539-1.118l1.287-3.966a1 1 0 0 0-.364-1.118L2.632 9.394c-.783-.57-.38-1.81.588-1.81h4.173a1 1 0 0 0 .95-.69L9.05 2.927z"/></svg>
+                <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 0 0 .95.69h4.173c.969 0 1.371 1.24.588 1.81l-3.376 2.453a1 1 0 0 0-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.539 1.118L10 15.347l-3.376 2.454c-.784.57-1.838-.196-1.539-1.118l1.287-3.966a1 1 0 0 0-.364-1.118L2.632 9.394c-.783-.57-.38-1.81.588-1.81h4.173a1 1 0 0 0 .95-.69L9.05 2.927z"/></svg>
+                <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 0 0 .95.69h4.173c.969 0 1.371 1.24.588 1.81l-3.376 2.453a1 1 0 0 0-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.539 1.118L10 15.347l-3.376 2.454c-.784.57-1.838-.196-1.539-1.118l1.287-3.966a1 1 0 0 0-.364-1.118L2.632 9.394c-.783-.57-.38-1.81.588-1.81h4.173a1 1 0 0 0 .95-.69L9.05 2.927z"/></svg>
+              </div>
+              <blockquote>
+                <p data-i18n="q3.text">„Erittäin asiakaskeskeinen, osaava ja avulias. Kaiken kaikkiaan hyvin miellyttävä ihminen. 😊"</p>
+              </blockquote>
+              <figcaption>Tomi Heikkilä — Google</figcaption>
+            </figure>
+          </div>
+
+        </div>
+
+        <!-- RIGHT: FAQ -->
+        <div class="tf-col" id="faq">
+          <header class="tf-head">
+            <p class="eyebrow" data-i18n="faq.eyebrow">FAQ</p>
+            <h2 data-i18n="faq.h2">Usein kysytyt kysymykset</h2>
+          </header>
+          <div class="faq-accordion">
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span data-i18n="faq.q1">Mitä eroa on urheiluhieronnalla ja klassisella hieronnalla?</span>
+                <span class="faq-icon-wrapper">
+                  <svg class="faq-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-content">
+                  <p data-i18n="faq.a1">Urheiluhieronta keskittyy enemmän urheilusuorituksen tukemiseen, vammojen ennaltaehkäisyyn ja palautumisen optimointiin. Klassinen hieronta on puolestaan enemmän rentouttavaa ja pyrkii yleiseen lihasjännitysten laukaisemiseen ja stressin lievitykseen. Molemmat räätälöidään kuitenkin aina asiakkaan tarpeen mukaan.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span data-i18n="faq.q2">Miten purentalihashieronta voi auttaa minua?</span>
+                <span class="faq-icon-wrapper">
+                  <svg class="faq-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-content">
+                  <p data-i18n="faq.a2">Purentalihashieronta lievittää leuan, kasvojen ja pään alueen lihasjännityksiä. Se on erittäin tehokas apu hampaiden narskutteluun (bruksismi), leukaniveloireisiin, päänsärkyyn sekä niska-hartiaseudun jännityksiin.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span data-i18n="faq.q3">Miten peruutan tai siirrän varatun aikani?</span>
+                <span class="faq-icon-wrapper">
+                  <svg class="faq-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-content">
+                  <p data-i18n="faq.a3">Voit peruuttaa tai siirtää aikasi Vellon varausjärjestelmän kautta tai ottamalla minuun yhteyttä viimeistään 24 tuntia ennen hoidon alkua. Alle 24 tuntia peruutetuista tai peruuttamattomista ajoista perimme 100 % hoidon hinnasta.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span data-i18n="faq.q4">Miten valmistaudun hierontakäynnille?</span>
+                <span class="faq-icon-wrapper">
+                  <svg class="faq-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-content">
+                  <p data-i18n="faq.a4">Saavu paikalle ajoissa ja vältä runsasta ruokailua juuri ennen hoitoa. Käymme aluksi läpi toiveesi ja mahdolliset kiputilat. Varmistathan myös, ettei sinulla ole flunssaa tai kuumetta hierontapäivänä, sillä ne ovat esteitä hieronnalle.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- CONTACT -->
+    <section class="section" id="contact" aria-label="Yhteystiedot-osio">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <p class="eyebrow" data-i18n="contact.eyebrow">Yhteystiedot</p>
+          <h2 data-i18n="contact.h2">Vieraile vastaanotolla</h2>
+          <p class="section-lede" data-i18n="contact.lede">Ulvilassa, helposti saavutettavissa Turusta ja lähiseudulta.</p>
+
+          <ul class="contact-list">
+            <li><span data-i18n="contact.phone">Puhelin</span><a href="tel:+358451457445">045 1457445</a></li>
+            <li><span data-i18n="contact.email">Sähköposti</span><a href="mailto:info@test.fi">info@test.fi</a></li>
+            <li><span data-i18n="contact.masseur">Hieroja</span><span>Ben</span></li>
+            <li><span data-i18n="contact.address">Osoite</span>
+              <address class="clinic-address">
+                <a href="https://maps.app.goo.gl/JBHGve4Y3fCqbpeC9?g_st=ifm" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">
+                  Rekikuja 6 AS 3<br />
+                  28400 Ulvila, Finland
+                </a>
+              </address>
+            </li>
+          </ul>
+
+          <h3 class="mini-title" data-i18n="contact.hours.h3">Aukioloajat</h3>
+          <ul class="hours">
+            <li><span data-i18n="contact.mon">Ma – Pe</span><span>08:00 – 18:00</span></li>
+            <li><span data-i18n="contact.sat">Lauantai</span><span>10:00 – 14:00</span></li>
+            <li><span data-i18n="contact.sun">Sunnuntai</span><span data-i18n="contact.closed">Suljettu</span></li>
+          </ul>
+
+          <div class="contact-cta-row">
+            <a class="btn btn-primary btn-lg" href="https://pro.vello.fi/koulutettu-hieroja-ben/service" target="_blank" rel="noopener noreferrer" data-i18n="contact.cta">Varaa aika</a>
+            <a class="btn btn-whatsapp btn-lg" href="https://wa.me/358451457445" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" data-i18n="contact.whatsapp">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true" style="margin-right:0.4rem; flex-shrink:0;"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.625 1.45 5.426-.003 9.885-4.417 9.888-9.848.002-2.628-1.02-5.1-2.877-6.96C16.427 1.936 13.96 1.91 11.2 1.91c-5.428 0-9.885 4.414-9.888 9.847-.001 1.63.463 3.22 1.34 4.646l-.997 3.64 3.73-.978zM17.65 14.88c-.31-.155-1.833-.902-2.115-1.006-.28-.104-.486-.156-.69.155-.205.31-.795.983-.974 1.19-.18.206-.358.23-.668.075-1.07-.538-1.848-.992-2.584-1.63-1.05-.907-1.527-1.89-1.674-2.148-.146-.26-.016-.4-.146-.53-.118-.117-.26-.31-.39-.465-.13-.155-.174-.26-.26-.44-.087-.18-.044-.336-.02-.49.02-.156.205-.5.31-.646.104-.155.138-.26.206-.44.068-.18.034-.336-.017-.44-.05-.104-.486-1.163-.667-1.602-.176-.425-.37-.367-.508-.374-.132-.007-.284-.008-.436-.008-.153 0-.402.057-.613.284-.21.227-.805.785-.805 1.915 0 1.13.827 2.22.94 2.378.114.156 1.625 2.447 3.937 3.428.55.233 1.077.37 1.442.483.553.176 1.057.15 1.455.09.444-.066 1.834-.749 2.09-1.474.257-.724.257-1.345.18-1.474-.078-.13-.284-.207-.593-.362z"/></svg>
+              💬 WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="map">
+          <iframe
+            title="Vastaanoton sijainti Google Mapsissa"
+            src="https://www.google.com/maps?q=Rekikuja%206%20AS%203%2C%2028400%20Ulvila%2C%20Finland&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            rel="noopener noreferrer"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" aria-label="Alatunniste">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> AB Fysioterapia. <span data-i18n="footer.rights">Kaikki oikeudet pidätetään.</span></p>
+      <ul class="footer-links">
+        <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn-profiili">LinkedIn</a></li>
+        <li><a href="https://www.instagram.com/hieroja_ben?igsh=YmRhcDg1bTR6aTR2" target="_blank" rel="noopener noreferrer" aria-label="Instagram-profiili">Instagram</a></li>
+        <li><a href="privacy.html" aria-label="Tietosuojaseloste" data-i18n="footer.privacy">Tietosuoja</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" id="backToTop" aria-label="Takaisin ylös">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+</body>
+</html>
