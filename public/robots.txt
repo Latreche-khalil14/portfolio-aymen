@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://abfysioterapia.fi/sitemap.xml
