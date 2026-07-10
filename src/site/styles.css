@@ -440,7 +440,7 @@ p  { margin: 0 0 var(--space-md); color: var(--color-text-muted); }
 }
 .brand:hover { color: var(--color-text); }
 .brand-logo {
-  width: 46px; /* Increased from 40px */
+  width: 46px;
   height: 46px;
   border-radius: 50%;
   object-fit: cover;
@@ -451,6 +451,17 @@ p  { margin: 0 0 var(--space-md); color: var(--color-text-muted); }
   width: 40px;
   height: 40px;
 }
+
+/* Theme-aware logo switching */
+.brand-logo-dark  { display: none; }
+.brand-logo-light { display: block; }
+[data-theme="dark"] .brand-logo-dark  { display: block; }
+[data-theme="dark"] .brand-logo-light { display: none; }
+
+.about-logo-dark  { display: none; }
+.about-logo-light { display: block; }
+[data-theme="dark"] .about-logo-dark  { display: block; }
+[data-theme="dark"] .about-logo-light { display: none; }
 .brand-name { 
   font-size: 1.15rem; /* Increased size */
   font-weight: 600; 
