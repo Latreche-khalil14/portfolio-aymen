@@ -17,6 +17,11 @@
   --color-text-on-dark:  #f8fafc;
   --color-muted-on-dark: #94a3b8;
 
+  /* Brand colors */
+  --color-whatsapp:      #25D366;
+  --color-whatsapp-hover:#1ebe57;
+  --color-star:          #f5a623;
+
   /* Typography Scale (Requirement 2.4) */
   --font-size-base:    1rem;       /* 16px */
   --font-size-lg:      1.125rem;   /* 18px */
@@ -35,7 +40,6 @@
   --r-sm: 8px;
   --r:    14px;
   --r-lg: 22px;
-  --radius-lg: 22px; /* alias for --r-lg used in scoped styles */
 
   /* Shadows */
   --shadow-sm: 0 1px 2px rgba(16,24,40,.04);
@@ -65,99 +69,118 @@
   --shadow-sm: 0 1px 3px rgba(0,0,0,.4);
   --shadow-md: 0 8px 28px rgba(0,0,0,.5);
   --shadow-lg: 0 20px 60px rgba(0,0,0,.6);
+
+  /* Dark-mode specific tokens */
+  --color-dark-btn-primary:       #2563eb;
+  --color-dark-btn-primary-hover: #3b82f6;
+  --color-dark-nav-mobile-bg:     #1a2035;
+  --color-dark-surface:           #161b27;
+  --color-dark-faq-icon-bg:       #1e2a42;
+  --color-dark-text-subtle:       #c9d1e8;
+  --color-dark-footer-bg:         #080c12;
+  --color-dark-footer-border:     #1a2030;
+  --color-dark-footer-text:       #9aa3b8;
+  --color-dark-footer-muted:      #6b7590;
+  --color-dark-footer-link:       #7c85a0;
+  --color-dark-header-bg:         rgba(13,17,23,0.88);
+  --color-dark-header-scrolled:   rgba(13,17,23,0.97);
+  --color-dark-quote-caption:     #7db3e8;
+  --color-dark-booking-section:   #1e293b;
+  --color-dark-booking-border:    #334155;
+  --color-dark-booking-step:      #0f172a;
 }
 
 /* Header */
 [data-theme="dark"] .site-header {
   background: rgba(13,17,23,0.88);
-  border-bottom-color: #252d40;
+  border-bottom-color: var(--color-border);
 }
 [data-theme="dark"] .site-header.is-scrolled {
   background: rgba(13,17,23,0.97);
-  border-bottom-color: #252d40;
+  border-bottom-color: var(--color-border);
 }
 
 /* Nav links */
 [data-theme="dark"] .nav-menu a {
-  color: #c9d1e8;
+  color: var(--color-dark-text-subtle);
 }
 [data-theme="dark"] .nav-menu a:hover {
-  color: #60a5fa;
-  border-bottom-color: #60a5fa;
+  color: var(--color-accent);
+  border-bottom-color: var(--color-accent);
 }
 [data-theme="dark"] .nav-menu a.active-nav-link {
-  color: #60a5fa;
-  border-bottom-color: #60a5fa;
+  color: var(--color-accent);
+  border-bottom-color: var(--color-accent);
 }
 [data-theme="dark"] .nav-menu {
-  background: #1a2035;
+  background: var(--color-dark-nav-mobile-bg);
 }
 
 /* Buttons */
 [data-theme="dark"] .btn-primary {
-  background: #2563eb;
+  background: var(--color-dark-btn-primary);
   color: #fff;
 }
 [data-theme="dark"] .btn-primary:hover {
-  background: #3b82f6;
+  background: var(--color-dark-btn-primary-hover);
 }
 [data-theme="dark"] .btn-accent {
-  background: #2563eb;
+  background: var(--color-dark-btn-primary);
   color: #fff;
 }
 [data-theme="dark"] .btn-accent:hover {
-  background: #3b82f6;
+  background: var(--color-dark-btn-primary-hover);
 }
 [data-theme="dark"] .btn-ghost {
-  color: #c9d1e8;
-  border-color: #252d40;
+  color: var(--color-dark-text-subtle);
+  border-color: var(--color-border);
 }
 [data-theme="dark"] .btn-ghost:hover {
-  border-color: #60a5fa;
-  color: #60a5fa;
+  border-color: var(--color-accent);
+  color: var(--color-accent);
 }
 [data-theme="dark"] .nav-cta {
-  background: #2563eb;
+  background: var(--color-dark-btn-primary);
   color: #fff;
 }
 [data-theme="dark"] .nav-cta:hover {
-  background: #3b82f6;
+  background: var(--color-dark-btn-primary-hover);
 }
 [data-theme="dark"] .nav-cta.btn-whatsapp {
-  background: #25D366;
-  border-color: #25D366;
+  background: var(--color-whatsapp);
+  border-color: var(--color-whatsapp);
   color: #fff;
 }
 [data-theme="dark"] .nav-cta.btn-whatsapp:hover {
-  background: #1ebe57;
-  border-color: #1ebe57;
+  background: var(--color-whatsapp-hover);
+  border-color: var(--color-whatsapp-hover);
 }
 
 /* Brand name */
 [data-theme="dark"] .brand-name {
-  color: #f0f2f8;
+  color: var(--color-text);
 }
 
 /* Section eyebrow */
 [data-theme="dark"] .eyebrow {
-  color: #60a5fa;
+  color: var(--color-accent);
 }
 
 /* Cards */
 [data-theme="dark"] .card,
 [data-theme="dark"] .service-detail-card {
-  background: #161b27;
-  border-color: #252d40;
+  background: var(--color-bg-secondary);
+  border-color: var(--color-border);
 }
 [data-theme="dark"] .card:hover,
 [data-theme="dark"] .service-detail-card:hover {
-  border-color: #2563eb;
+  border-color: var(--color-dark-btn-primary);
   box-shadow: 0 8px 28px rgba(37,99,235,0.15);
 }
 [data-theme="dark"] .card h3,
 [data-theme="dark"] .service-detail-card h2 {
-  color: #f0f2f8;
-  border-bottom-color: #252d40;
+  color: var(--color-text);
+  border-bottom-color: var(--color-border);
 }
 
 /* Testimonial quotes */
@@ -167,106 +190,106 @@
   border-color: transparent;
 }
 [data-theme="dark"] .quote::before {
-  color: #60a5fa;
+  color: var(--color-accent);
   opacity: 0.2;
 }
 
 /* FAQ */
 [data-theme="dark"] .faq-item {
-  background: #161b27;
-  border-color: #252d40;
+  background: var(--color-bg-secondary);
+  border-color: var(--color-border);
 }
 [data-theme="dark"] .faq-question {
-  color: #f0f2f8;
+  color: var(--color-text);
 }
 [data-theme="dark"] .faq-question:hover {
-  color: #60a5fa;
+  color: var(--color-accent);
 }
 [data-theme="dark"] .faq-answer-content {
-  border-top-color: #252d40;
+  border-top-color: var(--color-border);
 }
 [data-theme="dark"] .faq-answer-content p {
-  color: #9aa3b8;
+  color: var(--color-text-muted);
 }
 [data-theme="dark"] .faq-icon-wrapper {
-  background: #1e2a42;
+  background: var(--color-dark-faq-icon-bg);
 }
 [data-theme="dark"] .faq-question[aria-expanded="true"] .faq-icon-wrapper {
-  background: #1e3a5f;
+  background: var(--color-accent-soft);
 }
 
 /* Contact */
 [data-theme="dark"] .contact-list li,
 [data-theme="dark"] .hours li {
-  border-bottom-color: #252d40;
+  border-bottom-color: var(--color-border);
 }
 [data-theme="dark"] .contact-list a {
-  color: #60a5fa;
+  color: var(--color-accent);
 }
 [data-theme="dark"] .contact-list a:hover {
-  color: #93c5fd;
+  color: var(--color-accent-ink);
 }
 [data-theme="dark"] .clinic-address {
-  color: #c9d1e8;
+  color: var(--color-dark-text-subtle);
 }
 
 /* Stats */
 [data-theme="dark"] .stats dd {
-  color: #60a5fa;
+  color: var(--color-accent);
 }
 
 /* About section qualifications list */
 [data-theme="dark"] .clean-list li {
-  color: #c9d1e8;
+  color: var(--color-dark-text-subtle);
 }
 
 /* Links in body */
 [data-theme="dark"] a {
-  color: #60a5fa;
+  color: var(--color-accent);
 }
 [data-theme="dark"] a:hover {
-  color: #93c5fd;
+  color: var(--color-accent-ink);
 }
 
 /* Policy box */
 [data-theme="dark"] .policy-box {
-  background: #161b27;
-  border-left-color: #2563eb;
+  background: var(--color-bg-secondary);
+  border-left-color: var(--color-dark-btn-primary);
 }
 [data-theme="dark"] .policy-box h3 {
-  color: #f0f2f8;
+  color: var(--color-text);
 }
 
 /* Footer */
 [data-theme="dark"] .site-footer {
-  background: #080c12;
-  border-top-color: #1a2030;
-  color: #9aa3b8;
+  background: var(--color-dark-footer-bg);
+  border-top-color: var(--color-dark-footer-border);
+  color: var(--color-text-muted);
 }
 [data-theme="dark"] .site-footer p {
-  color: #6b7590;
+  color: var(--color-dark-footer-muted);
 }
 [data-theme="dark"] .footer-links a {
-  color: #7c85a0;
+  color: var(--color-dark-footer-link);
 }
 [data-theme="dark"] .footer-links a:hover {
-  color: #60a5fa;
+  color: var(--color-accent);
 }
 
 /* Map border */
 [data-theme="dark"] .map {
-  border-color: #252d40;
+  border-color: var(--color-border);
 }
 
 /* Theme/lang toggle */
 [data-theme="dark"] .theme-toggle,
 [data-theme="dark"] .lang-toggle {
-  color: #c9d1e8;
+  color: var(--color-dark-text-subtle);
 }
 [data-theme="dark"] .theme-toggle:hover,
 [data-theme="dark"] .lang-toggle:hover {
-  color: #60a5fa;
-  background: #161b27;
+  color: var(--color-accent);
+  background: var(--color-bg-secondary);
 }
 
 
@@ -1093,7 +1116,7 @@ p  { margin: 0 0 var(--space-md); color: var(--color-text-muted); }
   border-left-color: var(--color-accent);
 }
 [data-theme="dark"] .quote blockquote p { color: var(--color-text); }
-[data-theme="dark"] .quote figcaption { color: #7db3e8; }
+[data-theme="dark"] .quote figcaption { color: var(--color-dark-quote-caption); }
 
 /* =========================================================
    Testimonials + FAQ side-by-side layout
@@ -1141,7 +1164,7 @@ p  { margin: 0 0 var(--space-md); color: var(--color-text-muted); }
   box-shadow: var(--shadow-sm);
 }
 .google-badge-stars {
-  color: #f5a623;
+  color: var(--color-star);
   letter-spacing: 1px;
   font-size: 0.9rem;
 }
@@ -1160,7 +1183,7 @@ p  { margin: 0 0 var(--space-md); color: var(--color-text-muted); }
   display: flex;
   gap: 2px;
   margin-bottom: var(--space-sm);
-  color: #f5a623;
+  color: var(--color-star);
 }
 .tf-quotes {
   display: flex;
@@ -1223,14 +1246,14 @@ p  { margin: 0 0 var(--space-md); color: var(--color-text-muted); }
   align-items: center;
 }
 .btn-whatsapp {
-  background: #25D366;
+  background: var(--color-whatsapp);
   color: #ffffff !important;
-  border-color: #25D366;
+  border-color: var(--color-whatsapp);
 }
 .btn-whatsapp:hover,
 .btn-whatsapp:focus {
-  background: #1ebe57;
-  border-color: #1ebe57;
+  background: var(--color-whatsapp-hover);
+  border-color: var(--color-whatsapp-hover);
   color: #ffffff !important;
   transform: translateY(-1px);
 }
@@ -1320,7 +1343,7 @@ p  { margin: 0 0 var(--space-md); color: var(--color-text-muted); }
     width: 100vw;
     height: calc(100vh - 100%);
     min-height: calc(100vh - 72px);
-    background: #f0f4f9;
+    background: var(--color-bg-secondary);
     flex-direction: column;
     align-items: stretch;
     gap: 0;
@@ -1333,9 +1356,6 @@ p  { margin: 0 0 var(--space-md); color: var(--color-text-muted); }
     border-top: 1px solid var(--color-border);
     z-index: 1000;
     overflow-y: auto;
-  }
-  .nav-menu li {
-    border-bottom: 1px solid var(--color-border);
   }
   .nav-menu a {
     display: block;
@@ -1659,8 +1679,8 @@ html[data-font-size="xlarge"] {
 }
 
 [data-theme="dark"] .booking-guide-section {
-  background: #1e293b;
-  border-color: #334155;
+  background: var(--color-dark-booking-section);
+  border-color: var(--color-dark-booking-border);
 }
 
 .booking-guide-grid {
@@ -1690,8 +1710,8 @@ html[data-font-size="xlarge"] {
 }
 
 [data-theme="dark"] .booking-step {
-  background: #0f172a;
-  border-color: #1e293b;
+  background: var(--color-dark-booking-step);
+  border-color: var(--color-dark-booking-section);
 }
 
 .booking-step:hover {
@@ -1764,7 +1784,7 @@ html[data-font-size="xlarge"] {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: #25d366;
+  background: var(--color-whatsapp);
   color: #ffffff;
   padding: 6px 14px;
   border-radius: 100px;
@@ -1807,7 +1827,7 @@ html[data-font-size="xlarge"] {
 }
 
 [data-theme="dark"] .whatsapp-card-title {
-  color: #25d366;
+  color: var(--color-whatsapp);
 }
 
 .whatsapp-card-desc {
@@ -1825,7 +1845,7 @@ html[data-font-size="xlarge"] {
   font-size: 1rem;
   font-weight: 700;
   color: #ffffff !important;
-  background-color: #25d366;
+  background-color: var(--color-whatsapp);
   padding: 14px 28px;
   border-radius: var(--r);
   text-decoration: none;
@@ -1843,7 +1863,7 @@ html[data-font-size="xlarge"] {
 }
 
 .whatsapp-booking-btn:hover {
-  background-color: #20ba5a;
+  background-color: var(--color-whatsapp-hover);
   transform: translateY(-2px);
   box-shadow: 0 8px 24px rgba(37, 211, 102, 0.35);
   text-decoration: none;
@@ -1854,6 +1874,37 @@ html[data-font-size="xlarge"] {
 }
 
 
+
+/* =========================================================
+   Utility classes for removed inline styles
+   ========================================================= */
+.btn-icon {
+  margin-right: 0.4rem;
+  flex-shrink: 0;
+}
+.nav-cta svg { flex-shrink: 0; }
+
+.clinic-address-link {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.clinic-address-link:hover {
+  color: var(--color-accent-ink);
+}
+
+.price-hint-icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 4px;
+  color: var(--color-accent);
+  flex-shrink: 0;
+}
+
+.badge-external-icon {
+  margin-left: 2px;
+  opacity: 0.5;
+}
 
 /* =========================================================
    Hero price hint
@@ -1933,10 +1984,10 @@ a.google-badge:hover {
   outline-offset: 3px;
 }
 [data-theme="dark"] .back-to-top {
-  background: #2563eb;
+  background: var(--color-dark-btn-primary);
 }
 [data-theme="dark"] .back-to-top:hover {
-  background: #3b82f6;
+  background: var(--color-dark-btn-primary-hover);
 }
 @media (prefers-reduced-motion: reduce) {
   .back-to-top { transition: none !important; }
