@@ -107,9 +107,10 @@ const translations = {
     'booking.phone.desc': 'Jos netissä varaaminen tuntuu hankalalta, voit lähettää minulle viestin suoraan WhatsAppissa. Vastaan mielelläni ja varaan ajan puolestasi!',
     'booking.phone.cta': 'Lähetä viesti WhatsAppissa: 045 1457445',
     'hero.more-btn': 'Ota yhteyttä',
+    'hero.price-hint': 'Hieronta alkaen 35 \u20ac \u00b7 <a href="services.html">Katso kaikki hinnat</a>',
+    'hero.price-link': 'Katso kaikki hinnat',
   },
   en: {
-    'nav.about': 'About',
     'nav.services': 'Services',
     'nav.why': 'Why Choose Me',
     'nav.testimonials': 'Testimonials',
@@ -215,6 +216,8 @@ const translations = {
     'booking.phone.desc': 'If online booking feels too complicated, you can send me a message directly on WhatsApp. I am happy to assist you and book your slot!',
     'booking.phone.cta': 'Send WhatsApp message: 045 1457445',
     'hero.more-btn': 'Contact me',
+    'hero.price-hint': 'Massage from 35 \u20ac \u00b7 <a href="services.html">See all prices</a>',
+    'hero.price-link': 'See all prices',
   }
 };
 
@@ -443,3 +446,15 @@ document.querySelectorAll('.svc-btn').forEach(btn => {
     }
   });
 });
+
+// ── Back to top button ───────────────────────────────────────────────────────
+const backToTopBtn = document.getElementById('backToTop');
+if (backToTopBtn) {
+  window.addEventListener('scroll', () => {
+    backToTopBtn.classList.toggle('is-visible', window.scrollY > 400);
+  }, { passive: true });
+
+  backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}
