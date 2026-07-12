@@ -703,8 +703,8 @@ p  { margin: 0 0 var(--space-md); color: var(--color-text-muted); }
   width: 100%;
   border-radius: var(--r-lg);
   box-shadow: var(--shadow-lg);
-  object-fit: cover;
-  aspect-ratio: 4/5;
+  height: auto;
+  display: block;
 }
 
 /* Buttons */
