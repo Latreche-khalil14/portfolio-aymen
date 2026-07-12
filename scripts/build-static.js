@@ -60,11 +60,11 @@ async function build() {
     fs.copyFileSync(path.join(srcDir, 'classic_massage.png'), path.join(publicDir, 'classic_massage.png'));
 
     console.log('Copying profile images...');
+    if (fs.existsSync(path.join(srcDir, 'aymen.pro.jpeg'))) {
+      fs.copyFileSync(path.join(srcDir, 'aymen.pro.jpeg'), path.join(publicDir, 'aymen.pro.jpeg'));
+    }
     if (fs.existsSync(path.join(srcDir, 'aymen.jpg'))) {
       fs.copyFileSync(path.join(srcDir, 'aymen.jpg'), path.join(publicDir, 'aymen.jpg'));
-    }
-    if (fs.existsSync(path.join(srcDir, 'aymen-profil.jpg'))) {
-      fs.copyFileSync(path.join(srcDir, 'aymen-profil.jpg'), path.join(publicDir, 'aymen-profil.jpg'));
     }
     if (fs.existsSync(path.join(srcDir, 'og-image.jpg'))) {
       fs.copyFileSync(path.join(srcDir, 'og-image.jpg'), path.join(publicDir, 'og-image.jpg'));

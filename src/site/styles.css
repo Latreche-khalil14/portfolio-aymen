@@ -705,7 +705,6 @@ p  { margin: 0 0 var(--space-md); color: var(--color-text-muted); }
 }
 .hero-media img {
   width: 100%;
-  border-radius: var(--r-lg);
   box-shadow: var(--shadow-lg);
   height: auto;
   display: block;
