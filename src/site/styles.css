@@ -699,6 +699,10 @@ p  { margin: 0 0 var(--space-md); color: var(--color-text-muted); }
   gap: var(--space-sm);
   margin-top: var(--space-lg);
 }
+.hero-media {
+  max-width: 480px;
+  margin: 0 auto;
+}
 .hero-media img {
   width: 100%;
   border-radius: var(--r-lg);
