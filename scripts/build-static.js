@@ -59,6 +59,14 @@ async function build() {
     fs.copyFileSync(path.join(srcDir, 'masseter_massage.png'), path.join(publicDir, 'masseter_massage.png'));
     fs.copyFileSync(path.join(srcDir, 'classic_massage.png'), path.join(publicDir, 'classic_massage.png'));
 
+    console.log('Copying profile images...');
+    if (fs.existsSync(path.join(srcDir, 'aymen-profil.jpg'))) {
+      fs.copyFileSync(path.join(srcDir, 'aymen-profil.jpg'), path.join(publicDir, 'aymen-profil.jpg'));
+    }
+    if (fs.existsSync(path.join(srcDir, 'og-image.jpg'))) {
+      fs.copyFileSync(path.join(srcDir, 'og-image.jpg'), path.join(publicDir, 'og-image.jpg'));
+    }
+
     console.log('Checking for sharp to generate JPEG fallback images...');
     try {
       const sharpModule = await import('sharp');
