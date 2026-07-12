@@ -396,6 +396,20 @@ p  { margin: 0 0 var(--space-md); color: var(--color-text-muted); }
   margin-top: -0.5rem;
   margin-bottom: var(--space-lg);
 }
+/* Hero name + title inline */
+.hero-name {
+  color: var(--color-accent);
+  font-weight: 700;
+}
+.hero-title-inline {
+  font-size: clamp(1.6rem, 3vw + 0.5rem, 2.6rem);
+  font-weight: 400;
+  color: var(--color-text);
+  letter-spacing: -0.01em;
+}
+[data-theme="dark"] .hero-name {
+  color: var(--color-accent);
+}
 .mini-title {
   font-size: 0.85rem;
   text-transform: uppercase;
