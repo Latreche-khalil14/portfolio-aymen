@@ -702,11 +702,25 @@ p  { margin: 0 0 var(--space-md); color: var(--color-text-muted); }
 .hero-media {
   max-width: 480px;
   margin: 0 auto;
+  overflow: hidden;
 }
 .hero-media img {
   width: 100%;
   box-shadow: var(--shadow-lg);
   height: auto;
+  display: block;
+  border: none;
+  outline: none;
+}
+[data-theme="dark"] .hero-media img {
+  box-shadow: none;
+  border: none;
+  outline: none;
+  filter: none;
+}
+[data-theme="dark"] .hero-media picture {
+  border: none;
+  outline: none;
   display: block;
 }
 
