@@ -95,7 +95,7 @@
           <span class="bars" aria-hidden="true"></span>
         </button>
         <ul class="nav-menu" id="navMenu">
-          <li><a href="#about" data-i18n="nav.about">Tietoa</a></li>
+          <li><a href="#top" data-i18n="nav.about">Tietoa</a></li>
           <li><a href="#services" data-i18n="nav.services">Palvelut</a></li>
           <li><a href="#testimonials" data-i18n="nav.testimonials">Kokemukset</a></li>
           <li><a href="#contact" data-i18n="nav.contact">Yhteystiedot</a></li>
@@ -132,24 +132,11 @@
   </header>
 
   <main id="main" aria-label="Pääsisältö">
-    <!-- HERO -->
+    <!-- HERO + ABOUT COMBINED -->
     <section class="hero" id="top" aria-label="Hero-osio">
       <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow" data-i18n="hero.eyebrow">Hieronta | Ulvila & Turku</p>
-          <h1><span class="hero-name">Ben</span> <span class="hero-title-inline" data-i18n="hero.subtitle">Koulutettu Hieroja</span></h1>
-          <p class="lede" data-i18n="hero.lede.1">Olen Ben, koulutettu hieroja. Valmistuin Turun Hierojakoulusta (TYA), ja lisäksi minulla on liikunta-alan maisterin tutkinto. Taustani valmennuksessa, opetuksessa ja urheiluravitsemuksessa tukee kokonaisvaltaista lähestymistapaani asiakkaiden hyvinvointiin.</p>
-          <p class="lede" data-i18n="hero.lede.2">Työssäni kohtaan jokaisen asiakkaan yksilöllisesti ja suunnittelen hoidon aina asiakkaan tarpeiden mukaan. Vastaanotolleni voit tulla hakemaan apua kiputiloihin, lihasjännityksiin, urheilusta palautumiseen tai rentoutumaan.</p>
-          <p class="lede" data-i18n="hero.lede.3">Liikunta on ollut tärkeä osa elämääni jo pitkään. Pelasin käsipalloa ammattilaistasolla useiden vuosien ajan, ja vapaa-ajallani harrastan myös monipuolisesti muita liikuntalajeja.</p>
-          <div class="cta-row">
-            <a class="btn btn-primary" href="https://pro.vello.fi/koulutettu-hieroja-ben/service" target="_blank" rel="noopener noreferrer" data-i18n="hero.cta">Varaa aika</a>
-            <a class="btn btn-ghost" href="#contact" data-i18n="hero.more-btn">Ota yhteyttä</a>
-          </div>
-          <p class="hero-price-hint" data-i18n="hero.price-hint">
-            <svg viewBox="0 0 20 20" width="14" height="14" fill="currentColor" aria-hidden="true" class="price-hint-icon"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 0 0 .95.69h4.173c.969 0 1.371 1.24.588 1.81l-3.376 2.453a1 1 0 0 0-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.539 1.118L10 15.347l-3.376 2.454c-.784.57-1.838-.196-1.539-1.118l1.287-3.966a1 1 0 0 0-.364-1.118L2.632 9.394c-.783-.57-.38-1.81.588-1.81h4.173a1 1 0 0 0 .95-.69L9.05 2.927z"/></svg>
-            Hieronta alkaen 35 € · <a href="services.html" data-i18n="hero.price-link">Katso kaikki hinnat</a>
-          </p>
-        </div>
+
+        <!-- LEFT: Photo -->
         <div class="hero-media">
           <picture>
             <img
@@ -160,37 +147,24 @@
             />
           </picture>
         </div>
-      </div>
-    </section>
 
-    <!-- ABOUT -->
-    <section class="section" id="about" aria-label="Tietoa-osio">
-      <div class="container about-grid">
-        <div class="about-media">
-          <picture>
-            <source srcset="about.webp" type="image/webp" />
-            <img
-              src="about.jpg"
-              alt="Aymen Benloucif hoitamassa asiakasta Ulvilan vastaanotollaan"
-              width="1280" height="1024"
-              loading="lazy" decoding="async"
-            />
-          </picture>
-        </div>
-        <div class="about-copy">
-          <p class="eyebrow" data-i18n="about.eyebrow">Tietoa minusta</p>
-          <h2 data-i18n="about.h2">Yksilöllistä hoitoa jokaiselle</h2>
-          <div class="about-logo">
-            <img src="logo.light.jpg" alt="Aymen Benloucif — Koulutettu Urheiluhieroja" class="about-logo-light" width="120" height="120" loading="lazy" />
-            <img src="logo.dark.jpg"  alt="" class="about-logo-dark" width="120" height="120" loading="lazy" aria-hidden="true" />
-          </div>
-        
+        <!-- RIGHT: Copy + Stats + Qualifications -->
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="hero.eyebrow">Hieronta · Ulvila</p>
+          <h1><span class="hero-name">Ben</span> <span class="hero-title-inline" data-i18n="hero.subtitle">Koulutettu Hieroja</span></h1>
+
+          <p class="lede" data-i18n="hero.lede.1">Olen Ben, koulutettu hieroja. Valmistuin Turun Hierojakoulusta (TYA), ja lisäksi minulla on liikunta-alan maisterin tutkinto. Taustani valmennuksessa, opetuksessa ja urheiluravitsemuksessa tukee kokonaisvaltaista lähestymistapaani asiakkaiden hyvinvointiin.</p>
+          <p class="lede" data-i18n="hero.lede.2">Työssäni kohtaan jokaisen asiakkaan yksilöllisesti ja suunnittelen hoidon aina asiakkaan tarpeiden mukaan. Vastaanotollesi voit tulla hakemaan apua kiputiloihin, lihasjännityksiin, urheilusta palautumiseen tai rentoutumaan.</p>
+          <p class="lede" data-i18n="hero.lede.3">Liikunta on ollut tärkeä osa elämääni jo pitkään. Pelasin käsipalloa ammattilaistasolla useiden vuosien ajan, ja vapaa-ajallani harrastan myös monipuolisesti muita liikuntalajeja.</p>
+
+          <!-- Stats -->
           <dl class="stats">
             <div><dt data-i18n="about.stat1.dt">Koulutus</dt><dd data-i18n="about.stat1.dd">Maisteri</dd></div>
             <div><dt data-i18n="about.stat2.dt">Ammattilaiskäsipallo</dt><dd data-i18n="about.stat2.dd">Vuosia</dd></div>
             <div><dt data-i18n="about.stat3.dt">Vastausaika</dt><dd>&lt; 24h</dd></div>
           </dl>
 
+          <!-- Qualifications -->
           <h3 class="mini-title" data-i18n="about.qual.h3">Koulutus &amp; Tausta</h3>
           <ul class="clean-list">
             <li data-i18n="about.q1">Koulutettu urheiluhieroja — Turun Hierojakoulu (TYA)</li>
@@ -198,7 +172,18 @@
             <li data-i18n="about.q3">Tausta valmennuksessa, opetuksessa &amp; urheiluravitsemuksessa</li>
             <li data-i18n="about.q4">Entinen ammattilaiskäsipalloilija</li>
           </ul>
+
+          <!-- CTAs -->
+          <div class="cta-row">
+            <a class="btn btn-primary" href="https://pro.vello.fi/koulutettu-hieroja-ben/service" target="_blank" rel="noopener noreferrer" data-i18n="hero.cta">Varaa aika</a>
+            <a class="btn btn-ghost" href="#contact" data-i18n="hero.more-btn">Ota yhteyttä</a>
+          </div>
+          <p class="hero-price-hint" data-i18n="hero.price-hint">
+            <svg viewBox="0 0 20 20" width="14" height="14" fill="currentColor" aria-hidden="true" class="price-hint-icon"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 0 0 .95.69h4.173c.969 0 1.371 1.24.588 1.81l-3.376 2.453a1 1 0 0 0-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.539 1.118L10 15.347l-3.376 2.454c-.784.57-1.838-.196-1.539-1.118l1.287-3.966a1 1 0 0 0-.364-1.118L2.632 9.394c-.783-.57-.38-1.81.588-1.81h4.173a1 1 0 0 0 .95-.69L9.05 2.927z"/></svg>
+            Hieronta alkaen 35 € · <a href="services.html" data-i18n="hero.price-link">Katso kaikki hinnat</a>
+          </p>
         </div>
+
       </div>
     </section>
 
