@@ -702,6 +702,9 @@ p  { margin: 0 0 var(--space-md); color: var(--color-text-muted); }
   align-items: start;
   width: 100%;
 }
+/* Mobile: text first, image second */
+.hero-copy  { order: 1; }
+.hero-media { order: 2; }
 .hero-copy .lede {
   font-size: var(--font-size-lg);
   max-width: 100%;
