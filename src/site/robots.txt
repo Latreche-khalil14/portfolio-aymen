@@ -1,4 +1,4 @@
-User-agent: *
+﻿User-agent: *
 Allow: /
 
-Sitemap: https://abfysioterapia.fi/sitemap.xml
+Sitemap: https://hieroja.fi/sitemap.xml
