@@ -859,21 +859,17 @@ p  { margin: 0 0 var(--space-md); color: var(--color-text-muted); }
 
 .clean-list { list-style: none; margin: 0; padding: 0; }
 .clean-list li {
-  position: relative;
-  padding: 10px 0 10px 22px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
   color: var(--color-text);
   border-bottom: 1px solid var(--color-border);
 }
 .clean-list li:last-child { border-bottom: none; }
-.clean-list li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 18px;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--color-accent);
+.check-icon {
+  color: var(--color-accent);
+  flex-shrink: 0;
 }
 
 /* =========================================================
@@ -1147,6 +1143,19 @@ p  { margin: 0 0 var(--space-md); color: var(--color-text-muted); }
   font-size: 0.85rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.contact-label {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 6px;
+}
+.contact-label svg {
+  color: var(--color-accent);
+  flex-shrink: 0;
+  opacity: 0.85;
 }
 .contact-list a {
   color: var(--color-text);
@@ -1209,37 +1218,115 @@ p  { margin: 0 0 var(--space-md); color: var(--color-text-muted); }
   background: var(--color-footer-bg);
   color: var(--color-footer-text);
   border-top: 1px solid var(--color-footer-border);
-  padding: var(--space-lg) 0;
+  padding: var(--space-lg) 0 0;
 }
 .footer-inner {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: var(--space-md);
+  padding-bottom: var(--space-lg);
 }
-.site-footer p {
+@media (min-width: 1024px) {
+  .footer-inner {
+    grid-template-columns: 1.5fr 1fr 1.2fr;
+    gap: var(--space-xl);
+  }
+}
+/* Brand */
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  grid-column: 1 / -1; /* full width on mobile */
+}
+@media (min-width: 1024px) {
+  .footer-brand {
+    grid-column: auto;
+  }
+}
+.footer-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.footer-brand-name {
   margin: 0;
-  color: var(--color-footer-muted);
-  font-size: 0.9rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-footer-text);
 }
-.footer-links {
+.footer-brand-sub {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--color-footer-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+/* Nav title */
+.footer-nav-title {
+  margin: 0 0 var(--space-sm);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--color-footer-muted);
+}
+/* Footer nav links */
+.footer-nav .footer-links {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
-  gap: var(--space-lg);
+  flex-direction: column;
+  gap: 4px;
 }
-.footer-links a {
+.footer-nav .footer-links a {
   color: var(--color-footer-link);
-  font-size: 0.9rem;
-  min-height: 44px; /* Accessible tap target (Requirement 11.4) */
-  padding: 12px 8px;
-  display: flex;
+  font-size: 0.88rem;
+  padding: 3px 0;
+  min-height: unset;
+  display: inline-flex;
   align-items: center;
   transition: color 0.2s ease;
 }
-.footer-links a:hover { color: var(--color-footer-hover); }
+.footer-nav .footer-links a:hover { color: var(--color-footer-hover); }
+/* Footer contact list */
+.footer-contact-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.footer-contact-list li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+}
+.footer-contact-list svg {
+  color: var(--color-footer-muted);
+  flex-shrink: 0;
+}
+.footer-contact-list a {
+  color: var(--color-footer-link);
+  transition: color 0.2s ease;
+}
+.footer-contact-list a:hover { color: var(--color-footer-hover); }
+/* Bottom bar */
+.footer-bottom {
+  border-top: 1px solid var(--color-footer-border);
+  padding: var(--space-md) 0;
+}
+.footer-bottom p {
+  margin: 0;
+  font-size: 0.82rem;
+  color: var(--color-footer-muted);
+  text-align: center;
+}
 
 /* =========================================================
    Responsive Breakpoints (Requirement 11.2)
