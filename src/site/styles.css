@@ -1,4 +1,4 @@
-/* =========================================================
+﻿/* =========================================================
    Ben — Koulutettu Hieroja
    Scandinavian, minimal, premium. One CSS file. System fonts.
    ========================================================= */
@@ -723,7 +723,7 @@ p  { margin: 0 0 var(--space-md); color: var(--color-text-muted); }
 }
 @media (min-width: 1024px) {
   .hero-media {
-    max-width: 88%;
+    max-width: 80%;
     margin-left: auto;
     margin-right: 0;
     position: sticky;
