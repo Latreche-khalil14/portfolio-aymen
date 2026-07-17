@@ -45,6 +45,15 @@ async function build() {
 
     console.log('Copying favicon...');
     fs.copyFileSync(path.join(srcDir, 'favicon.svg'), path.join(publicDir, 'favicon.svg'));
+    if (fs.existsSync(path.join(srcDir, 'favicon.png'))) {
+      fs.copyFileSync(path.join(srcDir, 'favicon.png'), path.join(publicDir, 'favicon.png'));
+    }
+    if (fs.existsSync(path.join(srcDir, 'apple-touch-icon.png'))) {
+      fs.copyFileSync(path.join(srcDir, 'apple-touch-icon.png'), path.join(publicDir, 'apple-touch-icon.png'));
+    }
+    if (fs.existsSync(path.join(srcDir, 'b-logo.jpg'))) {
+      fs.copyFileSync(path.join(srcDir, 'b-logo.jpg'), path.join(publicDir, 'b-logo.jpg'));
+    }
 
     console.log('Copying SEO files...');
     fs.copyFileSync(path.join(srcDir, 'sitemap.xml'), path.join(publicDir, 'sitemap.xml'));
