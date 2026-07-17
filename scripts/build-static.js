@@ -9,6 +9,8 @@ const __dirname = path.dirname(__filename);
 const rootDir = path.resolve(__dirname, '..');
 const srcDir = path.join(rootDir, 'src', 'site');
 const publicDir = path.join(rootDir, 'public');
+const srcImages = path.join(srcDir, 'images');
+const pubImages = path.join(publicDir, 'images');
 
 function ensureDirExists(dir) {
   if (!fs.existsSync(dir)) {
@@ -16,19 +18,23 @@ function ensureDirExists(dir) {
   }
 }
 
+function copyIfExists(src, dest) {
+  if (fs.existsSync(src)) {
+    fs.copyFileSync(src, dest);
+  }
+}
+
 async function build() {
   try {
     ensureDirExists(publicDir);
+    ensureDirExists(pubImages);
 
     console.log('Minifying CSS and JS...');
-    // Minify styles.css
     esbuild.buildSync({
       entryPoints: [path.join(srcDir, 'styles.css')],
       outfile: path.join(publicDir, 'styles.css'),
       minify: true,
     });
-
-    // Minify script.js
     esbuild.buildSync({
       entryPoints: [path.join(srcDir, 'script.js')],
       outfile: path.join(publicDir, 'script.js'),
@@ -36,80 +42,55 @@ async function build() {
     });
 
     console.log('Copying HTML files...');
-    fs.copyFileSync(path.join(srcDir, 'site.html'), path.join(publicDir, 'site.html'));
-    fs.copyFileSync(path.join(srcDir, 'site.html'), path.join(publicDir, 'index.html')); // Vercel root entry
-    fs.copyFileSync(path.join(srcDir, '404.html'), path.join(publicDir, '404.html'));
-    fs.copyFileSync(path.join(srcDir, 'privacy.html'), path.join(publicDir, 'privacy.html'));
-    fs.copyFileSync(path.join(srcDir, 'services.html'), path.join(publicDir, 'services.html'));
-    fs.copyFileSync(path.join(srcDir, 'booking-guide.html'), path.join(publicDir, 'booking-guide.html'));
-
-    console.log('Copying favicon...');
-    fs.copyFileSync(path.join(srcDir, 'favicon.svg'), path.join(publicDir, 'favicon.svg'));
-    if (fs.existsSync(path.join(srcDir, 'favicon.png'))) {
-      fs.copyFileSync(path.join(srcDir, 'favicon.png'), path.join(publicDir, 'favicon.png'));
-    }
-    if (fs.existsSync(path.join(srcDir, 'apple-touch-icon.png'))) {
-      fs.copyFileSync(path.join(srcDir, 'apple-touch-icon.png'), path.join(publicDir, 'apple-touch-icon.png'));
-    }
-    if (fs.existsSync(path.join(srcDir, 'b-logo.jpg'))) {
-      fs.copyFileSync(path.join(srcDir, 'b-logo.jpg'), path.join(publicDir, 'b-logo.jpg'));
-    }
+    fs.copyFileSync(path.join(srcDir, 'site.html'),         path.join(publicDir, 'site.html'));
+    fs.copyFileSync(path.join(srcDir, 'site.html'),         path.join(publicDir, 'index.html'));
+    fs.copyFileSync(path.join(srcDir, '404.html'),          path.join(publicDir, '404.html'));
+    fs.copyFileSync(path.join(srcDir, 'privacy.html'),      path.join(publicDir, 'privacy.html'));
+    fs.copyFileSync(path.join(srcDir, 'services.html'),     path.join(publicDir, 'services.html'));
+    fs.copyFileSync(path.join(srcDir, 'booking-guide.html'),path.join(publicDir, 'booking-guide.html'));
 
     console.log('Copying SEO files...');
     fs.copyFileSync(path.join(srcDir, 'sitemap.xml'), path.join(publicDir, 'sitemap.xml'));
     fs.copyFileSync(path.join(srcDir, 'robots.txt'),  path.join(publicDir, 'robots.txt'));
 
-    console.log('Copying logo variants...');
-    fs.copyFileSync(path.join(srcDir, 'logo.light.jpg'), path.join(publicDir, 'logo.light.jpg'));
-    fs.copyFileSync(path.join(srcDir, 'logo.dark.jpg'),  path.join(publicDir, 'logo.dark.jpg'));
+    console.log('Copying images to public/images/...');
+    const imageFiles = [
+      'aymen.pro.jpeg',
+      'b-logo.jpg',
+      'classic_massage.png',
+      'favicon.png',
+      'apple-touch-icon.png',
+      'logo.dark.jpg',
+      'logo.light.jpg',
+      'masseter_massage.png',
+      'og-image.jpg',
+      'sports_massage.png',
+    ];
+    for (const img of imageFiles) {
+      copyIfExists(path.join(srcImages, img), path.join(pubImages, img));
+    }
 
-    console.log('Copying service images...');
-    fs.copyFileSync(path.join(srcDir, 'sports_massage.png'), path.join(publicDir, 'sports_massage.png'));
-    fs.copyFileSync(path.join(srcDir, 'masseter_massage.png'), path.join(publicDir, 'masseter_massage.png'));
-    fs.copyFileSync(path.join(srcDir, 'classic_massage.png'), path.join(publicDir, 'classic_massage.png'));
-
-    console.log('Copying profile images...');
-    if (fs.existsSync(path.join(srcDir, 'og-image.jpg'))) {
-      fs.copyFileSync(path.join(srcDir, 'og-image.jpg'), path.join(publicDir, 'og-image.jpg'));
-    }
-    if (fs.existsSync(path.join(srcDir, 'aymen.pro.jpeg'))) {
-      fs.copyFileSync(path.join(srcDir, 'aymen.pro.jpeg'), path.join(publicDir, 'aymen.pro.jpeg'));
-    }
-    if (fs.existsSync(path.join(srcDir, 'aymen.jpg'))) {
-      fs.copyFileSync(path.join(srcDir, 'aymen.jpg'), path.join(publicDir, 'aymen.jpg'));
-    }
+    // Also copy favicon.png to root for browser default lookup
+    copyIfExists(path.join(srcImages, 'favicon.png'),         path.join(publicDir, 'favicon.png'));
+    copyIfExists(path.join(srcImages, 'apple-touch-icon.png'),path.join(publicDir, 'apple-touch-icon.png'));
 
     console.log('Checking for sharp to generate JPEG fallback images...');
     try {
       const sharpModule = await import('sharp');
       const sharp = sharpModule.default || sharpModule;
 
-      const portraitWebP = path.join(publicDir, 'portrait.webp');
-      const portraitJpg = path.join(publicDir, 'portrait.jpg');
+      const portraitWebP = path.join(srcImages, 'portrait.webp');
       if (fs.existsSync(portraitWebP)) {
-        if (fs.existsSync(portraitJpg)) {
-          fs.unlinkSync(portraitJpg);
-        }
-        await sharp(portraitWebP).jpeg({ quality: 85 }).toFile(portraitJpg);
+        await sharp(portraitWebP).jpeg({ quality: 85 }).toFile(path.join(pubImages, 'portrait.jpg'));
         console.log('Generated portrait.jpg fallback.');
       }
-
-      const aboutWebP = path.join(publicDir, 'about.webp');
-      const aboutJpg = path.join(publicDir, 'about.jpg');
-      if (fs.existsSync(aboutWebP)) {
-        if (fs.existsSync(aboutJpg)) {
-          fs.unlinkSync(aboutJpg);
-        }
-        await sharp(aboutWebP).jpeg({ quality: 85 }).toFile(aboutJpg);
-        console.log('Generated about.jpg fallback.');
-      }
     } catch (err) {
-      console.warn('sharp is not available yet. Skipping JPEG fallback generation. Reason:', err.message);
+      console.warn('sharp not available. Skipping JPEG fallback:', err.message);
     }
 
     console.log('Static site build complete.');
   } catch (error) {
-    console.error('Error during static site build:', error);
+    console.error('Error during build:', error);
     process.exit(1);
   }
 }
