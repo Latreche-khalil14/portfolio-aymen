@@ -1265,6 +1265,11 @@ p  { margin: 0 0 var(--space-md); color: var(--color-text-muted); }
   letter-spacing: 0.08em;
 }
 /* Nav title */
+.footer-nav,
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+}
 .footer-nav-title {
   margin: 0 0 var(--space-sm);
   font-size: 0.75rem;
@@ -1857,6 +1862,9 @@ html[data-font-size="xlarge"] {
   .whatsapp-booking-btn {
     width: auto;
   }
+}
+.icon-whatsapp {
+  flex-shrink: 0;
 }
 
 .whatsapp-booking-btn:hover {

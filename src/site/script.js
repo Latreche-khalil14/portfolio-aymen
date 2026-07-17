@@ -119,6 +119,7 @@ const translations = {
   },
   en: {
     'nav.services': 'Services',
+    'nav.about': 'About',
     'nav.why': 'Why Choose Me',
     'nav.testimonials': 'Testimonials',
     'nav.contact': 'Contact',
