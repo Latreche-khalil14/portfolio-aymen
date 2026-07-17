@@ -396,20 +396,6 @@ p  { margin: 0 0 var(--space-md); color: var(--color-text-muted); }
   margin-top: -0.5rem;
   margin-bottom: var(--space-lg);
 }
-/* Hero name + title inline */
-.hero-name {
-  color: var(--color-accent);
-  font-weight: 700;
-}
-.hero-title-inline {
-  font-size: clamp(1.6rem, 3vw + 0.5rem, 2.6rem);
-  font-weight: 400;
-  color: var(--color-text);
-  letter-spacing: -0.01em;
-}
-[data-theme="dark"] .hero-name {
-  color: var(--color-accent);
-}
 .mini-title {
   font-size: 0.85rem;
   text-transform: uppercase;
@@ -690,40 +676,102 @@ p  { margin: 0 0 var(--space-md); color: var(--color-text-muted); }
    Hero (Requirement 4)
    ========================================================= */
 .hero {
-  min-height: calc(100vh - 72px); /* At least 100vh viewport height (Requirement 4.1) */
+  min-height: calc(100vh - 84px);
   display: flex;
   align-items: center;
   padding: var(--space-xl) 0;
+  position: relative;
+  overflow: hidden;
 }
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 30% 50%, var(--color-accent-soft) 0%, transparent 60%);
+  pointer-events: none;
+  z-index: 0;
+}
+.hero .container { position: relative; z-index: 1; }
 .hero-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: var(--space-lg);
-  align-items: start;
+  gap: var(--space-xl);
+  align-items: center;
   width: 100%;
 }
 /* Mobile: text first, image second */
 .hero-copy  { order: 1; }
 .hero-media { order: 2; }
-.hero-copy .lede {
+
+/* Hero name + title */
+.hero-name {
+  font-size: clamp(3.5rem, 8vw + 1rem, 6rem);
+  font-weight: 700;
+  color: var(--color-accent);
+  letter-spacing: -0.04em;
+  line-height: 1;
+  display: inline;
+}
+.hero-title-inline {
+  font-size: clamp(1.6rem, 3vw + 0.5rem, 2.6rem);
+  font-weight: 400;
+  color: var(--color-text);
+  letter-spacing: -0.02em;
+  display: inline;
+  margin-left: 0.15em;
+}
+[data-theme="dark"] .hero-name { color: var(--color-accent); }
+
+/* Hero lead paragraph */
+.hero-lead {
   font-size: var(--font-size-lg);
-  max-width: 100%;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  max-width: 54ch;
   margin-bottom: var(--space-lg);
 }
+
+/* CTAs */
 .cta-row {
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-sm);
   margin-top: var(--space-lg);
+  margin-bottom: var(--space-md);
 }
+
+/* Hero qualifications compact */
+.hero-quals {
+  list-style: none;
+  margin: var(--space-md) 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--space-md);
+}
+.hero-quals li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+.hero-quals svg {
+  color: var(--color-accent);
+  flex-shrink: 0;
+}
+
+/* Hero media */
 .hero-media {
-  max-width: 480px;
+  max-width: 420px;
   margin: 0 auto;
   overflow: hidden;
 }
 @media (min-width: 1024px) {
   .hero-media {
-    max-width: 80%;
+    max-width: 78%;
     margin-left: auto;
     margin-right: 0;
     position: sticky;
@@ -732,12 +780,28 @@ p  { margin: 0 0 var(--space-md); color: var(--color-text-muted); }
 }
 .hero-media img {
   width: 100%;
-  box-shadow: var(--shadow-lg);
   height: auto;
   display: block;
   border: none;
   outline: none;
+  border-radius: var(--r-sm);
+  box-shadow: var(--shadow-lg);
 }
+[data-theme="dark"] .hero-media img {
+  box-shadow: none;
+  border: none;
+  outline: none;
+  filter: none;
+}
+[data-theme="dark"] .hero-media picture {
+  border: none;
+  outline: none;
+  display: block;
+}
+[data-theme="dark"] .hero::before {
+  background: radial-gradient(ellipse at 30% 50%, rgba(74,127,184,.12) 0%, transparent 60%);
+}
+
 [data-theme="dark"] .hero-media img {
   box-shadow: none;
   border: none;
@@ -1462,16 +1526,12 @@ p  { margin: 0 0 var(--space-md); color: var(--color-text-muted); }
 /* Desktop Layouts >= 1024px (Requirement 11.2) */
 @media (min-width: 1024px) {
   .hero-grid {
-    grid-template-columns: .85fr 1.15fr; /* photo left, copy right */
+    grid-template-columns: 1fr .8fr;
     gap: var(--space-xl);
-    align-items: start;
+    align-items: center;
   }
-  .hero-copy {
-    order: 1;
-  }
-  .hero-media {
-    order: 2;
-  }
+  .hero-copy  { order: 1; }
+  .hero-media { order: 2; }
   .about-grid {
     gap: var(--space-xl);
   }
