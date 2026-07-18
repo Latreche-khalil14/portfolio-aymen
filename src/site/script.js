@@ -1,4 +1,4 @@
-// ── Translations ────────────────────────────────────────────────────────────
+﻿// â”€â”€ Translations â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const translations = {
   fi: {
     'nav.about': 'Tietoa',
@@ -33,11 +33,11 @@ const translations = {
     'services.h2': 'Hoitoa jokaiseen tarpeeseen',
     'services.lede': 'Jokainen hoitokerta on yksil\u00f6llinen \u2014 kiputilat, palautuminen tai rentoutuminen.',
     's1.h3': 'Urheiluhieronta',
-    's1.p': 'Urheiluhieronta on tehokas lihaksia venyttävä ja muokkaava hoitomuoto, joka edistää palautumista, ehkäisee vammoja ja parantaa suorituskykyä.',
+    's1.p': 'Urheiluhieronta on tehokas lihaksia venyttÃ¤vÃ¤ ja muokkaava hoitomuoto, joka edistÃ¤Ã¤ palautumista, ehkÃ¤isee vammoja ja parantaa suorituskykyÃ¤.',
     's2.h3': 'Klassinen hieronta',
-    's2.p': 'Klassinen hieronta on rentouttava ja lihaksia huoltava hoitomuoto, joka vilkastuttaa verenkiertoa, lievittää jännitystä ja edistää kehon palautumista.',
+    's2.p': 'Klassinen hieronta on rentouttava ja lihaksia huoltava hoitomuoto, joka vilkastuttaa verenkiertoa, lievittÃ¤Ã¤ jÃ¤nnitystÃ¤ ja edistÃ¤Ã¤ kehon palautumista.',
     's3.h3': 'Purentalihashieronta',
-    's3.p': 'Purentalihashieronta on hoito, joka vapauttaa kasvojen ja pään alueen lihasjännitystä, lievittää kipua ja parantaa leuan liikkuvuutta.',
+    's3.p': 'Purentalihashieronta on hoito, joka vapauttaa kasvojen ja pÃ¤Ã¤n alueen lihasjÃ¤nnitystÃ¤, lievittÃ¤Ã¤ kipua ja parantaa leuan liikkuvuutta.',
     'why.eyebrow': 'Miksi valita minut',
     'why.h2': 'Rauhallinen tie kohti palautumista',
     'p1.h3': 'Ammatillinen kokemus',
@@ -50,9 +50,9 @@ const translations = {
     'p4.p': 'Aamu-, ilta- ja lauantaiajat \u2014 varaa verkossa alle minuutissa.',
     'test.eyebrow': 'Asiakaskokemukset',
     'test.h2': 'Mit\u00e4 asiakkaat sanovat',
-    'q1.text': '\u201eErittäin huomaavainen, ammattimainen ja lämmin hieroja. Asiantuntemus näkyy sekä hoidon laadussa että erinomaisissa neuvoissa. Lähdin rentoutuneena ja luottavaisena!\u201d',
-    'q2.text': '\u201eAmmattimainen ja osaava hieroja \u2014 kuunteleva ja erittäin miellyttävä. Olen käynyt useita kertoja ja laatu on todella erinomainen. Hän antoi myös neuvoja venyttelyyn ja liikkeisiin.\u201d',
-    'q3.text': '\u201eErittäin asiakaskeskeinen, osaava ja avulias. Kaiken kaikkiaan hyvin miellyttävä ihminen. \ud83d\ude0a\u201d',
+    'q1.text': '\u201eErittÃ¤in huomaavainen, ammattimainen ja lÃ¤mmin hieroja. Asiantuntemus nÃ¤kyy sekÃ¤ hoidon laadussa ettÃ¤ erinomaisissa neuvoissa. LÃ¤hdin rentoutuneena ja luottavaisena!\u201d',
+    'q2.text': '\u201eAmmattimainen ja osaava hieroja \u2014 kuunteleva ja erittÃ¤in miellyttÃ¤vÃ¤. Olen kÃ¤ynyt useita kertoja ja laatu on todella erinomainen. HÃ¤n antoi myÃ¶s neuvoja venyttelyyn ja liikkeisiin.\u201d',
+    'q3.text': '\u201eErittÃ¤in asiakaskeskeinen, osaava ja avulias. Kaiken kaikkiaan hyvin miellyttÃ¤vÃ¤ ihminen. \ud83d\ude0a\u201d',
     'contact.eyebrow': 'Yhteystiedot',
     'contact.h2': 'Vieraile vastaanotolla',
     'contact.lede': 'Ulvilassa, helposti saavutettavissa Turusta ja l\u00e4hiseudulta.',
@@ -67,53 +67,53 @@ const translations = {
     'contact.closed': 'Suljettu',
     'contact.cta': 'Varaa aika',
     'contact.whatsapp': 'WhatsApp',
-    'footer.rights': 'Kaikki oikeudet pidätetään.',
+    'footer.rights': 'Kaikki oikeudet pidÃ¤tetÃ¤Ã¤n.',
     'footer.privacy': 'Tietosuoja',
     'footer.links': 'Pikavalikko',
     'footer.contact': 'Yhteystiedot',
     'footer.pricing': 'Hinnasto',
     'services.see_more': 'Katso tarkempi hinnasto &amp; palvelut',
     'services.page.title': 'Palvelut &amp; Hinnasto \u2014 Ben',
-    'services.skip': 'Siirry sisältöön',
+    'services.skip': 'Siirry sisÃ¤ltÃ¶Ã¶n',
     'services.back': 'Takaisin etusivulle',
-    'services.detail.lede': 'Palveluihini kuuluvat urheiluhieronta, klassinen hieronta sekä purentalihashieronta.',
-    'services.sports.desc': 'Urheiluhieronta on tehokas hoitomuoto lihasten hyvinvoinnin ja suorituskyvyn tukemiseen. Se auttaa ehkäisemään vammoja, nopeuttaa palautumista sekä lievittää lihasjännitystä ja -kipua.',
-    'services.classic.desc': 'Klassinen hieronta rentouttaa lihaksia, lievittää kipua ja vilkastuttaa verenkiertoa. Se auttaa vähentämään stressiä, parantaa liikkuvuutta ja tukee kehon kokonaisvaltaista hyvinvointia.',
+    'services.detail.lede': 'Palveluihini kuuluvat urheiluhieronta, klassinen hieronta sekÃ¤ purentalihashieronta.',
+    'services.sports.desc': 'Urheiluhieronta on tehokas hoitomuoto lihasten hyvinvoinnin ja suorituskyvyn tukemiseen. Se auttaa ehkÃ¤isemÃ¤Ã¤n vammoja, nopeuttaa palautumista sekÃ¤ lievittÃ¤Ã¤ lihasjÃ¤nnitystÃ¤ ja -kipua.',
+    'services.classic.desc': 'Klassinen hieronta rentouttaa lihaksia, lievittÃ¤Ã¤ kipua ja vilkastuttaa verenkiertoa. Se auttaa vÃ¤hentÃ¤mÃ¤Ã¤n stressiÃ¤, parantaa liikkuvuutta ja tukee kehon kokonaisvaltaista hyvinvointia.',
     'services.masseter.title': 'Purentalihashieronta',
-    'services.masseter.desc': 'Purentalihashieronta lievittää leuan, kasvojen ja kaulan alueen lihasjännitystä. Se auttaa vähentämään päänsärkyä, leukakipuja ja stressistä johtuvaa hampaiden narskuttelua sekä parantaa alueen liikkuvuutta.',
+    'services.masseter.desc': 'Purentalihashieronta lievittÃ¤Ã¤ leuan, kasvojen ja kaulan alueen lihasjÃ¤nnitystÃ¤. Se auttaa vÃ¤hentÃ¤mÃ¤Ã¤n pÃ¤Ã¤nsÃ¤rkyÃ¤, leukakipuja ja stressistÃ¤ johtuvaa hampaiden narskuttelua sekÃ¤ parantaa alueen liikkuvuutta.',
     'services.policy.title': 'Peruutusehdot',
-    'services.policy.desc': 'Pidätämme oikeuden veloittaa 100% varauksen hinnasta, jos asiakas ei saavu paikalle tai peruuttaa varauksen alle 24 tuntia ennen varattua aikaa.',
+    'services.policy.desc': 'PidÃ¤tÃ¤mme oikeuden veloittaa 100% varauksen hinnasta, jos asiakas ei saavu paikalle tai peruuttaa varauksen alle 24 tuntia ennen varattua aikaa.',
     'faq.eyebrow': 'FAQ',
     'faq.h2': 'Usein kysytyt kysymykset',
-    'faq.q1': 'Mitä eroa on urheiluhieronnalla ja klassisella hieronnalla?',
-    'faq.a1': 'Urheiluhieronta keskittyy enemmän urheilusuorituksen tukemiseen, vammojen ennaltaehkäisyyn ja palautumisen optimointiin. Klassinen hieronta on puolestaan enemmän rentouttavaa ja pyrkii yleiseen lihasjännitysten laukaisemiseen ja stressin lievitykseen. Molemmat räätälöidään kuitenkin aina asiakkaan tarpeen mukaan.',
+    'faq.q1': 'MitÃ¤ eroa on urheiluhieronnalla ja klassisella hieronnalla?',
+    'faq.a1': 'Urheiluhieronta keskittyy enemmÃ¤n urheilusuorituksen tukemiseen, vammojen ennaltaehkÃ¤isyyn ja palautumisen optimointiin. Klassinen hieronta on puolestaan enemmÃ¤n rentouttavaa ja pyrkii yleiseen lihasjÃ¤nnitysten laukaisemiseen ja stressin lievitykseen. Molemmat rÃ¤Ã¤tÃ¤lÃ¶idÃ¤Ã¤n kuitenkin aina asiakkaan tarpeen mukaan.',
     'faq.q2': 'Miten purentalihashieronta voi auttaa minua?',
-    'faq.a2': 'Purentalihashieronta lievittää leuan, kasvojen ja pään alueen lihasjännityksiä. Se on erittäin tehokas apu hampaiden narskutteluun (bruksismi), leukaniveloireisiin, päänsärkyyn sekä niska-hartiaseudun jännityksiin.',
-    'faq.q3': 'Miten peruutan tai siirrän varatun aikani?',
-    'faq.a3': 'Voit peruuttaa tai siirtää aikasi Vellon varausjärjestelmän kautta tai ottamalla minuun yhteyttä viimeistään 24 tuntia ennen hoidon alkua. Alle 24 tuntia peruutetuista tai peruuttamattomista ajoista perimme 100 % hoidon hinnasta.',
-    'faq.q4': 'Miten valmistaudun hierontakäynnille?',
-    'faq.a4': 'Saavu paikalle ajoissa ja vältä runsasta ruokailua juuri ennen hoitoa. Käymme aluksi läpi toiveesi ja mahdolliset kiputilat. Varmistathan myös, ettei sinulla ole flunssaa tai kuumetta hierontapäivänä, sillä ne ovat esteitä hieronnalle.',
+    'faq.a2': 'Purentalihashieronta lievittÃ¤Ã¤ leuan, kasvojen ja pÃ¤Ã¤n alueen lihasjÃ¤nnityksiÃ¤. Se on erittÃ¤in tehokas apu hampaiden narskutteluun (bruksismi), leukaniveloireisiin, pÃ¤Ã¤nsÃ¤rkyyn sekÃ¤ niska-hartiaseudun jÃ¤nnityksiin.',
+    'faq.q3': 'Miten peruutan tai siirrÃ¤n varatun aikani?',
+    'faq.a3': 'Voit peruuttaa tai siirtÃ¤Ã¤ aikasi Vellon varausjÃ¤rjestelmÃ¤n kautta tai ottamalla minuun yhteyttÃ¤ viimeistÃ¤Ã¤n 24 tuntia ennen hoidon alkua. Alle 24 tuntia peruutetuista tai peruuttamattomista ajoista perimme 100 % hoidon hinnasta.',
+    'faq.q4': 'Miten valmistaudun hierontakÃ¤ynnille?',
+    'faq.a4': 'Saavu paikalle ajoissa ja vÃ¤ltÃ¤ runsasta ruokailua juuri ennen hoitoa. KÃ¤ymme aluksi lÃ¤pi toiveesi ja mahdolliset kiputilat. Varmistathan myÃ¶s, ettei sinulla ole flunssaa tai kuumetta hierontapÃ¤ivÃ¤nÃ¤, sillÃ¤ ne ovat esteitÃ¤ hieronnalle.',
     'a11y.text-size': 'Tekstin koko:',
     'a11y.normal': 'Normaali',
     'a11y.large': 'Suuri',
-    'a11y.xlarge': 'Erittäin suuri',
+    'a11y.xlarge': 'ErittÃ¤in suuri',
     'a11y.booking-guide': 'Helppo varausopas',
     'booking.guide.title': 'Helppo varausopas',
-    'booking.guide.subtitle': 'Näin varaat aikasi helposti kolmessa vaiheessa',
+    'booking.guide.subtitle': 'NÃ¤in varaat aikasi helposti kolmessa vaiheessa',
     'booking.page.title': 'Varaa aika',
-    'booking.page.subtitle': 'Valitse haluamasi hoito, päivä ja kellonaika poistumatta verkkosivustolta.',
-    'booking.page.notice': 'Rekisteröitymistä ei tarvita. Varauksesi vahvistetaan välittömästi.',
+    'booking.page.subtitle': 'Valitse haluamasi hoito, pÃ¤ivÃ¤ ja kellonaika poistumatta verkkosivustolta.',
+    'booking.page.notice': 'RekisterÃ¶itymistÃ¤ ei tarvita. Varauksesi vahvistetaan vÃ¤littÃ¶mÃ¤sti.',
     'booking.page.help': 'Tarvitsetko apua varaamiseen?',
     'booking.step1.title': '1. Klikkaa "Varaa aika" -painiketta',
-    'booking.step1.desc': 'Napsauta sivun ylälaidasta löytyvää "Varaa aika" -painiketta. Sinut ohjataan suoraan Vello-varausjärjestelmään — ei tarvita rekisteröitymistä.',
+    'booking.step1.desc': 'Napsauta sivun ylÃ¤laidasta lÃ¶ytyvÃ¤Ã¤ "Varaa aika" -painiketta. Sinut ohjataan suoraan Vello-varausjÃ¤rjestelmÃ¤Ã¤n â€” ei tarvita rekisterÃ¶itymistÃ¤.',
     'booking.step2.title': '2. Valitse palvelu, kesto ja aika',
-    'booking.step2.desc': 'Valitse haluamasi hierontatyyppi (esim. urheiluhieronta tai klassinen hieronta) ja kesto (30–90 min). Valitse sitten kalenterista sinulle sopiva vapaa päivä ja kellonaika.',
-    'booking.step3.title': '3. Syötä yhteystietosi ja vahvista',
-    'booking.step3.desc': 'Kirjoita nimesi ja puhelinnumerosi. Paina "Vahvista varaus" — saat sähköpostivahvistuksen heti. Varaaminen kestää alle 2 minuuttia!',
+    'booking.step2.desc': 'Valitse haluamasi hierontatyyppi (esim. urheiluhieronta tai klassinen hieronta) ja kesto (30â€“90 min). Valitse sitten kalenterista sinulle sopiva vapaa pÃ¤ivÃ¤ ja kellonaika.',
+    'booking.step3.title': '3. SyÃ¶tÃ¤ yhteystietosi ja vahvista',
+    'booking.step3.desc': 'Kirjoita nimesi ja puhelinnumerosi. Paina "Vahvista varaus" â€” saat sÃ¤hkÃ¶postivahvistuksen heti. Varaaminen kestÃ¤Ã¤ alle 2 minuuttia!',
     'booking.phone.title': 'Haluatko mieluummin varata WhatsAppilla?',
-    'booking.phone.desc': 'Jos netissä varaaminen tuntuu hankalalta, voit lähettää minulle viestin suoraan WhatsAppissa. Vastaan mielelläni ja varaan ajan puolestasi!',
-    'booking.phone.cta': 'Lähetä viesti WhatsAppissa: 045 1457445',
-    'hero.more-btn': 'Ota yhteyttä',
+    'booking.phone.desc': 'Jos netissÃ¤ varaaminen tuntuu hankalalta, voit lÃ¤hettÃ¤Ã¤ minulle viestin suoraan WhatsAppissa. Vastaan mielellÃ¤ni ja varaan ajan puolestasi!',
+    'booking.phone.cta': 'LÃ¤hetÃ¤ viesti WhatsAppissa: 045 1457445',
+    'hero.more-btn': 'Ota yhteyttÃ¤',
     'hero.price-hint': 'Hieronta alkaen 35 \u20ac \u00b7 <a href="services.html">Katso kaikki hinnat</a>',
     'hero.price-link': 'Katso kaikki hinnat',
   },
@@ -221,11 +221,11 @@ const translations = {
     'booking.page.notice': 'No registration is required. Your booking is confirmed immediately after completion.',
     'booking.page.help': 'Need help booking?',
     'booking.step1.title': '1. Click "Book Appointment"',
-    'booking.step1.desc': 'Click the "Book Appointment" button at the top of the page. You will be taken directly to the Vello booking system — no registration needed.',
+    'booking.step1.desc': 'Click the "Book Appointment" button at the top of the page. You will be taken directly to the Vello booking system â€” no registration needed.',
     'booking.step2.title': '2. Choose service, duration & time',
-    'booking.step2.desc': 'Select the type of massage (e.g. sports massage or classic massage) and the duration (30–90 min). Then pick an available date and time from the calendar.',
+    'booking.step2.desc': 'Select the type of massage (e.g. sports massage or classic massage) and the duration (30â€“90 min). Then pick an available date and time from the calendar.',
     'booking.step3.title': '3. Enter your details & confirm',
-    'booking.step3.desc': 'Enter your name and phone number. Click "Confirm booking" — you will receive an email confirmation right away. The whole process takes under 2 minutes!',
+    'booking.step3.desc': 'Enter your name and phone number. Click "Confirm booking" â€” you will receive an email confirmation right away. The whole process takes under 2 minutes!',
     'booking.phone.title': 'Would you rather book via WhatsApp?',
     'booking.phone.desc': 'If online booking feels too complicated, you can send me a message directly on WhatsApp. I am happy to assist you and book your slot!',
     'booking.phone.cta': 'Send WhatsApp message: 045 1457445',
@@ -235,7 +235,7 @@ const translations = {
   }
 };
 
-// ── Language Toggle ─────────────────────────────────────────────────────────
+// â”€â”€ Language Toggle â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 let currentLang = localStorage.getItem('lang') || 'fi';
 
 function applyLang(lang) {
@@ -256,7 +256,7 @@ function applyLang(lang) {
   currentLang = lang;
 }
 
-// ── Dark Mode Toggle ─────────────────────────────────────────────────────────
+// â”€â”€ Dark Mode Toggle â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function applyTheme(dark) {
   document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
   localStorage.setItem('theme', dark ? 'dark' : 'light');
@@ -275,7 +275,7 @@ const savedTheme = localStorage.getItem('theme');
 const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 applyTheme(savedTheme === 'dark' || (!savedTheme && prefersDark));
 
-// ── Accessibility Font Size ──────────────────────────────────────────────────
+// â”€â”€ Accessibility Font Size â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 let currentFontSize = localStorage.getItem('font-size') || 'normal';
 
 function applyFontSize(size) {
@@ -310,7 +310,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   applyLang(currentLang);
 
-  // ── Theme Toggle Click ──────────────────────────────────────────────────────
+  // â”€â”€ Theme Toggle Click â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   const themeBtns = document.querySelectorAll('#themeToggle, #themeToggleMobile');
   themeBtns.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -319,7 +319,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // ── Accessibility Sizing Controls ──────────────────────────────────────────
+  // â”€â”€ Accessibility Sizing Controls â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   const a11yBtns = document.querySelectorAll('.btn-a11y');
   a11yBtns.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -328,7 +328,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   applyFontSize(currentFontSize);
 
-  // ── FAQ Accordion Toggling ──────────────────────────────────────────────────
+  // â”€â”€ FAQ Accordion Toggling â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   const faqQuestions = document.querySelectorAll('.faq-question');
   faqQuestions.forEach(q => {
     q.addEventListener('click', () => {
@@ -355,7 +355,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // ── Scroll Reveal Animations ────────────────────────────────────────────────
+  // â”€â”€ Scroll Reveal Animations â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   const revealElements = document.querySelectorAll('.scroll-reveal');
   const revealObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
@@ -370,7 +370,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   revealElements.forEach(el => revealObserver.observe(el));
 
-  // ── Scroll Spy Active Nav Linking ───────────────────────────────────────────
+  // â”€â”€ Scroll Spy Active Nav Linking â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.nav-menu a[href*="#"]');
   
@@ -401,7 +401,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-// ── Nav scroll shadow + dynamic body padding ──────────────────────────────
+// â”€â”€ Nav scroll shadow + dynamic body padding â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const header = document.getElementById('siteHeader');
 
 function updateBodyPadding() {
@@ -421,7 +421,7 @@ if (header) {
   updateBodyPadding();
 }
 
-// ── Mobile nav toggle ───────────────────────────────────────────────────────
+// â”€â”€ Mobile nav toggle â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const toggle = document.getElementById('navToggle');
 const menu   = document.getElementById('navMenu');
 if (toggle && menu) {
@@ -440,11 +440,11 @@ if (toggle && menu) {
   });
 }
 
-// ── Footer year ─────────────────────────────────────────────────────────────
+// â”€â”€ Footer year â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-// ── Services accordion ───────────────────────────────────────────────────────
+// â”€â”€ Services accordion â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 document.querySelectorAll('.svc-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     const expanded = btn.getAttribute('aria-expanded') === 'true';
@@ -461,7 +461,7 @@ document.querySelectorAll('.svc-btn').forEach(btn => {
   });
 });
 
-// ── Back to top button ───────────────────────────────────────────────────────
+// â”€â”€ Back to top button â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const backToTopBtn = document.getElementById('backToTop');
 if (backToTopBtn) {
   window.addEventListener('scroll', () => {
@@ -473,7 +473,7 @@ if (backToTopBtn) {
   });
 }
 
-// ── Scroll Progress Bar ──────────────────────────────────────────────────────
+// â”€â”€ Scroll Progress Bar â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const progressBar = document.createElement('div');
 progressBar.className = 'scroll-progress';
 progressBar.setAttribute('aria-hidden', 'true');
