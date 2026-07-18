@@ -1,5 +1,5 @@
-﻿/* ============================================
-   DESIGN SYSTEM â€” Finnish Bold & Premium
+/* ============================================
+   DESIGN SYSTEM — Finnish Bold & Premium
    ============================================ */
 :root {
   --color-bg: #F7F6F3;
@@ -320,7 +320,7 @@ p { margin: 0 0 var(--space-md); color: var(--color-text-muted) }
 .nav-toggle[aria-expanded=true] .bars:after { top: 0; transform: rotate(-45deg) }
 
 /* ============================================
-   HERO â€” FINNISH BOLD & PREMIUM
+   HERO — FINNISH BOLD & PREMIUM
    ============================================ */
 
 /* Entrance animation keyframes */
@@ -467,7 +467,7 @@ p { margin: 0 0 var(--space-md); color: var(--color-text-muted) }
 }
 [data-theme=dark] .hero-name { color: var(--color-text) }
 
-/* Subtitle â€” ultra light / medium */
+/* Subtitle — ultra light / medium */
 .hero-subtitle-text {
   font-size: clamp(0.9rem, 1.8vw, 1.85rem);
   font-weight: 400;
@@ -499,7 +499,7 @@ p { margin: 0 0 var(--space-md); color: var(--color-text-muted) }
   margin-bottom: clamp(1.5rem, 4vh, 2.5rem);
 }
 
-/* Lead paragraph â€” base */
+/* Lead paragraph — base */
 .hero-lead {
   font-size: clamp(.95rem, 1.2vw, 1.08rem);
   color: var(--color-text);
@@ -510,7 +510,7 @@ p { margin: 0 0 var(--space-md); color: var(--color-text-muted) }
   opacity: .88;
 }
 
-/* Primary paragraph â€” intro, stronger emphasis */
+/* Primary paragraph — intro, stronger emphasis */
 .hero-lead--primary {
   font-size: clamp(1rem, 1.35vw, 1.13rem);
   color: var(--color-text);
@@ -521,7 +521,7 @@ p { margin: 0 0 var(--space-md); color: var(--color-text-muted) }
   border-left: 3px solid var(--color-accent-vivid);
 }
 
-/* Secondary paragraphs â€” supporting, still solid */
+/* Secondary paragraphs — supporting, still solid */
 .hero-lead--secondary {
   font-size: clamp(.92rem, 1.15vw, 1.04rem);
   color: var(--color-text);
@@ -541,7 +541,7 @@ p { margin: 0 0 var(--space-md); color: var(--color-text-muted) }
   align-items: center;
 }
 
-/* Hero Primary Button â€” bold dark */
+/* Hero Primary Button — bold dark */
 .btn-hero-primary {
   display: inline-flex;
   align-items: center;
@@ -570,7 +570,7 @@ p { margin: 0 0 var(--space-md); color: var(--color-text-muted) }
 .btn-hero-primary:hover svg { transform: translateX(4px) }
 [data-theme=dark] .btn-hero-primary { background: var(--color-text); color: var(--color-bg) !important }
 
-/* Hero Ghost Button â€” text-only style */
+/* Hero Ghost Button — text-only style */
 .btn-hero-ghost {
   display: inline-flex;
   align-items: center;
@@ -673,7 +673,7 @@ p { margin: 0 0 var(--space-md); color: var(--color-text-muted) }
   }
 }
 
-/* Stats card â€” floating over image bottom */
+/* Stats card — floating over image bottom */
 .hero-stats-card {
   position: relative;
   width: 100%;
@@ -822,7 +822,7 @@ p { margin: 0 0 var(--space-md); color: var(--color-text-muted) }
 .section-head .section-lede { color: var(--color-text-muted); font-size: 1.08rem; line-height: 1.75; margin-top: .75rem }
 .grid { display: grid; gap: var(--space-md) }
 
-/* Eyebrow label â€” used in all sections */
+/* Eyebrow label — used in all sections */
 .eyebrow {
   display: inline-flex;
   align-items: center;
