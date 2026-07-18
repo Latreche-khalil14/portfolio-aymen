@@ -56,15 +56,24 @@ async function build() {
     console.log('Copying images to public/images/...');
     const imageFiles = [
       'aymen.pro.jpeg',
+      'aymen.pro.webp',
+      'aymen.pro_opt.jpeg',
       'b-logo.jpg',
       'classic_massage.png',
+      'classic_massage.webp',
       'favicon.png',
       'apple-touch-icon.png',
       'logo.dark.jpg',
+      'logo.dark.webp',
+      'logo.dark_opt.jpeg',
       'logo.light.jpg',
+      'logo.light.webp',
+      'logo.light_opt.jpeg',
       'masseter_massage.png',
+      'masseter_massage.webp',
       'og-image.jpg',
       'sports_massage.png',
+      'sports_massage.webp',
     ];
     for (const img of imageFiles) {
       copyIfExists(path.join(srcImages, img), path.join(pubImages, img));
