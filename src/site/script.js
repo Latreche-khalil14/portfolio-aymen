@@ -1,4 +1,4 @@
-// �&euro;�&euro; Translations �&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;
+// â&euro;â&euro; Translations â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;
 const translations = {
   fi: {
     'nav.about': 'Tietoa',
@@ -235,7 +235,7 @@ const translations = {
   }
 };
 
-// �&euro;�&euro; Language Toggle �&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;
+// â&euro;â&euro; Language Toggle â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;
 let currentLang = localStorage.getItem('lang') || 'fi';
 
 function applyLang(lang) {
@@ -256,7 +256,7 @@ function applyLang(lang) {
   currentLang = lang;
 }
 
-// �&euro;�&euro; Dark Mode Toggle �&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;
+// â&euro;â&euro; Dark Mode Toggle â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;
 function applyTheme(dark) {
   document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
   localStorage.setItem('theme', dark ? 'dark' : 'light');
@@ -275,7 +275,7 @@ const savedTheme = localStorage.getItem('theme');
 const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 applyTheme(savedTheme === 'dark' || (!savedTheme && prefersDark));
 
-// �&euro;�&euro; Accessibility Font Size �&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;
+// â&euro;â&euro; Accessibility Font Size â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;
 let currentFontSize = localStorage.getItem('font-size') || 'normal';
 
 function applyFontSize(size) {
@@ -310,7 +310,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   applyLang(currentLang);
 
-  // �&euro;�&euro; Theme Toggle Click �&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;
+  // â&euro;â&euro; Theme Toggle Click â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;
   const themeBtns = document.querySelectorAll('#themeToggle, #themeToggleMobile');
   themeBtns.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -319,7 +319,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // �&euro;�&euro; Accessibility Sizing Controls �&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;
+  // â&euro;â&euro; Accessibility Sizing Controls â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;
   const a11yBtns = document.querySelectorAll('.btn-a11y');
   a11yBtns.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -328,7 +328,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   applyFontSize(currentFontSize);
 
-  // �&euro;�&euro; FAQ Accordion Toggling �&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;
+  // â&euro;â&euro; FAQ Accordion Toggling â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;
   const faqQuestions = document.querySelectorAll('.faq-question');
   faqQuestions.forEach(q => {
     q.addEventListener('click', () => {
@@ -355,7 +355,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // �&euro;�&euro; Scroll Reveal Animations �&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;
+  // â&euro;â&euro; Scroll Reveal Animations â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;
   const revealElements = document.querySelectorAll('.scroll-reveal');
   const revealObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
@@ -370,7 +370,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   revealElements.forEach(el => revealObserver.observe(el));
 
-  // �&euro;�&euro; Scroll Spy Active Nav Linking �&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;
+  // â&euro;â&euro; Scroll Spy Active Nav Linking â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.nav-menu a[href*="#"]');
   
@@ -401,7 +401,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-// �&euro;�&euro; Nav scroll shadow + dynamic body padding �&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;
+// â&euro;â&euro; Nav scroll shadow + dynamic body padding â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;
 const header = document.getElementById('siteHeader');
 
 function updateBodyPadding() {
@@ -421,7 +421,7 @@ if (header) {
   updateBodyPadding();
 }
 
-// �&euro;�&euro; Mobile nav toggle �&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;
+// â&euro;â&euro; Mobile nav toggle â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;
 const toggle = document.getElementById('navToggle');
 const menu   = document.getElementById('navMenu');
 if (toggle && menu) {
@@ -440,11 +440,11 @@ if (toggle && menu) {
   });
 }
 
-// �&euro;�&euro; Footer year �&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;
+// â&euro;â&euro; Footer year â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;
 const yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-// �&euro;�&euro; Services accordion �&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;
+// â&euro;â&euro; Services accordion â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;
 document.querySelectorAll('.svc-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     const expanded = btn.getAttribute('aria-expanded') === 'true';
@@ -461,7 +461,7 @@ document.querySelectorAll('.svc-btn').forEach(btn => {
   });
 });
 
-// �&euro;�&euro; Back to top button �&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;
+// â&euro;â&euro; Back to top button â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;
 const backToTopBtn = document.getElementById('backToTop');
 if (backToTopBtn) {
   window.addEventListener('scroll', () => {
@@ -473,7 +473,7 @@ if (backToTopBtn) {
   });
 }
 
-// �&euro;�&euro; Scroll Progress Bar �&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;�&euro;
+// â&euro;â&euro; Scroll Progress Bar â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;
 const progressBar = document.createElement('div');
 progressBar.className = 'scroll-progress';
 progressBar.setAttribute('aria-hidden', 'true');
