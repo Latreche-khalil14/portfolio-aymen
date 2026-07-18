@@ -63,8 +63,8 @@
   --shadow-md: 0 8px 32px rgba(0,0,0,.6);
   --shadow-lg: 0 24px 64px rgba(0,0,0,.7);
   --shadow-xl: 0 40px 100px rgba(0,0,0,.8);
-  --color-dark-btn-primary: #3b82f6;
-  --color-dark-btn-primary-hover: #60a5fa;
+  --color-dark-btn-primary: var(--color-text);
+  --color-dark-btn-primary-hover: var(--color-accent-ink);
   --color-dark-nav-mobile-bg: #0d0d14;
   --color-dark-surface: #111118;
   --color-dark-faq-icon-bg: #1a1a26;
@@ -90,12 +90,12 @@
 [data-theme=dark] .nav-menu a { color: var(--color-dark-text-subtle) }
 [data-theme=dark] .nav-menu a:hover, [data-theme=dark] .nav-menu a.active-nav-link { color: var(--color-accent-vivid); border-bottom-color: var(--color-accent-vivid) }
 [data-theme=dark] .nav-menu { background: var(--color-bg) }
-[data-theme=dark] .btn-primary { background: var(--color-dark-btn-primary); color: #fff }
-[data-theme=dark] .btn-primary:hover { background: var(--color-dark-btn-primary-hover) }
+[data-theme=dark] .btn-primary { background: var(--color-dark-btn-primary); color: var(--color-bg) !important }
+[data-theme=dark] .btn-primary:hover { background: var(--color-dark-btn-primary-hover); color: var(--color-bg) !important }
 [data-theme=dark] .btn-ghost { color: var(--color-dark-text-subtle); border-color: var(--color-border) }
 [data-theme=dark] .btn-ghost:hover { border-color: var(--color-accent-vivid); color: var(--color-accent-vivid) }
-[data-theme=dark] .nav-cta { background: var(--color-dark-btn-primary); color: #fff }
-[data-theme=dark] .nav-cta:hover { background: var(--color-dark-btn-primary-hover) }
+[data-theme=dark] .nav-cta { background: var(--color-dark-btn-primary); color: var(--color-bg) !important }
+[data-theme=dark] .nav-cta:hover { background: var(--color-dark-btn-primary-hover); color: var(--color-bg) !important }
 [data-theme=dark] .nav-cta.btn-whatsapp { background: var(--color-whatsapp); border-color: var(--color-whatsapp); color: #fff }
 [data-theme=dark] .nav-cta.btn-whatsapp:hover { background: var(--color-whatsapp-hover); border-color: var(--color-whatsapp-hover) }
 [data-theme=dark] .brand-name { color: var(--color-text) }
