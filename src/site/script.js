@@ -1,4 +1,4 @@
-﻿// ── Translations ────────────────────────────────────────────────────────────
+// ── Translations ────────────────────────────────────────────────────────────
 const translations = {
   fi: {
     'nav.about': 'Tietoa',
@@ -472,3 +472,16 @@ if (backToTopBtn) {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 }
+
+// ── Scroll Progress Bar ──────────────────────────────────────────────────────
+const progressBar = document.createElement('div');
+progressBar.className = 'scroll-progress';
+progressBar.setAttribute('aria-hidden', 'true');
+document.body.appendChild(progressBar);
+
+window.addEventListener('scroll', () => {
+  const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
+  const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  const scrolled = height > 0 ? (winScroll / height) * 100 : 0;
+  progressBar.style.width = scrolled + '%';
+}, { passive: true });

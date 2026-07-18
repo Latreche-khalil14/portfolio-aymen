@@ -1233,3 +1233,54 @@ a.google-badge { text-decoration: none }
 [data-theme=dark] .back-to-top:hover { background: var(--color-dark-btn-primary) }
 
 @media (prefers-reduced-motion: reduce) { .back-to-top { transition: none !important } }
+
+/* ============================================
+   SCROLLBAR, PROGRESS BAR & MICRO-INTERACTIONS
+   ============================================ */
+/* Scroll Progress Bar */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: var(--color-accent-vivid);
+  width: 0%;
+  z-index: 2000;
+  transition: width 0.08s ease-out;
+  pointer-events: none;
+}
+
+/* Custom Styled Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-accent-vivid);
+  border: 2px solid var(--color-bg);
+  border-radius: 999px;
+  opacity: 0.8;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent);
+}
+[data-theme=dark] ::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text);
+}
+
+/* Firefox scrollbar compatibility */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-accent-vivid) var(--color-bg);
+}
+
+/* General button micro-interactions (arrows sliding right on hover) */
+.btn svg, .btn-hero-primary svg, .btn-hero-ghost svg {
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.btn:hover svg, .btn-hero-primary:hover svg, .btn-hero-ghost:hover svg {
+  transform: translateX(4px);
+}
