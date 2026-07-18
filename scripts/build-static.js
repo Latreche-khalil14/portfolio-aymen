@@ -34,11 +34,13 @@ async function build() {
       entryPoints: [path.join(srcDir, 'styles.css')],
       outfile: path.join(publicDir, 'styles.css'),
       minify: true,
+      charset: 'ascii',
     });
     esbuild.buildSync({
       entryPoints: [path.join(srcDir, 'script.js')],
       outfile: path.join(publicDir, 'script.js'),
       minify: true,
+      charset: 'ascii',
     });
 
     console.log('Copying HTML files...');
