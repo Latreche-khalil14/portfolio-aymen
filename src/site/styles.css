@@ -103,6 +103,7 @@
 [data-theme=dark] .card, [data-theme=dark] .service-detail-card { background: var(--color-bg-secondary); border-color: var(--color-border) }
 [data-theme=dark] .card:hover, [data-theme=dark] .service-detail-card:hover { border-color: var(--color-dark-btn-primary); box-shadow: 0 8px 28px #2563eb26 }
 [data-theme=dark] .card h3, [data-theme=dark] .service-detail-card h2 { color: var(--color-text); border-bottom-color: var(--color-border) }
+[data-theme=dark] .card-content { border-top-color: var(--color-border) }
 [data-theme=dark] .quote:before { color: var(--color-accent-vivid); opacity: .2 }
 [data-theme=dark] .faq-item { background: var(--color-bg-secondary); border-color: var(--color-border) }
 [data-theme=dark] .faq-question { color: var(--color-text) }
