@@ -946,9 +946,11 @@ p { margin: 0 0 var(--space-md); color: var(--color-text-muted) }
   display: inline-block; width: 16px; height: 1.5px;
   background: var(--color-accent-vivid); border-radius: 2px;
 }
-[data-theme=dark] .quote { background: rgba(255,255,255,.04); border-color: rgba(255,255,255,.08); border-top-color: var(--color-accent-vivid) }
+[data-theme=dark] .quote { background: rgba(255,255,255,.04); border-color: rgba(255,255,255,.08); border-top-color: rgba(255,255,255,.25) }
+[data-theme=dark] .quote:hover { border-top-color: rgba(255,255,255,.45) }
 [data-theme=dark] .quote blockquote p { color: var(--color-text) }
-[data-theme=dark] .quote figcaption { color: var(--color-accent-vivid) }
+[data-theme=dark] .quote figcaption { color: var(--color-text-muted) }
+[data-theme=dark] .quote figcaption::before { background: var(--color-text-muted) }
 
 .tf-grid { display: grid; grid-template-columns: 1fr; gap: var(--space-xl); align-items: start }
 @media (min-width: 768px) {
