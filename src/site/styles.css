@@ -523,6 +523,18 @@ p { margin: 0 0 var(--space-md); color: var(--color-text-muted) }
   margin-bottom: 1.25rem;
   align-items: center;
 }
+@media (max-width: 580px) {
+  .cta-row {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+  .cta-row .btn-hero-primary,
+  .cta-row .btn-hero-ghost {
+    width: 100%;
+    justify-content: center;
+  }
+}
 
 /* Hero Primary Button — bold dark */
 .btn-hero-primary {
@@ -1012,6 +1024,10 @@ p { margin: 0 0 var(--space-md); color: var(--color-text-muted) }
 }
 .contact-cta-row { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.75rem; align-items: center }
 .contact-cta-row .btn { margin-top: 0; display: inline-flex; align-items: center; gap: .4rem }
+@media (max-width: 580px) {
+  .contact-cta-row { flex-direction: column; align-items: stretch; width: 100%; }
+  .contact-cta-row .btn { width: 100%; justify-content: center; }
+}
 
 .btn-whatsapp { background: var(--color-whatsapp); color: #fff !important; border-color: var(--color-whatsapp) }
 .btn-whatsapp:hover, .btn-whatsapp:focus { background: var(--color-whatsapp-hover); border-color: var(--color-whatsapp-hover); color: #fff !important; transform: translateY(-1px) }
@@ -1023,6 +1039,9 @@ p { margin: 0 0 var(--space-md); color: var(--color-text-muted) }
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
 }
 .clinic-photo-card {
   position: relative;
@@ -1032,6 +1051,8 @@ p { margin: 0 0 var(--space-md); color: var(--color-text-muted) }
   box-shadow: var(--shadow-md);
   aspect-ratio: 16/9;
   background: var(--color-bg-secondary);
+  width: 100%;
+  max-width: 100%;
 }
 .clinic-photo {
   width: 100%;
@@ -1065,9 +1086,10 @@ p { margin: 0 0 var(--space-md); color: var(--color-text-muted) }
   aspect-ratio: 16/9;
   min-height: 240px;
   width: 100%;
+  max-width: 100%;
 }
 @media (min-width: 900px) { .map { aspect-ratio: unset; min-height: 280px; flex-grow: 1 } }
-.map iframe { width: 100%; height: 100%; border: 0 }
+.map iframe { width: 100%; max-width: 100%; height: 100%; border: 0 }
 
 /* ============================================
    FOOTER
