@@ -122,7 +122,7 @@
 [data-theme=dark] .policy-box { background: var(--color-bg-secondary); border-left-color: var(--color-dark-btn-primary) }
 [data-theme=dark] .policy-box h3 { color: var(--color-text) }
 [data-theme=dark] .site-footer { background: var(--color-dark-footer-bg); border-top-color: var(--color-dark-footer-border); color: var(--color-text-muted) }
-[data-theme=dark] .site-footer p { color: var(--color-dark-footer-muted) }
+[data-theme=dark] .site-footer p { color: #8a93a8 }
 [data-theme=dark] .footer-links a { color: var(--color-dark-footer-link) }
 [data-theme=dark] .footer-links a:hover { color: var(--color-accent-vivid) }
 [data-theme=dark] .map { border-color: var(--color-border) }
@@ -421,35 +421,9 @@ p { margin: 0 0 var(--space-md); color: var(--color-text-muted) }
   animation-delay: var(--delay, 0ms);
 }
 
-/* Eyebrow pill */
-.hero-eyebrow-wrap { margin-bottom: .6rem }
-.hero-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 6px 16px 6px 10px;
-  background: var(--color-accent-soft);
-  border: 1px solid var(--color-border);
-  border-radius: 999px;
-  font-size: .75rem;
-  font-weight: 600;
-  letter-spacing: .15em;
-  text-transform: uppercase;
-  color: var(--color-text-muted);
-}
-[data-theme=dark] .hero-pill { background: rgba(255,255,255,.06); border-color: rgba(255,255,255,.1); color: var(--color-text-muted) }
-.hero-pill-dot {
-  width: 7px; height: 7px;
-  border-radius: 50%;
-  background: #22c55e;
-  box-shadow: 0 0 0 3px rgba(34,197,94,.2);
-  animation: pulse-dot 2.5s ease-in-out infinite;
-  flex-shrink: 0;
-}
-@keyframes pulse-dot {
-  0%, 100% { box-shadow: 0 0 0 3px rgba(34,197,94,.2) }
-  50%       { box-shadow: 0 0 0 6px rgba(34,197,94,.08) }
-}
+/* Eyebrow label */
+.hero-eyebrow-wrap { margin-bottom: clamp(0.5rem, 1.5vh, 1rem); }
+.hero-eyebrow-wrap .eyebrow { margin-bottom: 0; }
 
 /* Name and Subtitle row alignment */
 .hero-title-group {
@@ -472,7 +446,7 @@ p { margin: 0 0 var(--space-md); color: var(--color-text-muted) }
   color: var(--color-text);
   margin: 0;
 }
-[data-theme=dark] .hero-name { color: var(--color-text) }
+[data-theme=dark] .hero-name { color: #ffffff }
 
 /* Subtitle — ultra light / medium */
 .hero-subtitle-text {
@@ -486,6 +460,7 @@ p { margin: 0 0 var(--space-md); color: var(--color-text-muted) }
   display: inline-block;
   white-space: nowrap;
 }
+[data-theme=dark] .hero-subtitle-text { color: #b0bcd4 }
 
 /* Divider line between title block and body text */
 .hero-divider {
@@ -1033,14 +1008,54 @@ p { margin: 0 0 var(--space-md); color: var(--color-text-muted) }
 .clinic-address { font-style: normal; text-align: right; color: var(--color-text); font-size: .92rem; line-height: 1.6 }
 .clinic-address-link { color: var(--color-text); text-decoration: underline; text-underline-offset: 3px; text-decoration-color: var(--color-border); transition: color .2s }
 .clinic-address-link:hover { color: var(--color-accent-vivid) }
+.contact-media-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.clinic-photo-card {
+  position: relative;
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-md);
+  aspect-ratio: 16/9;
+  background: var(--color-bg-secondary);
+}
+.clinic-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform .4s cubic-bezier(.16,1,.3,1);
+}
+.clinic-photo-card:hover .clinic-photo {
+  transform: scale(1.04);
+}
+.clinic-photo-badge {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  background: rgba(0, 0, 0, 0.68);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #ffffff;
+  font-size: .75rem;
+  font-weight: 600;
+  padding: 5px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  letter-spacing: .02em;
+}
 .map {
   border-radius: var(--r-lg); overflow: hidden;
   border: 1px solid var(--color-border); box-shadow: var(--shadow-md);
   background: var(--color-bg-secondary);
-  aspect-ratio: 3/4;
+  aspect-ratio: 16/9;
+  min-height: 240px;
   width: 100%;
 }
-@media (min-width: 900px) { .map { aspect-ratio: unset; height: 100%; min-height: 420px } }
+@media (min-width: 900px) { .map { aspect-ratio: unset; min-height: 280px; flex-grow: 1 } }
 .map iframe { width: 100%; height: 100%; border: 0 }
 
 /* ============================================
@@ -1303,3 +1318,37 @@ html {
 .btn:hover svg, .btn-hero-primary:hover svg, .btn-hero-ghost:hover svg {
   transform: translateX(4px);
 }
+
+/* ============================================
+   COOKIE CONSENT BANNER
+   ============================================ */
+#cookieBanner {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--r-lg);
+  box-shadow: var(--shadow-lg);
+  padding: 1.25rem 1.5rem;
+  max-width: min(520px, calc(100vw - 2rem));
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: .85rem;
+  animation: slide-up .35s cubic-bezier(.16,1,.3,1);
+}
+#cookieBanner p { margin: 0; font-size: .9rem; color: var(--color-text); line-height: 1.6 }
+#cookieBanner a { color: var(--color-accent-vivid) }
+.cookie-actions { display: flex; gap: .6rem; flex-wrap: wrap }
+.cookie-actions .btn { font-size: .85rem; padding: .5rem 1.1rem; min-height: 38px }
+.btn-outline { background: transparent; border: 1px solid var(--color-border); color: var(--color-text-muted); border-radius: var(--r-md) }
+.btn-outline:hover { border-color: var(--color-accent-vivid); color: var(--color-accent-vivid) }
+[data-theme=dark] #cookieBanner { background: var(--color-bg-secondary); border-color: var(--color-border) }
+@keyframes slide-up {
+  from { opacity: 0; transform: translateX(-50%) translateY(20px) }
+  to   { opacity: 1; transform: translateX(-50%) translateY(0) }
+}
+

@@ -77,7 +77,7 @@
           <span class="a11y-label" data-i18n="a11y.text-size">Tekstin koko:</span>
           <button class="btn-a11y" data-size="normal" data-i18n="a11y.normal" aria-label="Normaali tekstikoko">Normaali</button>
           <button class="btn-a11y" data-size="large" data-i18n="a11y.large" aria-label="Suuri tekstikoko">Suuri</button>
-          <button class="btn-a11y" data-size="xlarge" data-i18n="a11y.xlarge" aria-label="Erittäin suuri tekstikoko">Erittäin suuri</button>
+          <button class="btn-a11y is-active" data-size="xlarge" data-i18n="a11y.xlarge" aria-label="Erittäin suuri tekstikoko">Erittäin suuri</button>
         </div>
         <div class="a11y-group">
           <a href="booking-guide.html" class="a11y-link" data-i18n="a11y.booking-guide">Helppo varausopas</a>
@@ -149,12 +149,9 @@
         <!-- LEFT: Copy -->
         <div class="hero-copy">
 
-          <!-- Eyebrow pill -->
+          <!-- Eyebrow label -->
           <div class="hero-eyebrow-wrap hero-anim" style="--delay:0ms">
-            <span class="hero-pill">
-              <span class="hero-pill-dot" aria-hidden="true"></span>
-              <span data-i18n="hero.eyebrow">Hieronta · Ulvila | Turku</span>
-            </span>
+            <p class="eyebrow" data-i18n="hero.eyebrow">Hieronta · Ulvila | Turku</p>
           </div>
 
           <!-- Giant name + Subtitle next to it -->
@@ -253,7 +250,7 @@
           <!-- Card 1: Sports Massage -->
           <article class="card service-home-card scroll-reveal">
             <div class="card-image-wrapper">
-              <picture><source srcset="images/sports_massage.webp" type="image/webp" /><img src="images/sports_massage_opt.jpg" alt="Sports massage" class="card-image" loading="lazy" /></picture>
+              <img src="images/sport-massage.webp" alt="Sports massage" class="card-image" loading="lazy" width="800" height="600" />
             </div>
             <div class="card-content">
               <h3 data-i18n="s1.h3">Urheiluhieronta</h3>
@@ -267,7 +264,7 @@
           <!-- Card 2: Classic Massage -->
           <article class="card service-home-card scroll-reveal">
             <div class="card-image-wrapper">
-              <picture><source srcset="images/classic_massage.webp" type="image/webp" /><img src="images/classic_massage_opt.jpg" alt="Classic massage" class="card-image" loading="lazy" /></picture>
+              <img src="images/classic-massage.webp" alt="Classic massage" class="card-image" loading="lazy" width="800" height="600" />
             </div>
             <div class="card-content">
               <h3 data-i18n="s2.h3">Klassinen hieronta</h3>
@@ -281,7 +278,7 @@
           <!-- Card 3: Masseter Massage -->
           <article class="card service-home-card scroll-reveal">
             <div class="card-image-wrapper">
-              <picture><source srcset="images/masseter_massage.webp" type="image/webp" /><img src="images/masseter_massage_opt.jpg" alt="Masseter massage" class="card-image" loading="lazy" /></picture>
+              <img src="images/master-massage.webp" alt="Masseter massage" class="card-image" loading="lazy" width="800" height="600" />
             </div>
             <div class="card-content">
               <h3 data-i18n="s3.h3">Purentalihashieronta</h3>
@@ -539,14 +536,20 @@
           </div>
         </div>
 
-        <div class="map">
-          <iframe
-            title="Vastaanoton sijainti Google Mapsissa"
-            src="https://www.google.com/maps?q=Rekikuja%206%20AS%203%2C%2028400%20Ulvila%2C%20Finland&output=embed"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            rel="noopener noreferrer"
-            allowfullscreen></iframe>
+        <div class="contact-media-wrap">
+          <div class="clinic-photo-card">
+            <img src="images/cabinet.webp" alt="Vastaanotto Ulvilassa" class="clinic-photo" loading="lazy" width="600" height="400" />
+            <span class="clinic-photo-badge">📍 Vastaanotto Ulvilassa</span>
+          </div>
+          <div class="map">
+            <iframe
+              title="Vastaanoton sijainti Google Mapsissa"
+              src="https://www.google.com/maps?q=Rekikuja%206%20AS%203%2C%2028400%20Ulvila%2C%20Finland&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              rel="noopener noreferrer"
+              allowfullscreen></iframe>
+          </div>
         </div>
       </div>
     </section>
@@ -604,12 +607,21 @@
     <!-- Bottom bar -->
     <div class="footer-bottom">
       <div class="container">
-        <p>© <span id="year"></span> Ben — Koulutettu Hieroja. <span data-i18n="footer.rights">Kaikki oikeudet pidätetään.</span></p>
+        <p>© <span id="year"></span> Ben — Koulutettu Hieroja. <span data-i18n="footer.rights">Kaikki oikeudet pidätetään.</span> &nbsp;·&nbsp; Y-tunnus: 3635364-1</p>
       </div>
     </div>
   </footer>
 
   <script src="script.js" defer></script>
+
+  <!-- Cookie Consent Banner -->
+  <div id="cookieBanner" role="dialog" aria-live="polite" aria-label="Evästeilmoitus" style="display:none">
+    <p data-i18n="cookie.text">Sivustolla on upotettuna <strong>Google Maps</strong> -kartta, joka käyttää Googlen evästeitä. Hyväksymällä sallit kartan lataamisen. <a href="privacy.html" data-i18n="cookie.readmore">Lue lisää</a></p>
+    <div class="cookie-actions">
+      <button id="cookieAccept" class="btn btn-primary" data-i18n="cookie.accept">Hyväksy</button>
+      <button id="cookieDecline" class="btn btn-outline" data-i18n="cookie.decline">Hylkää</button>
+    </div>
+  </div>
 
   <!-- Back to top button -->
   <button class="back-to-top" id="backToTop" aria-label="Takaisin ylös">

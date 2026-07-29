@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tietosuojaseloste  Ben</title>
+  <title>Tietosuojaseloste — Ben, Koulutettu Hieroja</title>
   <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
   <link rel="icon" href="images/favicon.png" type="image/png" sizes="32x32" />
   <link rel="icon" href="images/b-logo.jpg" type="image/jpeg" sizes="192x192" />
@@ -50,7 +50,7 @@
           <span class="a11y-label" data-i18n="a11y.text-size">Tekstin koko:</span>
           <button class="btn-a11y" data-size="normal" data-i18n="a11y.normal" aria-label="Normaali tekstikoko">Normaali</button>
           <button class="btn-a11y" data-size="large" data-i18n="a11y.large" aria-label="Suuri tekstikoko">Suuri</button>
-          <button class="btn-a11y" data-size="xlarge" data-i18n="a11y.xlarge" aria-label="Erittäin suuri tekstikoko">Erittäin suuri</button>
+          <button class="btn-a11y is-active" data-size="xlarge" data-i18n="a11y.xlarge" aria-label="Erittäin suuri tekstikoko">Erittäin suuri</button>
         </div>
         <div class="a11y-group">
           <a href="booking-guide.html" class="a11y-link" data-i18n="a11y.booking-guide">Helppo varausopas</a>
@@ -95,86 +95,54 @@
 
   <main id="main" aria-label="Tietosuojaseloste">
     <article class="privacy-container">
-      <h1>Privacy Policy</h1>
-      <p class="last-updated">Last updated: July 7, 2026</p>
+      <h1 data-i18n="privacy.title">Tietosuojaseloste</h1>
+      <p class="last-updated" data-i18n="privacy.updated">Päivitetty: 1. heinäkuuta 2026</p>
 
+      <p data-i18n="privacy.intro">Tämä tietosuojaseloste kuvaa, miten henkilötietojasi kerätään, käytetään ja suojataan, kun vierailet tällä verkkosivustolla tai otat yhteyttä palveluun. Noudatamme EU:n yleistä tietosuoja-asetusta (GDPR) sekä Suomen tietosuojalainsäädäntöä.</p>
+
+      <h2 data-i18n="privacy.s1.h">1. Rekisterinpitäjä</h2>
       <p>
-        This Privacy Policy describes how your personal data is collected, used, and protected when you visit this website
-        or contact the practice. We are committed to protecting your privacy in accordance with the General Data Protection Regulation (GDPR)
-        and other applicable Finnish data protection legislation.
+        <span data-i18n="privacy.s1.intro">Henkilötietojesi rekisterinpitäjä on:</span><br />
+        <strong>Ben — Koulutettu Hieroja</strong><br />
+        Y-tunnus: 3635364-1<br />
+        <span data-i18n="privacy.s1.address">Osoite:</span> Rekikuja 6 AS 3, 28400 Ulvila, <span data-i18n="privacy.s1.country">Suomi</span><br />
+        <span data-i18n="privacy.s1.email">Sähköposti:</span> <a href="mailto:algaymanhandball@gmail.com">algaymanhandball@gmail.com</a><br />
+        <span data-i18n="privacy.s1.phone">Puhelin:</span> 045 1457445
       </p>
 
-      <h2>1. Data Controller</h2>
-      <p>
-        The data controller responsible for your personal data is:<br />
-        <strong>Ben  Koulutettu Hieroja</strong><br />
-        Address: Rekikuja 6 AS 3, 28400 Ulvila, Finland<br />
-        Email: <a href="mailto:algaymanhandball@gmail.com">algaymanhandball@gmail.com</a><br />
-        Phone: 045 1457445
-      </p>
-
-      <h2>2. What Personal Data We Collect and Why</h2>
-      <p>
-        We only collect personal data that is necessary for the purposes outlined below:
-      </p>
+      <h2 data-i18n="privacy.s2.h">2. Mitä henkilötietoja keräämme ja miksi</h2>
+      <p data-i18n="privacy.s2.intro">Keräämme vain alla mainittuihin tarkoituksiin tarvittavia henkilötietoja:</p>
       <ul>
-        <li>
-          <strong>Contact Submissions:</strong> If you contact us via email or phone, we collect the personal details you provide
-          (such as name, email, phone number, and message content) to respond to your inquiries.
-        </li>
-        <li>
-          <strong>Server Logs:</strong> When you access this website, our hosting provider automatically collects standard server logs,
-          which may include your IP address, browser type, operating system, referring URL, and date/time of access. This data is processed
-          solely for security and system maintenance purposes.
-        </li>
+        <li data-i18n="privacy.s2.li1"><strong>Ajanvaraus (Vello-järjestelmä):</strong> Kun varaat ajan verkossa, Vello-varausjärjestelmä käsittelee nimesi, puhelinnumerosi ja sähköpostiosoitteesi varauksen vahvistamiseksi ja hallinnoimiseksi. Vello toimii erillisenä tietojenkäsittelijänä ja noudattaa omaa tietosuojakäytäntöään.</li>
+        <li data-i18n="privacy.s2.li2"><strong>Yhteydenotot (puhelin / WhatsApp / sähköposti):</strong> Kun otat yhteyttä suoraan, keräämme viestin sisällön ja yhteystietosi yhteydenottosi käsittelemiseksi.</li>
+        <li data-i18n="privacy.s2.li3"><strong>Palvelinlokit:</strong> Verkkosivuston isäntäpalvelin kerää automaattisesti teknisiä lokitietoja (kuten IP-osoite, selain, käyttöjärjestelmä, vierailuaika) ainoastaan tietoturvan ja ylläpidon tarkoituksiin.</li>
       </ul>
 
-      <h2>3. Legal Basis for Processing</h2>
-      <p>
-        We process your personal data under the following legal bases of GDPR Article 6:
-      </p>
+      <h2 data-i18n="privacy.s3.h">3. Evästeet ja kolmannen osapuolen palvelut</h2>
+      <p data-i18n="privacy.s3.p">Tämä verkkosivusto ei käytä seurantaevästeitä eikä analytiikkapalveluita (kuten Google Analytics). Sivustolla on kuitenkin upotettuna <strong>Google Maps</strong> -kartta, joka ladataan vasta kun hyväksyt sen käytön. Google voi asettaa omia evästeitään karttawidgetin latauksen yhteydessä. Katso Googlen tietosuojakäytäntö osoitteesta <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a>.</p>
+
+      <h2 data-i18n="privacy.s4.h">4. Käsittelyn oikeusperuste</h2>
+      <p data-i18n="privacy.s4.intro">Käsittelemme henkilötietojasi seuraavilla GDPR:n 6 artiklan mukaisilla perusteilla:</p>
       <ul>
-        <li>
-          <strong>Legitimate Interests:</strong> To communicate with you and respond to your direct queries (GDPR Article 6(1)(f)).
-        </li>
-        <li>
-          <strong>Performance of a Contract / Pre-contractual Measures:</strong> To arrange and manage appointments and provide physical therapy services (GDPR Article 6(1)(b)).
-        </li>
+        <li data-i18n="privacy.s4.li1"><strong>Sopimuksen täytäntöönpano (6(1)(b)):</strong> Ajanvarausten hallinnoimiseksi ja hierontapalveluiden tarjoamiseksi.</li>
+        <li data-i18n="privacy.s4.li2"><strong>Oikeutettu etu (6(1)(f)):</strong> Yhteydenottoihin vastaamiseksi ja palvelun turvaamiseksi.</li>
       </ul>
 
-      <h2>4. Cookies and Web Analytics</h2>
-      <p>
-        This website does not use tracking cookies, analytics scripts (such as Google Analytics), or any third-party tracking services.
-        No non-essential cookies are set, and your browsing behavior is not tracked or shared. Because we do not use cookies or analytics, 
-        no cookie consent banner is displayed.
-      </p>
+      <h2 data-i18n="privacy.s5.h">5. Tietojen säilytysaika</h2>
+      <p data-i18n="privacy.s5.p">Säilytämme henkilötietojasi vain niin kauan kuin on tarpeen niiden keräämiseen liittyvien tarkoitusten täyttämiseksi tai lainsäädännön vaatimalla tavalla. Yleiset yhteydenotot poistetaan, kun asia on käsitelty. Hierontahoitoihin liittyvät asiakastiedot säilytetään Suomen lainsäädännön mukaisesti.</p>
 
-      <h2>5. Data Retention Period</h2>
-      <p>
-        We retain your personal data only as long as necessary to fulfill the purposes for which it was collected, or as required by law.
-        General contact inquiries are deleted once the query has been resolved, unless further communication is required. Client records
-        related to massage treatments are stored in compliance with applicable laws in Finland.
-      </p>
-
-      <h2>6. Your Rights Under GDPR</h2>
-      <p>
-        As a data subject located in the EU/Finland, you have the following rights regarding your personal data:
-      </p>
+      <h2 data-i18n="privacy.s6.h">6. Oikeutesi rekisteröitynä</h2>
+      <p data-i18n="privacy.s6.intro">EU:ssa / Suomessa sijaitsevana henkilönä sinulla on seuraavat oikeudet:</p>
       <ul>
-        <li><strong>Right of Access:</strong> You can request a copy of the personal data we hold about you.</li>
-        <li><strong>Right to Rectification:</strong> You can request that inaccurate or incomplete data be corrected.</li>
-        <li><strong>Right to Erasure ("Right to be Forgotten"):</strong> You can request the deletion of your personal data under certain conditions.</li>
-        <li><strong>Right to Restrict Processing:</strong> You can request that we restrict how we use your data in specific scenarios.</li>
-        <li><strong>Right to Data Portability:</strong> You can request the transfer of your data to another organization.</li>
-        <li><strong>Right to Object:</strong> You can object to the processing of your data based on legitimate interests.</li>
+        <li data-i18n="privacy.s6.li1"><strong>Tarkastusoikeus:</strong> Voit pyytää kopion sinua koskevista henkilötiedoista.</li>
+        <li data-i18n="privacy.s6.li2"><strong>Oikaisupyyntö:</strong> Voit pyytää virheellisten tai puutteellisten tietojen korjaamista.</li>
+        <li data-i18n="privacy.s6.li3"><strong>Oikeus tietojen poistamiseen:</strong> Voit pyytää henkilötietojesi poistamista tietyissä olosuhteissa.</li>
+        <li data-i18n="privacy.s6.li4"><strong>Käsittelyn rajoittaminen:</strong> Voit pyytää tietojesi käsittelyn rajoittamista tietyissä tilanteissa.</li>
+        <li data-i18n="privacy.s6.li5"><strong>Tietojen siirrettävyys:</strong> Voit pyytää tietojesi siirtämistä toiselle organisaatiolle.</li>
+        <li data-i18n="privacy.s6.li6"><strong>Vastustamisoikeus:</strong> Voit vastustaa tietojesi käsittelyä oikeutetun edun perusteella.</li>
       </ul>
-      <p>
-        To exercise any of these rights, please contact us at <a href="mailto:algaymanhandball@gmail.com">algaymanhandball@gmail.com</a>.
-      </p>
-      <p>
-        If you believe that your data has been processed in violation of data protection regulations, you also have the right to lodge a complaint
-        with the Finnish Data Protection Ombudsman (Tietosuojavaltuutettu): <a href="https://tietosuoja.fi" target="_blank" rel="noopener noreferrer">tietosuoja.fi</a>.
-      </p>
+      <p data-i18n="privacy.s6.contact">Oikeuksiesi käyttämiseksi ota yhteyttä osoitteeseen <a href="mailto:algaymanhandball@gmail.com">algaymanhandball@gmail.com</a>.</p>
+      <p data-i18n="privacy.s6.complaint">Jos katsot, että henkilötietojasi on käsitelty tietosuojasäännösten vastaisesti, sinulla on oikeus tehdä kantelu Tietosuojavaltuutetulle: <a href="https://tietosuoja.fi" target="_blank" rel="noopener noreferrer">tietosuoja.fi</a>.</p>
     </article>
   </main>
 

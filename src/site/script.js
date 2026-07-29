@@ -120,6 +120,54 @@ const translations = {
     'hero.more-btn': 'Ota yhteyttä',
     'hero.price-hint': 'Hieronta alkaen 35 \u20ac \u00b7 <a href="services.html">Katso kaikki hinnat</a>',
     'hero.price-link': 'Katso kaikki hinnat',
+    'price.sports.30': 'Urheiluhieronta (30 min)',
+    'price.sports.45': 'Urheiluhieronta (45 min)',
+    'price.sports.60': 'Urheiluhieronta (60 min)',
+    'price.sports.75': 'Urheiluhieronta (75 min)',
+    'price.sports.90': 'Urheiluhieronta (90 min)',
+    'price.classic.30': 'Klassinen hieronta (30 min)',
+    'price.classic.45': 'Klassinen hieronta (45 min)',
+    'price.classic.60': 'Klassinen hieronta (60 min)',
+    'price.classic.75': 'Klassinen hieronta (75 min)',
+    'price.classic.90': 'Klassinen hieronta (90 min)',
+    'price.masseter.45': 'Purentalihashieronta (45 min)',
+    'price.masseter.60': 'Purentalihashieronta (60 min)',
+    'cookie.text': 'Sivustolla on upotettuna <strong>Google Maps</strong> -kartta, joka käyttää Googlen evästeitä. Hyväksymällä sallit kartan lataamisen.',
+    'cookie.readmore': 'Lue lisää',
+    'cookie.accept': 'Hyväksy',
+    'cookie.decline': 'Hylkää',
+    'privacy.title': 'Tietosuojaseloste',
+    'privacy.updated': 'Päivitetty: 1. heinäkuuta 2026',
+    'privacy.intro': 'Tämä tietosuojaseloste kuvaa, miten henkilötietojasi kerätään, käytetään ja suojataan, kun vierailet tällä verkkosivustolla tai otat yhteyttä palveluun. Noudatamme EU:n yleistä tietosuoja-asetusta (GDPR) sekä Suomen tietosuojalainsäädäntöä.',
+    'privacy.s1.h': '1. Rekisterinpitäjä',
+    'privacy.s1.intro': 'Henkilötietojesi rekisterinpitäjä on:',
+    'privacy.s1.address': 'Osoite:',
+    'privacy.s1.country': 'Suomi',
+    'privacy.s1.email': 'Sähköposti:',
+    'privacy.s1.phone': 'Puhelin:',
+    'privacy.s2.h': '2. Mitä henkilötietoja keräämme ja miksi',
+    'privacy.s2.intro': 'Keräämme vain alla mainittuihin tarkoituksiin tarvittavia henkilötietoja:',
+    'privacy.s2.li1': '<strong>Ajanvaraus (Vello-järjestelmä):</strong> Kun varaat ajan verkossa, Vello-varausjärjestelmä käsittelee nimesi, puhelinnumerosi ja sähköpostiosoitteesi varauksen vahvistamiseksi ja hallinnoimiseksi. Vello toimii erillisenä tietojenkäsittelijänä ja noudattaa omaa tietosuojakäytäntöään.',
+    'privacy.s2.li2': '<strong>Yhteydenotot (puhelin / WhatsApp / sähköposti):</strong> Kun otat yhteyttä suoraan, keräämme viestin sisällön ja yhteystietosi yhteydenottosi käsittelemiseksi.',
+    'privacy.s2.li3': '<strong>Palvelinlokit:</strong> Verkkosivuston isäntäpalvelin kerää automaattisesti teknisiä lokitietoja (kuten IP-osoite, selain, käyttöjärjestelmä, vierailuaika) ainoastaan tietoturvan ja ylläpidon tarkoituksiin.',
+    'privacy.s3.h': '3. Evästeet ja kolmannen osapuolen palvelut',
+    'privacy.s3.p': 'Tämä verkkosivusto ei käytä seurantaevästeitä eikä analytiikkapalveluita (kuten Google Analytics). Sivustolla on kuitenkin upotettuna <strong>Google Maps</strong> -kartta, joka ladataan vasta kun hyväksyt sen käytön. Google voi asettaa omia evästeitään karttawidgetin latauksen yhteydessä. Katso Googlen tietosuojakäytäntö osoitteesta <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a>.',
+    'privacy.s4.h': '4. Käsittelyn oikeusperuste',
+    'privacy.s4.intro': 'Käsittelemme henkilötietojasi seuraavilla GDPR:n 6 artiklan mukaisilla perusteilla:',
+    'privacy.s4.li1': '<strong>Sopimuksen täytäntöönpano (6(1)(b)):</strong> Ajanvarausten hallinnoimiseksi ja hierontapalveluiden tarjoamiseksi.',
+    'privacy.s4.li2': '<strong>Oikeutettu etu (6(1)(f)):</strong> Yhteydenottoihin vastaamiseksi ja palvelun turvaamiseksi.',
+    'privacy.s5.h': '5. Tietojen säilytysaika',
+    'privacy.s5.p': 'Säilytämme henkilötietojasi vain niin kauan kuin on tarpeen niiden keräämiseen liittyvien tarkoitusten täyttämiseksi tai lainsäädännön vaatimalla tavalla. Yleiset yhteydenotot poistetaan, kun asia on käsitelty. Hierontahoitoihin liittyvät asiakastiedot säilytetään Suomen lainsäädännön mukaisesti.',
+    'privacy.s6.h': '6. Oikeutesi rekisteröitynä',
+    'privacy.s6.intro': 'EU:ssa / Suomessa sijaitsevana henkilönä sinulla on seuraavat oikeudet:',
+    'privacy.s6.li1': '<strong>Tarkastusoikeus:</strong> Voit pyytää kopion sinua koskevista henkilötiedoista.',
+    'privacy.s6.li2': '<strong>Oikaisupyyntö:</strong> Voit pyytää virheellisten tai puutteellisten tietojen korjaamista.',
+    'privacy.s6.li3': '<strong>Oikeus tietojen poistamiseen:</strong> Voit pyytää henkilötietojesi poistamista tietyissä olosuhteissa.',
+    'privacy.s6.li4': '<strong>Käsittelyn rajoittaminen:</strong> Voit pyytää tietojesi käsittelyn rajoittamista tietyissä tilanteissa.',
+    'privacy.s6.li5': '<strong>Tietojen siirrettävyys:</strong> Voit pyytää tietojesi siirtämistä toiselle organisaatiolle.',
+    'privacy.s6.li6': '<strong>Vastustamisoikeus:</strong> Voit vastustaa tietojesi käsittelyä oikeutetun edun perusteella.',
+    'privacy.s6.contact': 'Oikeuksiesi käyttämiseksi ota yhteyttä osoitteeseen <a href="mailto:algaymanhandball@gmail.com">algaymanhandball@gmail.com</a>.',
+    'privacy.s6.complaint': 'Jos katsot, että henkilötietojasi on käsitelty tietosuojasäännösten vastaisesti, sinulla on oikeus tehdä kantelu Tietosuojavaltuutetulle: <a href="https://tietosuoja.fi" target="_blank" rel="noopener noreferrer">tietosuoja.fi</a>.',
   },
   en: {
     'nav.services': 'Services',
@@ -240,6 +288,54 @@ const translations = {
     'hero.more-btn': 'Contact me',
     'hero.price-hint': 'Massage from 35 \u20ac \u00b7 <a href="services.html">See all prices</a>',
     'hero.price-link': 'See all prices',
+    'price.sports.30': 'Sports massage (30 min)',
+    'price.sports.45': 'Sports massage (45 min)',
+    'price.sports.60': 'Sports massage (60 min)',
+    'price.sports.75': 'Sports massage (75 min)',
+    'price.sports.90': 'Sports massage (90 min)',
+    'price.classic.30': 'Classic massage (30 min)',
+    'price.classic.45': 'Classic massage (45 min)',
+    'price.classic.60': 'Classic massage (60 min)',
+    'price.classic.75': 'Classic massage (75 min)',
+    'price.classic.90': 'Classic massage (90 min)',
+    'price.masseter.45': 'Masseter massage (45 min)',
+    'price.masseter.60': 'Masseter massage (60 min)',
+    'cookie.text': 'This website embeds a <strong>Google Maps</strong> map, which uses Google\'s cookies. By accepting, you allow the map to load.',
+    'cookie.readmore': 'Read more',
+    'cookie.accept': 'Accept',
+    'cookie.decline': 'Decline',
+    'privacy.title': 'Privacy Policy',
+    'privacy.updated': 'Updated: July 1, 2026',
+    'privacy.intro': 'This Privacy Policy describes how your personal data is collected, used, and protected when you visit this website or contact the service. We comply with the EU General Data Protection Regulation (GDPR) and Finnish data protection legislation.',
+    'privacy.s1.h': '1. Data Controller',
+    'privacy.s1.intro': 'The data controller for your personal data is:',
+    'privacy.s1.address': 'Address:',
+    'privacy.s1.country': 'Finland',
+    'privacy.s1.email': 'Email:',
+    'privacy.s1.phone': 'Phone:',
+    'privacy.s2.h': '2. What Personal Data We Collect and Why',
+    'privacy.s2.intro': 'We only collect personal data necessary for the following purposes:',
+    'privacy.s2.li1': '<strong>Appointment Booking (Vello System):</strong> When you book an appointment online, the Vello booking system processes your name, phone number, and email address to confirm and manage your booking. Vello acts as a data processor and complies with its own privacy policy.',
+    'privacy.s2.li2': '<strong>Direct Contacts (phone / WhatsApp / email):</strong> When you contact us directly, we collect your message content and contact details to handle your request.',
+    'privacy.s2.li3': '<strong>Server Logs:</strong> The hosting server automatically collects technical log data (such as IP address, browser, OS, visit time) solely for security and system maintenance purposes.',
+    'privacy.s3.h': '3. Cookies and Third-Party Services',
+    'privacy.s3.p': 'This website does not use tracking cookies or analytics services (like Google Analytics). However, the site embeds a <strong>Google Maps</strong> map, which is loaded only after your consent. Google may set its own cookies when loading the map widget. See Google\'s privacy policy at <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a>.',
+    'privacy.s4.h': '4. Legal Basis for Processing',
+    'privacy.s4.intro': 'We process your personal data under the following legal bases of GDPR Article 6:',
+    'privacy.s4.li1': '<strong>Performance of a Contract (6(1)(b)):</strong> To manage appointments and provide massage services.',
+    'privacy.s4.li2': '<strong>Legitimate Interest (6(1)(f)):</strong> To respond to inquiries and secure the service.',
+    'privacy.s5.h': '5. Data Retention Period',
+    'privacy.s5.p': 'We retain your personal data only as long as necessary to fulfill the purposes of collection or as required by law. General inquiries are deleted once handled. Customer records related to massage treatments are stored in compliance with Finnish law.',
+    'privacy.s6.h': '6. Your Rights as a Data Subject',
+    'privacy.s6.intro': 'As a person located in the EU / Finland, you have the following rights:',
+    'privacy.s6.li1': '<strong>Right of Access:</strong> You can request a copy of your personal data held by us.',
+    'privacy.s6.li2': '<strong>Right to Rectification:</strong> You can request correction of inaccurate or incomplete data.',
+    'privacy.s6.li3': '<strong>Right to Erasure:</strong> You can request erasure of your personal data under certain conditions.',
+    'privacy.s6.li4': '<strong>Restriction of Processing:</strong> You can request restriction of processing in specific situations.',
+    'privacy.s6.li5': '<strong>Data Portability:</strong> You can request transfer of your data to another organization.',
+    'privacy.s6.li6': '<strong>Right to Object:</strong> You can object to processing based on legitimate interests.',
+    'privacy.s6.contact': 'To exercise your rights, please contact <a href="mailto:algaymanhandball@gmail.com">algaymanhandball@gmail.com</a>.',
+    'privacy.s6.complaint': 'If you believe your data has been processed in violation of data protection rules, you have the right to lodge a complaint with the Data Protection Ombudsman: <a href="https://tietosuoja.fi" target="_blank" rel="noopener noreferrer">tietosuoja.fi</a>.',
   }
 };
 
@@ -284,7 +380,15 @@ const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 applyTheme(savedTheme === 'dark' || (!savedTheme && prefersDark));
 
 // â&euro;â&euro; Accessibility Font Size â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;
-let currentFontSize = localStorage.getItem('font-size') || 'normal';
+let currentFontSize = localStorage.getItem('font-size-v2');
+if (!currentFontSize) {
+  const oldSize = localStorage.getItem('font-size');
+  if (oldSize && oldSize !== 'normal') {
+    currentFontSize = oldSize;
+  } else {
+    currentFontSize = window.innerWidth >= 1024 ? 'xlarge' : 'normal';
+  }
+}
 
 function applyFontSize(size) {
   if (size === 'normal') {
@@ -292,7 +396,7 @@ function applyFontSize(size) {
   } else {
     document.documentElement.setAttribute('data-font-size', size);
   }
-  localStorage.setItem('font-size', size);
+  localStorage.setItem('font-size-v2', size);
   currentFontSize = size;
   
   // Highlight active buttons (if they exist in the DOM yet)
@@ -468,6 +572,51 @@ document.querySelectorAll('.svc-btn').forEach(btn => {
     }
   });
 });
+
+// ── Cookie Consent & Google Maps Lazy Load ────────────────────────────────────
+(function () {
+  const CONSENT_KEY = 'maps-consent';
+  const banner      = document.getElementById('cookieBanner');
+  const mapIframe   = document.querySelector('.map iframe');
+
+  // Replace iframe src with data-src to block loading
+  if (mapIframe) {
+    mapIframe.dataset.src = mapIframe.src;
+    mapIframe.removeAttribute('src');
+  }
+
+  function loadMap() {
+    if (mapIframe && mapIframe.dataset.src) {
+      mapIframe.src = mapIframe.dataset.src;
+    }
+  }
+
+  function hideBanner() {
+    if (banner) banner.style.display = 'none';
+  }
+
+  const consent = localStorage.getItem(CONSENT_KEY);
+
+  if (consent === 'accepted') {
+    loadMap();
+  } else if (consent === 'declined') {
+    // map stays hidden, banner stays hidden
+  } else {
+    // Show banner after short delay
+    if (banner) setTimeout(() => { banner.style.display = 'flex'; }, 800);
+  }
+
+  document.getElementById('cookieAccept')?.addEventListener('click', () => {
+    localStorage.setItem(CONSENT_KEY, 'accepted');
+    hideBanner();
+    loadMap();
+  });
+
+  document.getElementById('cookieDecline')?.addEventListener('click', () => {
+    localStorage.setItem(CONSENT_KEY, 'declined');
+    hideBanner();
+  });
+})();
 
 // â&euro;â&euro; Back to top button â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;
 const backToTopBtn = document.getElementById('backToTop');
