@@ -134,6 +134,9 @@
    ============================================ */
 *, *:before, *:after { box-sizing: border-box }
 html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; overflow-x: hidden }
+@media (max-width: 767px) {
+  html { font-size: 93.75%; }
+}
 body { overflow-x: hidden; width: 100% }
 
 @media (prefers-reduced-motion: reduce) {
@@ -500,7 +503,7 @@ p { margin: 0 0 var(--space-md); color: var(--color-text-muted) }
 
 /* Primary paragraph — intro, stronger emphasis */
 .hero-lead--primary {
-  font-size: clamp(1.02rem, 1.4vw, 1.26rem);
+  font-size: clamp(0.95rem, 1.4vw, 1.26rem);
   color: var(--color-text);
   font-weight: 600;
   line-height: 1.8;
@@ -511,7 +514,7 @@ p { margin: 0 0 var(--space-md); color: var(--color-text-muted) }
 
 /* Secondary paragraphs — supporting, still solid */
 .hero-lead--secondary {
-  font-size: clamp(.98rem, 1.25vw, 1.16rem);
+  font-size: clamp(0.88rem, 1.25vw, 1.16rem);
   color: var(--color-text);
   font-weight: 500;
   line-height: 1.85;
@@ -1022,26 +1025,24 @@ p { margin: 0 0 var(--space-md); color: var(--color-text-muted) }
 .contact-list, .hours { list-style: none; margin: 0; padding: 0 }
 .contact-list li, .hours li {
   display: flex; justify-content: space-between; align-items: center;
-  flex-wrap: wrap;
-  gap: 0.5rem; padding: 13px 0; border-bottom: 1px solid var(--color-border);
-  word-break: break-word;
+  flex-direction: row !important;
+  flex-wrap: nowrap;
+  gap: 0.75rem; padding: 13px 0; border-bottom: 1px solid var(--color-border);
 }
 .contact-list li:last-child, .hours li:last-child { border-bottom: none }
 .contact-list span:first-child, .hours span:first-child {
   color: var(--color-text-muted); font-size: .78rem; text-transform: uppercase;
   letter-spacing: .12em; display: inline-flex; align-items: center; gap: 6px;
+  flex-shrink: 0;
 }
-.contact-label { display: inline-flex !important; align-items: center; gap: 7px }
+.contact-label { display: inline-flex !important; align-items: center; gap: 7px; flex-shrink: 0 }
 .contact-label svg { color: var(--color-accent-vivid); flex-shrink: 0 }
 .contact-list a, .contact-list span:last-child, .hours span:last-child {
-  word-break: break-all;
-  text-align: right;
+  word-break: break-word;
+  text-align: right !important;
+  font-size: clamp(0.78rem, 3.2vw, 0.92rem);
 }
-.contact-list a { color: var(--color-text); font-weight: 500; min-height: 44px; display: inline-flex; align-items: center; transition: color .2s }
-@media (max-width: 480px) {
-  .contact-list li, .hours li { flex-direction: column; align-items: flex-start; }
-  .contact-list a, .contact-list span:last-child, .hours span:last-child { text-align: left; }
-}
+.contact-list a { color: var(--color-text); font-weight: 500; min-height: 38px; display: inline-flex; align-items: center; transition: color .2s }
 .contact-list a:hover { color: var(--color-accent-vivid) }
 .mini-title {
   font-size: .7rem; font-weight: 700; letter-spacing: .2em;
@@ -1130,13 +1131,11 @@ p { margin: 0 0 var(--space-md); color: var(--color-text-muted) }
 .site-footer {
   background: var(--color-footer-bg); color: var(--color-footer-text);
   border-top: 1px solid var(--color-footer-border);
-  padding: clamp(2rem, 4vw, 3rem) 0 0;
+  padding: clamp(1.5rem, 4vw, 3rem) 0 0;
 }
-.footer-inner { display: grid; grid-template-columns: 1fr; gap: var(--space-md); padding-bottom: var(--space-lg) }
-@media (min-width: 640px) { .footer-inner { grid-template-columns: 1fr 1fr } }
-@media (min-width: 1024px) { .footer-inner { grid-template-columns: 1.5fr 1fr 1.2fr; gap: var(--space-xl) } }
-.footer-brand { display: flex; align-items: center; gap: var(--space-sm); grid-column: 1 / -1 }
-@media (min-width: 1024px) { .footer-brand { grid-column: auto } }
+.footer-inner { display: flex; flex-direction: column; gap: var(--space-md); padding-bottom: var(--space-lg) }
+
+.footer-brand { display: flex; align-items: center; gap: var(--space-sm) }
 .footer-logo { width: 42px; height: 42px; border-radius: 50%; object-fit: cover; flex-shrink: 0; box-shadow: var(--shadow-sm) }
 .footer-brand-name { margin: 0; font-size: 1.05rem; font-weight: 800; color: var(--color-footer-text); letter-spacing: -.02em }
 .footer-brand-sub {
@@ -1145,7 +1144,7 @@ p { margin: 0 0 var(--space-md); color: var(--color-text-muted) }
 }
 .footer-nav, .footer-contact { display: flex; flex-direction: column }
 .footer-nav-title {
-  margin: 0 0 .85rem; font-size: .68rem; font-weight: 700;
+  margin: 0 0 .5rem; font-size: .68rem; font-weight: 700;
   text-transform: uppercase; letter-spacing: .18em;
   color: var(--color-accent-vivid);
   display: flex; align-items: center; gap: .4rem;
@@ -1155,14 +1154,47 @@ p { margin: 0 0 var(--space-md); color: var(--color-text-muted) }
   width: 14px; height: 1.5px;
   background: var(--color-accent-vivid); border-radius: 2px;
 }
-.footer-nav .footer-links { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px }
-.footer-nav .footer-links a { color: var(--color-footer-link); font-size: .88rem; padding: 4px 0; min-height: unset; display: inline-flex; align-items: center; transition: color .2s ease, padding-left .2s ease }
-.footer-nav .footer-links a:hover { color: var(--color-footer-hover); padding-left: 4px }
-.footer-contact-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px }
+
+/* Mobile (< 640px): Horizontal compact layout */
+.footer-nav .footer-links { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 4px 16px }
+.footer-nav .footer-links a { color: var(--color-footer-link); font-size: .85rem; padding: 2px 0; min-height: unset; display: inline-flex; align-items: center; transition: color .2s ease }
+.footer-nav .footer-links a:hover { color: var(--color-footer-hover) }
+
+.footer-contact-list { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 16px }
 .footer-contact-list li { display: flex; align-items: center; gap: 7px; font-size: .85rem }
 .footer-contact-list svg { color: var(--color-accent-vivid); flex-shrink: 0 }
 .footer-contact-list a { color: var(--color-footer-link); transition: color .2s ease }
 .footer-contact-list a:hover { color: var(--color-footer-hover) }
+
+/* Desktop / Tablet (>= 640px): Vertical stacked columns */
+@media (min-width: 640px) {
+  .footer-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-lg);
+  }
+  .footer-nav .footer-links,
+  .footer-contact-list {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 6px;
+  }
+  .footer-nav .footer-links a {
+    font-size: .88rem;
+    padding: 4px 0;
+  }
+  .footer-nav .footer-links a:hover {
+    padding-left: 4px;
+  }
+}
+@media (min-width: 1024px) {
+  .footer-inner {
+    grid-template-columns: 1.5fr 1fr 1.2fr;
+    gap: var(--space-xl);
+  }
+  .footer-brand { grid-column: auto }
+}
+
 .footer-bottom { border-top: 1px solid var(--color-footer-border); padding: var(--space-md) 0 }
 .footer-bottom p { margin: 0; font-size: .8rem; color: var(--color-footer-muted); text-align: center }
 
