@@ -1148,7 +1148,6 @@ p { margin: 0 0 var(--space-md); color: var(--color-text-muted) }
    MOBILE NAV
    ============================================ */
 @media (max-width: 1023px) {
-  .a11y-bar { display: none !important }
   body { padding-top: 72px }
   .nav-toggle { display: inline-flex }
   .nav-toggle[aria-expanded=true] { background: rgba(74,127,184,.1); border-color: var(--color-accent-vivid); color: var(--color-accent-vivid) }
@@ -1179,27 +1178,7 @@ p { margin: 0 0 var(--space-md); color: var(--color-text-muted) }
   .nav-menu li.mobile-only + li.mobile-only .nav-cta { margin-top: var(--space-sm) }
   .nav-menu li.mobile-only { border-bottom: none }
   .nav-menu li.mobile-only:first-of-type { margin-top: var(--space-md); padding-top: var(--space-md); border-top: 1px solid var(--color-border) }
-  .mobile-a11y-group {
-    padding: 14px 4px;
-    border-top: 1px solid var(--color-border);
-    margin-top: var(--space-sm);
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
-  .mobile-a11y-buttons {
-    display: flex;
-    gap: 8px;
-    width: 100%;
-  }
-  .mobile-a11y-buttons .btn-a11y {
-    flex: 1;
-    text-align: center;
-    padding: 8px;
-    font-size: 0.9rem;
-    min-height: 38px;
-    border-radius: var(--r-sm);
-  }
+
   .site-header.menu-open .nav-menu, .nav-menu.open, #navMenu.open { opacity: 1; visibility: visible; transform: translateY(0); pointer-events: auto }
   .nav-menu .lang-toggle { display: block; width: 100%; text-align: left; padding: 16px 8px; font-size: 1.05rem; color: var(--color-text); background: transparent; border: none; min-height: 50px }
   .nav-menu .lang-toggle:hover { color: var(--color-accent-vivid) }
@@ -1267,27 +1246,6 @@ p { margin: 0 0 var(--space-md); color: var(--color-text-muted) }
 }
 .faq-answer-content p { margin: .85rem 0 0; font-size: .94rem; line-height: 1.75; color: var(--color-text-muted) }
 
-/* ============================================
-   FONT SIZE ACCESSIBILITY
-   ============================================ */
-html[data-font-size=normal] { font-size: 100% }
-html[data-font-size=large]  { font-size: 112% }
-html[data-font-size=xlarge] { font-size: 125% }
-
-/* ============================================
-   ACCESSIBILITY BAR
-   ============================================ */
-.a11y-bar { background: var(--color-bg-secondary); border-bottom: 1px solid var(--color-border); padding: 6px 0; font-size: .85rem; width: 100%; min-height: 44px; opacity: 1; transition: opacity .25s ease, padding .25s ease, border .25s ease }
-.site-header.is-scrolled .a11y-bar { display: none; }
-.a11y-container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-sm); max-width: 100%; overflow-x: auto; }
-.a11y-group { display: flex; align-items: center; gap: var(--space-sm) }
-.a11y-label { font-weight: 600; color: var(--color-text-muted) }
-.btn-a11y { background: var(--color-bg); border: 1px solid var(--color-border); color: var(--color-text); padding: 4px 10px; border-radius: var(--r-sm); font-weight: 700; transition: all .2s ease; min-height: 32px; min-width: 32px; display: inline-flex; align-items: center; justify-content: center; cursor: pointer }
-.btn-a11y:hover { background: var(--color-accent-soft); border-color: var(--color-accent-vivid) }
-.btn-a11y.is-active { background: var(--color-accent); color: var(--color-bg); border-color: var(--color-accent) }
-.a11y-link { color: var(--color-accent-vivid); font-weight: 600; text-decoration: underline; cursor: pointer }
-.a11y-link:hover { color: var(--color-accent) }
-@media (max-width: 1023px) { .a11y-link { display: none } }
 
 /* ============================================
    BOOKING GUIDE PAGE

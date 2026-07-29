@@ -379,33 +379,6 @@ const savedTheme = localStorage.getItem('theme');
 const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 applyTheme(savedTheme === 'dark' || (!savedTheme && prefersDark));
 
-// â&euro;â&euro; Accessibility Font Size â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;
-let currentFontSize = localStorage.getItem('font-size-v3');
-if (!currentFontSize) {
-  currentFontSize = window.innerWidth >= 1024 ? 'large' : 'normal';
-}
-
-function applyFontSize(size) {
-  if (size === 'normal') {
-    document.documentElement.removeAttribute('data-font-size');
-  } else {
-    document.documentElement.setAttribute('data-font-size', size);
-  }
-  localStorage.setItem('font-size-v3', size);
-  currentFontSize = size;
-  
-  // Highlight active buttons (if they exist in the DOM yet)
-  const btns = document.querySelectorAll('.btn-a11y');
-  if (btns.length) {
-    btns.forEach(btn => {
-      const btnSize = btn.dataset.size;
-      btn.classList.toggle('is-active', btnSize === size);
-    });
-  }
-}
-
-// Load saved font size instantly to prevent FOUT
-applyFontSize(currentFontSize);
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -417,7 +390,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   applyLang(currentLang);
 
-  // â&euro;â&euro; Theme Toggle Click â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;
+  // ── Theme Toggle Click ───────────────────────────────────────────────────────
   const themeBtns = document.querySelectorAll('#themeToggle, #themeToggleMobile');
   themeBtns.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -426,14 +399,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // â&euro;â&euro; Accessibility Sizing Controls â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;
-  const a11yBtns = document.querySelectorAll('.btn-a11y');
-  a11yBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      applyFontSize(btn.dataset.size);
-    });
-  });
-  applyFontSize(currentFontSize);
 
   // â&euro;â&euro; FAQ Accordion Toggling â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;
   const faqQuestions = document.querySelectorAll('.faq-question');
