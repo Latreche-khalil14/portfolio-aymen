@@ -1270,8 +1270,9 @@ p { margin: 0 0 var(--space-md); color: var(--color-text-muted) }
 /* ============================================
    FONT SIZE ACCESSIBILITY
    ============================================ */
-html[data-font-size=large]  { font-size: 116% }
-html[data-font-size=xlarge] { font-size: 132% }
+html[data-font-size=normal] { font-size: 100% }
+html[data-font-size=large]  { font-size: 112% }
+html[data-font-size=xlarge] { font-size: 125% }
 
 /* ============================================
    ACCESSIBILITY BAR

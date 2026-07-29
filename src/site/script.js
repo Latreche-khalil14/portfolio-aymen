@@ -380,14 +380,9 @@ const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 applyTheme(savedTheme === 'dark' || (!savedTheme && prefersDark));
 
 // â&euro;â&euro; Accessibility Font Size â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;â&euro;
-let currentFontSize = localStorage.getItem('font-size-v2');
+let currentFontSize = localStorage.getItem('font-size-v3');
 if (!currentFontSize) {
-  const oldSize = localStorage.getItem('font-size');
-  if (oldSize && oldSize !== 'normal') {
-    currentFontSize = oldSize;
-  } else {
-    currentFontSize = window.innerWidth >= 1024 ? 'xlarge' : 'normal';
-  }
+  currentFontSize = window.innerWidth >= 1024 ? 'large' : 'normal';
 }
 
 function applyFontSize(size) {
@@ -396,7 +391,7 @@ function applyFontSize(size) {
   } else {
     document.documentElement.setAttribute('data-font-size', size);
   }
-  localStorage.setItem('font-size-v2', size);
+  localStorage.setItem('font-size-v3', size);
   currentFontSize = size;
   
   // Highlight active buttons (if they exist in the DOM yet)
