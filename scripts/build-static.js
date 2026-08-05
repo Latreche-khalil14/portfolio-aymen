@@ -66,7 +66,7 @@ async function build() {
       'og-image.jpg',
       'classic-massage-new.webp',
       'master-massage.webp',
-      'sport-massage.webp',
+      'sport-massage-new.webp',
       'cabinet.webp',
       'plasa.webp',
     ];
