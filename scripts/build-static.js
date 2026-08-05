@@ -64,10 +64,11 @@ async function build() {
       'logo.dark.webp',
       'logo.light.webp',
       'og-image.jpg',
-      'classic-massage.webp',
+      'classic-massage-new.jpg',
       'master-massage.webp',
       'sport-massage.webp',
       'cabinet.webp',
+      'plasa.jpg',
     ];
     for (const img of imageFiles) {
       copyIfExists(path.join(srcImages, img), path.join(pubImages, img));
